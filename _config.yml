@@ -55,6 +55,10 @@ default_asides: [asides/recent_posts.html, asides/github.html, asides/twitter.ht
 #   3rd Party Settings    #
 # ----------------------- #
 
+# Linkedin Profile
+linkedin_user: ryanweald
+linkedin_show_profile_link: true
+
 # Github repositories
 github_user: rweald
 github_repo_count: 0
