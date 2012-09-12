@@ -1,194 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
 
-<!DOCTYPE html>
-<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
-<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
-<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
-<head>
-  <meta charset="utf-8">
-  <title>Ryan Weald</title>
-  <meta name="author" content="">
-
-  
-  <meta name="description" content="Tweet Linear Regression Using Ruby Sep 12th, 2012 Read the post on the Sharethrough Engineering Blog Tweet Banking Your Profits Apr 15th, 2012 &hellip;">
-  
-
-  <!-- http://t.co/dKP3o1e -->
-  <meta name="HandheldFriendly" content="True">
-  <meta name="MobileOptimized" content="320">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  
-  <link rel="canonical" href="http://rweald.github.com/">
-  <link href="/favicon.png" rel="icon">
-  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
-  <script src="/javascripts/modernizr-2.0.js"></script>
-  <script src="/javascripts/ender.js"></script>
-  <script src="/javascripts/octopress.js" type="text/javascript"></script>
-  <link href="/atom.xml" rel="alternate" title="Ryan Weald" type="application/atom+xml">
-  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
-<link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
-<link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
-
-  
-
-</head>
-
-<body >
-  <header role="banner" id="sidebar">
-    <!-- Logo -->
-<aside id="logo" class="clearfix">
-  <div class="clearfix">
-    <a href="/">Ryan Weald</a>
-  </div>
-</aside>
-
-<ul id="menu">
-
-  <li class="title">
-    <h1 id="title"><a href="/">Ryan Weald</a></h1>
-  </li>
-
-
-  <li class="link">
-    <a href="/about/">about</a>
-  </li>
-
-
-  <li class="link">
-    <a href="http://www.linkedin.com/in/ryanweald/">linkedin</a>
-  </li>
-
-
-
-  <li class="link">
-    <a href="http://twitter.com/rweald/">twitter</a>
-  </li>
-
-
-  <li class="link">
-    <a href="http://github.com/rweald/">github</a>
-  </li>
-
-
-  <li class="link rss">
-    <a href="/atom.xml">rss feed</a>
-  </li>
-</ul>
-
-
-<form action="http://google.com/search" method="get">
-  <fieldset role="search">
-    <input type="hidden" name="q" value="site:rweald.github.com" />
-    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
-  </fieldset>
-</form>
-
-
-<!-- Octopress Love -->
-<aside id="octopress_linkback">
-  <a href="http://octopress.org/">
-    <span class="unicode_square">
-      <span class="unicode_circle">
-        &nbsp;
-      </span>
-    </span>
-    <span class="octopress">Powered by Octopress</span>
-  </a>
-</aside>
-
-  </header>
-  <section id="main">
-      
-  
-  
-    <article class="post">
-      <div class="sharing-box">
-  
-  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://rweald.github.com/index.html" data-via="rweald" data-counturl="http://rweald.github.com/index.html" data-size="large">Tweet</a>
-  
-  
-  
-</div>
-
-      
-  <header>
+  <title><![CDATA[Ryan Weald]]></title>
+  <link href="http://rweald.github.com/atom.xml" rel="self"/>
+  <link href="http://rweald.github.com/"/>
+  <updated>2012-09-12T07:48:27-07:00</updated>
+  <id>http://rweald.github.com/</id>
+  <author>
+    <name><![CDATA[]]></name>
     
-      <h2 class="entry-title">
-        
-        <a href="/blog/2012/09/12/linear-regression-using-ruby/">Linear Regression Using Ruby</a>
-        
-      </h2>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
 
   
-
-
-<time datetime="2012-09-12T07:45:00-07:00" pubdate data-updated="true">Sep 12<span>th</span>, 2012</time>
-        
-      </p>
-    
-  </header>
-
-
-  <p>Read the post on the <a href="http://www.sharethrough.com/2012/09/linear-regression-using-ruby/">Sharethrough Engineering Blog</a></p>
-
+  <entry>
+    <title type="html"><![CDATA[Linear Regression Using Ruby]]></title>
+    <link href="http://rweald.github.com/blog/2012/09/12/linear-regression-using-ruby/"/>
+    <updated>2012-09-12T07:45:00-07:00</updated>
+    <id>http://rweald.github.com/blog/2012/09/12/linear-regression-using-ruby</id>
+    <content type="html"><![CDATA[<p>Read the post on the <a href="http://www.sharethrough.com/2012/09/linear-regression-using-ruby/">Sharethrough Engineering Blog</a></p>
+]]></content>
+  </entry>
   
-  
-
-
-    </article>
-  
-  
-    <article class="post">
-      <div class="sharing-box">
-  
-  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://rweald.github.com/index.html" data-via="rweald" data-counturl="http://rweald.github.com/index.html" data-size="large">Tweet</a>
-  
-  
-  
-</div>
-
-      
-  <header>
-    
-      <h2 class="entry-title">
-        
-        <a href="/blog/2012/04/15/banking-your-profits/">Banking Your Profits</a>
-        
-      </h2>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2012-04-15T00:00:00-07:00" pubdate data-updated="true">Apr 15<span>th</span>, 2012</time>
-        
-      </p>
-    
-  </header>
-
-
-  <h1>Banking Your Profits, How to Upgrade to the latest Rails</h1>
+  <entry>
+    <title type="html"><![CDATA[Banking Your Profits]]></title>
+    <link href="http://rweald.github.com/blog/2012/04/15/banking-your-profits/"/>
+    <updated>2012-04-15T00:00:00-07:00</updated>
+    <id>http://rweald.github.com/blog/2012/04/15/banking-your-profits</id>
+    <content type="html"><![CDATA[<h1>Banking Your Profits, How to Upgrade to the latest Rails</h1>
 
 <p>Let me start off by saying this is not a post touting all the great new features available in the latest version of Rails. I am not going to try and convince you that there is no way you can be productive staying on your current version of Rails. Instead this is a post about the way you can improve the overall quality of your codebase and reduce technical debt even if you never fully complete the upgrade. I am going to outline the process that we used at <a href="http://sharethrough.github.com">Sharethrough</a> to improve the quality of our codebase while upgrading from Rails 2 to Rails 3.</p>
 
@@ -222,54 +61,15 @@ pain was actually the result of tight coupling and
 <p><a name="ci"></a> [1] <a href="http://en.wikipedia.org/wiki/Continuous_integration">http://en.wikipedia.org/wiki/Continuous_integration</a></p>
 
 <p><a name="solid"></a> [2] <a href="http://en.wikipedia.org/wiki/SOLID_(object-oriented_design)">http://en.wikipedia.org/wiki/SOLID_(object-oriented_design)</a></p>
-
+]]></content>
+  </entry>
   
-  
-
-
-    </article>
-  
-  
-    <article class="post">
-      <div class="sharing-box">
-  
-  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://rweald.github.com/index.html" data-via="rweald" data-counturl="http://rweald.github.com/index.html" data-size="large">Tweet</a>
-  
-  
-  
-</div>
-
-      
-  <header>
-    
-      <h2 class="entry-title">
-        
-        <a href="/blog/2011/05/26/mongoid-activerecord-side-by-side/">Using Mongoid Alongside ActiveRecord</a>
-        
-      </h2>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2011-05-26T00:00:00-07:00" pubdate data-updated="true">May 26<span>th</span>, 2011</time>
-        
-      </p>
-    
-  </header>
-
-
-  <p>MongoDB is a very popular document oriented database and more apps are
+  <entry>
+    <title type="html"><![CDATA[Using Mongoid Alongside ActiveRecord]]></title>
+    <link href="http://rweald.github.com/blog/2011/05/26/mongoid-activerecord-side-by-side/"/>
+    <updated>2011-05-26T00:00:00-07:00</updated>
+    <id>http://rweald.github.com/blog/2011/05/26/mongoid-activerecord-side-by-side</id>
+    <content type="html"><![CDATA[<p>MongoDB is a very popular document oriented database and more apps are
 using it every day. However, we all know about the problems that mongo
 has with data durability. So you might not want to use it as a complete
 replacment for ActiveRecord and your favorite sql store.
@@ -314,54 +114,15 @@ file</p>
 
 
 
-
+]]></content>
+  </entry>
   
-  
-
-
-    </article>
-  
-  
-    <article class="post">
-      <div class="sharing-box">
-  
-  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://rweald.github.com/index.html" data-via="rweald" data-counturl="http://rweald.github.com/index.html" data-size="large">Tweet</a>
-  
-  
-  
-</div>
-
-      
-  <header>
-    
-      <h2 class="entry-title">
-        
-        <a href="/blog/2011/05/12/2011-experimenting-with-goliath-and-EventMachine/">2011 Experimenting With Goliath and Eventmachine</a>
-        
-      </h2>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2011-05-12T00:00:00-07:00" pubdate data-updated="true">May 12<span>th</span>, 2011</time>
-        
-      </p>
-    
-  </header>
-
-
-  <p>After hearing lots of buzz surrounding <a href="https://github.com/postrank-labs/goliath">Goliath</a> the new asynchronous web server for ruby I thought I would give it a try for a particular problem I had. As part of <a href="https://github.com/icl/cove">COVE</a>, an open source online video ethnography tool, we have to handle large video file uploads. The application is written in Rails which is great except when you have really long running connections. With long running connections it ties up your mongrels and reduces your ability to service request.</p>
+  <entry>
+    <title type="html"><![CDATA[2011 Experimenting With Goliath And Eventmachine]]></title>
+    <link href="http://rweald.github.com/blog/2011/05/12/2011-experimenting-with-goliath-and-EventMachine/"/>
+    <updated>2011-05-12T00:00:00-07:00</updated>
+    <id>http://rweald.github.com/blog/2011/05/12/2011-experimenting-with-goliath-and-EventMachine</id>
+    <content type="html"><![CDATA[<p>After hearing lots of buzz surrounding <a href="https://github.com/postrank-labs/goliath">Goliath</a> the new asynchronous web server for ruby I thought I would give it a try for a particular problem I had. As part of <a href="https://github.com/icl/cove">COVE</a>, an open source online video ethnography tool, we have to handle large video file uploads. The application is written in Rails which is great except when you have really long running connections. With long running connections it ties up your mongrels and reduces your ability to service request.</p>
 
 <p>  The reason for this is because Rails is an inherently I/O blocking.
 When you run your application in production using
@@ -959,54 +720,15 @@ Just remember I am still young and while my college peers were out partying I wa
 <p>  In my next post I will document the upload client that also takes
 advantaged of EventMachine and fibers to compute checksums and upload
 files to the web service.</p>
-
+]]></content>
+  </entry>
   
-  
-
-
-    </article>
-  
-  
-    <article class="post">
-      <div class="sharing-box">
-  
-  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://rweald.github.com/index.html" data-via="rweald" data-counturl="http://rweald.github.com/index.html" data-size="large">Tweet</a>
-  
-  
-  
-</div>
-
-      
-  <header>
-    
-      <h2 class="entry-title">
-        
-        <a href="/blog/2011/04/05/caching-responses-from-external-apis/">Caching Responses From Remote APIs</a>
-        
-      </h2>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2011-04-05T00:00:00-07:00" pubdate data-updated="true">Apr 5<span>th</span>, 2011</time>
-        
-      </p>
-    
-  </header>
-
-
-  <p>  <a href="http://secure.dokbot.com">Dokbot</a>, the project that I am currently
+  <entry>
+    <title type="html"><![CDATA[Caching Responses From Remote APIs]]></title>
+    <link href="http://rweald.github.com/blog/2011/04/05/caching-responses-from-external-apis/"/>
+    <updated>2011-04-05T00:00:00-07:00</updated>
+    <id>http://rweald.github.com/blog/2011/04/05/caching-responses-from-external-apis</id>
+    <content type="html"><![CDATA[<p>  <a href="http://secure.dokbot.com">Dokbot</a>, the project that I am currently
 working on, utilizes the mendeley API to add citations to posts. To
 achieve this the application allows users to click an add citation
 button which brings up a modal view where the user can enter a search
@@ -1059,54 +781,15 @@ response using whatever cache <a href="http://guides.rubyonrails.org/caching_wit
 
 
 
-
+]]></content>
+  </entry>
   
-  
-
-
-    </article>
-  
-  
-    <article class="post">
-      <div class="sharing-box">
-  
-  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://rweald.github.com/index.html" data-via="rweald" data-counturl="http://rweald.github.com/index.html" data-size="large">Tweet</a>
-  
-  
-  
-</div>
-
-      
-  <header>
-    
-      <h2 class="entry-title">
-        
-        <a href="/blog/2011/03/07/mongodb-indexes-with-rspec/">Mongodb Indexes With Rspec</a>
-        
-      </h2>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2011-03-07T00:00:00-08:00" pubdate data-updated="true">Mar 7<span>th</span>, 2011</time>
-        
-      </p>
-    
-  </header>
-
-
-  <p>I recently had need to test some geospatial queries in a rails
+  <entry>
+    <title type="html"><![CDATA[Mongodb Indexes With Rspec]]></title>
+    <link href="http://rweald.github.com/blog/2011/03/07/mongodb-indexes-with-rspec/"/>
+    <updated>2011-03-07T00:00:00-08:00</updated>
+    <id>http://rweald.github.com/blog/2011/03/07/mongodb-indexes-with-rspec</id>
+    <content type="html"><![CDATA[<p>I recently had need to test some geospatial queries in a rails
 application.
 At first this seems like nothing out of the ordinary but there are
 a couple of minor details that if forgotten can result in failing tests</p>
@@ -1151,40 +834,7 @@ method within my before block.</p>
 
 
 
-
+]]></content>
+  </entry>
   
-  
-
-
-    </article>
-  
-
-    <nav role="navigation" id="pagination">
-
-</nav>
-  </section>
-  
-
-  
-
-
-
-
-
-
-
-  <script type="text/javascript">
-    (function(){
-      var twitterWidgets = document.createElement('script');
-      twitterWidgets.type = 'text/javascript';
-      twitterWidgets.async = true;
-      twitterWidgets.src = 'http://platform.twitter.com/widgets.js';
-      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
-    })();
-  </script>
-
-
-
-
-</body>
-</html>
+</feed>

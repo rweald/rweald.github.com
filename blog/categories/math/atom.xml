@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: math | Ryan Weald]]></title>
+  <link href="http://rweald.github.com/blog/categories/math/atom.xml" rel="self"/>
+  <link href="http://rweald.github.com/"/>
+  <updated>2012-09-12T07:48:27-07:00</updated>
+  <id>http://rweald.github.com/</id>
+  <author>
+    <name><![CDATA[]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Linear Regression Using Ruby]]></title>
+    <link href="http://rweald.github.com/blog/2012/09/12/linear-regression-using-ruby/"/>
+    <updated>2012-09-12T07:45:00-07:00</updated>
+    <id>http://rweald.github.com/blog/2012/09/12/linear-regression-using-ruby</id>
+    <content type="html"><![CDATA[<p>Read the post on the <a href="http://www.sharethrough.com/2012/09/linear-regression-using-ruby/">Sharethrough Engineering Blog</a></p>
+]]></content>
+  </entry>
+  
+</feed>
