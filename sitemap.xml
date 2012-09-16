@@ -2,40 +2,40 @@
 <urlset xmlns='http://www.sitemaps.org/schemas/sitemap/0.9'>
     <url>
         <loc>http://rweald.github.com/blog/2011/03/07/mongodb-indexes-with-rspec/</loc>
-        <lastmod>2012-09-11T08:31:32-07:00</lastmod>
+        <lastmod>2012-09-16T10:30:27-07:00</lastmod>
     </url>
     <url>
         <loc>http://rweald.github.com/blog/2011/04/05/caching-responses-from-external-apis/</loc>
-        <lastmod>2012-09-11T08:35:19-07:00</lastmod>
+        <lastmod>2012-09-16T10:30:27-07:00</lastmod>
     </url>
     <url>
         <loc>
             http://rweald.github.com/blog/2011/05/12/2011-experimenting-with-goliath-and-EventMachine/
         </loc>
-        <lastmod>2012-09-11T08:34:03-07:00</lastmod>
+        <lastmod>2012-09-16T10:30:27-07:00</lastmod>
     </url>
     <url>
         <loc>http://rweald.github.com/blog/2011/05/26/mongoid-activerecord-side-by-side/</loc>
-        <lastmod>2012-09-11T08:29:06-07:00</lastmod>
+        <lastmod>2012-09-16T10:30:27-07:00</lastmod>
     </url>
     <url>
         <loc>http://rweald.github.com/blog/2012/04/15/banking-your-profits/</loc>
-        <lastmod>2012-09-11T08:34:39-07:00</lastmod>
+        <lastmod>2012-09-16T10:30:27-07:00</lastmod>
     </url>
     <url>
         <loc>http://rweald.github.com/blog/2012/09/12/linear-regression-using-ruby/</loc>
-        <lastmod>2012-09-12T07:46:53-07:00</lastmod>
+        <lastmod>2012-09-16T10:30:27-07:00</lastmod>
     </url>
     <url>
         <loc>http://rweald.github.com/about/</loc>
-        <lastmod>2012-09-11T08:44:37-07:00</lastmod>
+        <lastmod>2012-09-16T10:30:27-07:00</lastmod>
     </url>
     <url>
         <loc>http://rweald.github.com/blog/archives/</loc>
-        <lastmod>2012-09-12T07:46:53-07:00</lastmod>
+        <lastmod>2012-09-16T10:30:27-07:00</lastmod>
     </url>
     <url>
         <loc>http://rweald.github.com/</loc>
-        <lastmod>2012-09-12T07:46:53-07:00</lastmod>
+        <lastmod>2012-09-16T10:30:27-07:00</lastmod>
     </url>
 </urlset>
