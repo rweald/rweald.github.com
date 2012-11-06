@@ -5,7 +5,7 @@ comments: false
 sharing: false
 footer: false
 ---
-<img src="/images/rubyconf_headshot.jpg" alt="" height=350 width=180/>
+<img src="/images/rubyconf.jpg" alt="" height=350 width=180/>
 
 I am a data scientist at
 [Sharethrough](http://sharethrough.com) where I use data to rid the internet of disruptive advertising. 
