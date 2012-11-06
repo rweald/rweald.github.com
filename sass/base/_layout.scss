@@ -72,7 +72,7 @@ ul#menu li {
 
 ul#menu a {
   display: inline-block;
-  font-size: 15px;
+  font-size: 18px;
   line-height: 14px;
   z-index: 999;
   padding: 7px;
@@ -81,6 +81,7 @@ ul#menu a {
   margin-left: -15px;
   font-weight: 600;
   position: relative;
+  text-transform: capitalize;
 }
 
 ul#menu li.title {
@@ -153,18 +154,18 @@ header#sidebar h2#subtitle {
   }
 
   aside#logo {
-    width: 165px;
-    height: 165px;
+    width: 180px;
+    height: 180px;
   }
 
   aside#logo div {
-    width: 135px;
-    height: 135px;
+    width: 175px;
+    height: 175px;
     margin-top: 15px;
   }
 
   aside#logo div a {
-    width: 117px;
+    width: 170px;
     height: 117px;
     margin-top: 9px;
   }
@@ -175,7 +176,7 @@ header#sidebar h2#subtitle {
   }
 
   header#sidebar h1#title a {
-    font-size: 35px;
+    font-size: 45px;
     line-height: 35px;
   }
 
