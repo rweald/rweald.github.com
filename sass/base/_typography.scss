@@ -26,7 +26,7 @@ body > header h2 {
   font-family: $header-subtitle-font-family;
 }
 
-#body {
+body {
   line-height: 1.5em;
   color: $text-color;
   @extend .serif;
@@ -37,7 +37,7 @@ h1 {
 }
 
 @media only screen and (min-width: 992px) {
-  #body { font-size: 1.15em; }
+  body { font-size: 1.15em; }
   h1 { font-size: 2.6em; line-height: 1.2em; }
 }
 
