@@ -3,7 +3,7 @@ layout: post
 title: "Building Data Driven Products With Ruby - RubyConf 2012"
 date: 2012-12-03 20:36
 comments: true
-categories: ruby,hadoop,presentations,big data
+categories: ruby hadoop presentations big-data
 ---
 
 Below is the presentation I gave at RubyConf 2012 titled, "Building Data Driven Products With Ruby."
