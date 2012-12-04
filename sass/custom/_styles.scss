@@ -1,3 +1,35 @@
-.gist {
-  max-width: 550px;
+// This File is imported last, and will override other styles in the cascade
+// Add styles here to make changes without digging in too much
+
+#content .blog-index article h1 {
+  font-size: 1.4em;
+}
+
+article header p {
+  font-size: .7em;
+}
+
+h1 {
+  font-size: 1.6em;
+}
+
+body > header[role="banner"] hgroup h1 {
+  font-family: "Helvetica Neue",Arial,sans-serif;
+}
+
+body {
+  font-family: "Helvetica Neue",Arial,sans-serif;
+}
+
+.heading, body > header h1, h1, h2, h3, h4, h5, h6 {
+  font-family: "Helvetica Neue",Arial,sans-serif;
+}
+
+body, p, h1, h2, h3, h4, h5, a {
+  font-family: "Helvetica Neue",Arial,sans-serif;
+}
+
+nav a {
+  font-family: "Helvetica Neue",Arial,sans-serif;
+  font-size: 1.5em;
 }
