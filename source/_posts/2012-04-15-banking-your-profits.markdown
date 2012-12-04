@@ -1,11 +1,8 @@
 ---
 layout: post
-tite: Banking Your Profits, How Everyone Should Try Upgrading to the latest Rails
+title: Banking Your Profits, How to upgrade to the Rails 3
 summary: Technique you can use to improve your codebase while upgrading to a major version of rails
 ---
-
-#Banking Your Profits, How to Upgrade to the latest Rails
-
 Let me start off by saying this is not a post touting all the great new features available in the latest version of Rails. I am not going to try and convince you that there is no way you can be productive staying on your current version of Rails. Instead this is a post about the way you can improve the overall quality of your codebase and reduce technical debt even if you never fully complete the upgrade. I am going to outline the process that we used at [Sharethrough](http://sharethrough.github.com) to improve the quality of our codebase while upgrading from Rails 2 to Rails 3.
 
 The driving principle behind this post is "Banking your profits". In
