@@ -12,3 +12,17 @@ I am a data scientist at
 I studied Computer Science and Bioinformatics at UCSD before dropping out to try and make my mark on the world. 
 In my spare time I contribute to open source, hack on healthcare, and dodge sharks while surfing in Northern California.
 
+<p style="margin-bottom: 3px;">
+  You can find me online at the following locations:
+</p>
+<ul id="about_me_list">
+  <li>
+    <a href="http://twitter.com/rweald">Twitter</a>
+  </li>
+  <li>
+    <a href="http://www.linkedin.com/in/ryanweald/">LinkedIn</a>
+  </li>
+  <li>
+    <a href="http://github.com/rweald">Github</a>
+  </li>
+</ul>

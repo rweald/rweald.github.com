@@ -1,3 +1,11 @@
-.gist {
-  max-width: 550px;
+// This File is imported last, and will override other styles in the cascade
+// Add styles here to make changes without digging in too much
+
+#about_me_list {
+  list-style: none;
+  font-size: 1.2em;
 }
+
+#about_me_list li {
+  padding: 5px;
+}  
