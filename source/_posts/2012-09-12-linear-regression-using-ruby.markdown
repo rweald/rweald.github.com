@@ -6,4 +6,9 @@ comments: true
 categories: statistics, ruby, math
 ---
 
-Read the post on the [Sharethrough Engineering Blog](http://www.sharethrough.com/2012/09/linear-regression-using-ruby/)
+#### \*Posted on the [Sharethrough Engineering Blog](http://www.sharethrough.com/2012/09/linear-regression-using-ruby/)
+
+*Abstract:*
+
+I walk you through the basics of
+linear regression, and show you how you can perform <em>simple linear regression</em> using Ruby
