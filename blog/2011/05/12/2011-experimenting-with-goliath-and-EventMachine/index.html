@@ -5,11 +5,11 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>2011 Experimenting With Goliath And Eventmachine - Ryan Weald</title>
+  <title>2011 Experimenting With Goliath And Eventmachine - Ryan Weald's Blog</title>
   <meta name="author" content="">
 
   
-  <meta name="description" content="2011 Experimenting With Goliath and Eventmachine May 12th, 2011 | Comments After hearing lots of buzz surrounding Goliath the new asynchronous web &hellip;">
+  <meta name="description" content="After hearing lots of buzz surrounding Goliath the new asynchronous web server for ruby I thought I would give it a try for a particular problem I &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -24,7 +24,7 @@
   <script src="/javascripts/modernizr-2.0.js"></script>
   <script src="/javascripts/ender.js"></script>
   <script src="/javascripts/octopress.js" type="text/javascript"></script>
-  <link href="/atom.xml" rel="alternate" title="Ryan Weald" type="application/atom+xml">
+  <link href="/atom.xml" rel="alternate" title="Ryan Weald's Blog" type="application/atom+xml">
   <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
 <link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
 <link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
@@ -45,75 +45,40 @@
 
 </head>
 
-<body >
-  <header role="banner" id="sidebar">
-    <ul id="menu">
+<body   >
+  <header role="banner"><hgroup>
+  <h1><a href="/">Ryan Weald's Blog</a></h1>
+  
+</hgroup>
 
-  <li class="title">
-    <h1 id="title"><a href="/">Ryan Weald</a></h1>
-  </li>
-
-
-  <li class="link">
-    <a href="/about/">about</a>
-  </li>
-
-
-  <li class="link">
-    <a href="http://www.linkedin.com/in/ryanweald/">linkedin</a>
-  </li>
-
-
-
-  <li class="link">
-    <a href="http://twitter.com/rweald/">twitter</a>
-  </li>
-
-
-  <li class="link">
-    <a href="http://github.com/rweald/">github</a>
-  </li>
-
-
-  <li class="link rss">
-    <a href="/atom.xml">rss feed</a>
-  </li>
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
 </ul>
-
-
+  
 <form action="http://google.com/search" method="get">
   <fieldset role="search">
     <input type="hidden" name="q" value="site:rweald.github.com" />
     <input class="search" type="text" name="q" results="0" placeholder="Search"/>
   </fieldset>
 </form>
-
-
-<!-- Octopress Love -->
-<aside id="octopress_linkback">
-  <a href="http://octopress.org/">
-    <span class="unicode_square">
-      <span class="unicode_circle">
-        &nbsp;
-      </span>
-    </span>
-    <span class="octopress">Powered by Octopress</span>
-  </a>
-</aside>
-
-  </header>
-  <section id="main">
-    <article class="post">
-  <div class="sharing-box">
   
-  
-  
-</div>
+<ul class="main-navigation">
+  <li><a href="/">Blog</a></li>
+  <li><a href="/blog/archives">Archives</a></li>
+  <li><a href="/about">About</a></li>
+</ul>
 
+</nav>
+  <div id="main">
+    <div id="content">
+      <div>
+<article class="hentry" role="article">
   
   <header>
     
-      <h2 class="entry-title">2011 Experimenting With Goliath and Eventmachine</h2>
+      <h1 class="entry-title">2011 Experimenting With Goliath and Eventmachine</h1>
     
     
       <p class="meta">
@@ -138,7 +103,7 @@
   </header>
 
 
-<p>After hearing lots of buzz surrounding <a href="https://github.com/postrank-labs/goliath">Goliath</a> the new asynchronous web server for ruby I thought I would give it a try for a particular problem I had. As part of <a href="https://github.com/icl/cove">COVE</a>, an open source online video ethnography tool, we have to handle large video file uploads. The application is written in Rails which is great except when you have really long running connections. With long running connections it ties up your mongrels and reduces your ability to service request.</p>
+<div class="entry-content"><p>After hearing lots of buzz surrounding <a href="https://github.com/postrank-labs/goliath">Goliath</a> the new asynchronous web server for ruby I thought I would give it a try for a particular problem I had. As part of <a href="https://github.com/icl/cove">COVE</a>, an open source online video ethnography tool, we have to handle large video file uploads. The application is written in Rails which is great except when you have really long running connections. With long running connections it ties up your mongrels and reduces your ability to service request.</p>
 
 <p>  The reason for this is because Rails is an inherently I/O blocking.
 When you run your application in production using
@@ -736,18 +701,135 @@ Just remember I am still young and while my college peers were out partying I wa
 <p>  In my next post I will document the upload client that also takes
 advantaged of EventMachine and fibers to compute checksums and upload
 files to the web service.</p>
+</div>
 
 
-
-</article>
-
-
-    <nav role="navigation" id="pagination">
-
-</nav>
-  </section>
+  <footer>
+    <p class="meta">
+      
   
 
+
+
+      
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2011-05-12T00:00:00-07:00" pubdate data-updated="true">May 12<span>th</span>, 2011</time>
+      
+
+
+    </p>
+    
+      <div class="sharing">
+  
+  
+  
+</div>
+
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/blog/2011/04/05/caching-responses-from-external-apis/" title="Previous Post: Caching Responses From Remote APIs">&laquo; Caching Responses From Remote APIs</a>
+      
+      
+        <a class="basic-alignment right" href="/blog/2011/05/26/mongoid-activerecord-side-by-side/" title="Next Post: Using Mongoid Alongside ActiveRecord">Using Mongoid Alongside ActiveRecord &raquo;</a>
+      
+    </p>
+  </footer>
+</article>
+
+</div>
+
+<aside class="sidebar">
+  
+    <section>
+  <h1>About Me</h1>
+  <p>
+    Hi I'm Ryan. I am currently a data scientist 
+    at <a href="http://sharethrough.com">Sharethrough</a>.
+    My main interests liejin using data and machine learning to improve peoples lives. 
+    I'm particularly interesting in health care and data driven businesses, such as advertising.
+  </p>
+  <p>
+    You can find me online at the following locations:
+    <ul id="about_me_list">
+    	<li>
+    		<a href="http://twitter.com/rweald">Twitter</a>
+    	</li>
+    	<li>
+    		<a href="http://www.linkedin.com/in/ryanweald/">LinkedIn</a>
+    	</li>
+    	<li>
+    		<a href="http://github.com/rweald">Github</a>
+    	</li>
+    </ul>
+    </p>
+</section>
+<section>
+  <h1>Recent Posts</h1>
+  <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2012/12/03/building-data-driven-products-with-ruby-rubyconf-2012/">Building Data Driven Products With Ruby - RubyConf 2012</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2012/09/12/linear-regression-using-ruby/">Linear Regression Using Ruby</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2012/04/15/banking-your-profits/">Banking Your Profits</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2011/05/26/mongoid-activerecord-side-by-side/">Using Mongoid Alongside ActiveRecord</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2011/05/12/2011-experimenting-with-goliath-and-EventMachine/">2011 Experimenting With Goliath And Eventmachine</a>
+      </li>
+    
+  </ul>
+</section>
+
+<section>
+  <h1>Latest Tweets</h1>
+  <ul id="tweets">
+    <li class="loading">Status updating...</li>
+  </ul>
+  <script type="text/javascript">
+    $.domReady(function(){
+      getTwitterFeed("rweald", 4, false);
+    });
+  </script>
+  <script src="/javascripts/twitter.js" type="text/javascript"> </script>
+  
+    <a href="http://twitter.com/rweald" class="twitter-follow-button" data-show-count="false">Follow @rweald</a>
+  
+</section>
+
+
+  
+</aside>
+
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+  Copyright &copy; 2012 -  -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a>. Design by <a href="http://octopressthemes.com">Octopress Themes</a>.</span>
+</p>
+
+</footer>
   
 
 <script type="text/javascript">
@@ -778,6 +860,7 @@ files to the web service.</p>
       document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
     })();
   </script>
+
 
 
 
