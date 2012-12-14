@@ -3,7 +3,7 @@ layout: post
 title: "Visualizing the Geographic Connections Between U.S. Doctors"
 date: 2012-12-13 08:05
 comments: true
-categories: data R visualizations
+categories: data R visualizations docgraph
 ---
 
 I recently acquired access to the [DocGraph](http://strata.oreilly.com/2012/11/docgraph-open-social-doctor-data.html) data set on
