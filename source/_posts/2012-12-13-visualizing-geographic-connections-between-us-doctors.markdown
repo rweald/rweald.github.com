@@ -8,7 +8,7 @@ categories: data R visualizations
 
 I recently acquired access to the [DocGraph](http://strata.oreilly.com/2012/11/docgraph-open-social-doctor-data.html) data set on
 [MedStartr](http://www.medstartr.com/projects/93-phase-ii-next-level-doctor-social-graph). 
-This data set contains a social network of U.S. doctors, with each connection in the social network represents 
+This data set contains a social network of U.S. doctors, with each connection representing
 a physician referring a patient to another physician. 
 Given this new unique data I thought it would be interesting to investigate the geographic connections between doctors. What better way to start
 analyzing the data than to make a sexy visualization.
