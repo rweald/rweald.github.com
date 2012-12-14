@@ -5,13 +5,11 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>Caching Responses From Remote APIs - Ryan Weald's Blog</title>
+  <title>Category: visualizations - Ryan Weald's Blog</title>
   <meta name="author" content="Ryan Weald">
 
   
-  <meta name="description" content="Dokbot, the project that I am currently
-working on, utilizes the mendeley API to add citations to posts. To
-achieve this the application allows &hellip;">
+  <meta name="description" content="Category: visualizations">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -20,7 +18,7 @@ achieve this the application allows &hellip;">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://rweald.github.com/blog/2011/04/05/caching-responses-from-external-apis/">
+  <link rel="canonical" href="http://rweald.github.comblog/categories/visualizations/">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <script src="/javascripts/modernizr-2.0.js"></script>
@@ -76,132 +74,35 @@ achieve this the application allows &hellip;">
   <div id="main">
     <div id="content">
       <div>
-<article class="hentry" role="article">
+<article role="article">
   
   <header>
-    
-      <h1 class="entry-title">Caching Responses From Remote APIs</h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2011-04-05T00:00:00-07:00" pubdate data-updated="true">Apr 5<span>th</span>, 2011</time>
-        
-         | <a href="#disqus_thread">Comments</a>
-        
-      </p>
+    <h1 class="entry-title">Category: Visualizations</h1>
     
   </header>
+  
+  <div id="blog-archives" class="category">
 
 
-<div class="entry-content"><p>  <a href="http://secure.dokbot.com">Dokbot</a>, the project that I am currently
-working on, utilizes the mendeley API to add citations to posts. To
-achieve this the application allows users to click an add citation
-button which brings up a modal view where the user can enter a search
-term that will be sent off the the mendeley API. To provide the a
-positive user experience the search form must be highly responsive. This
-presented a problem because the <a href="http://mendeley.com">mendeley</a> API
-although resonably responsible was not quite snappy enought to provide
-the UX we were looking for.</p>
 
-<p>  To remidy this problem we decided to route the search request through
-our own application servers. Although at first glance this might appear
-to be a bad idea as it would increase latency, it turns out it actual
-decreased the average latency. The cause for this decrease in
-latency; caching. It turns out that most users enter the same search
-term almost every time they enter a citation. With this in mind we wrote
-some code in our application that caches the responses from mendeley API
-that way for any given search query we only have to make 1 request to
-the mendeley API. All subsequent requests for the search term will be
-returned from our application cache rather than a request to the API.</p>
+  
+  <h2>2012</h2>
 
-<p>  Caching was also a resonable solution for this particular problem
-because the mendeley search results change very infrequently.</p>
+<article>
+  
+<h1><a href="/blog/2012/12/13/visualizing-geographic-connections-between-us-doctors/">Visualizing the Geographic Connections Between U.S. Doctors</a></h1>
+<time datetime="2012-12-13T08:05:00-08:00" pubdate><span class='month'>Dec</span> <span class='day'>13</span> <span class='year'>2012</span></time>
 
-<p>You can see the code below that was used to cache the mendeley API
-response using whatever cache <a href="http://guides.rubyonrails.org/caching_with_rails.html">Rails</a> is configured to use.</p>
-
-<h4>The Code</h4>
-
-<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-<span class='line-number'>8</span>
-<span class='line-number'>9</span>
-<span class='line-number'>10</span>
-</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="k">def</span> <span class="nc">self</span><span class="o">.</span><span class="nf">search_mendeley</span><span class="p">(</span><span class="n">query</span><span class="o">=</span><span class="kp">nil</span><span class="p">)</span>
-</span><span class='line'>  <span class="k">raise</span> <span class="s2">&quot;no query specified&quot;</span> <span class="k">unless</span> <span class="n">query</span>
-</span><span class='line'>
-</span><span class='line'>  <span class="n">papers</span> <span class="o">=</span> <span class="no">Rails</span><span class="o">.</span><span class="n">cache</span><span class="o">.</span><span class="n">fetch</span><span class="p">(</span><span class="n">query</span><span class="p">)</span> <span class="k">do</span> <span class="o">|</span><span class="n">query</span><span class="o">|</span>
-</span><span class='line'>    <span class="n">response</span> <span class="o">=</span> <span class="no">Mendeley</span><span class="o">::</span><span class="no">API</span><span class="o">::</span><span class="no">Documents</span><span class="o">.</span><span class="n">search</span><span class="p">(</span><span class="n">query</span><span class="p">)</span>
-</span><span class='line'>    <span class="n">papers</span> <span class="o">=</span> <span class="n">response</span><span class="o">[</span><span class="s2">&quot;documents&quot;</span><span class="o">][</span><span class="mi">0</span><span class="o">.</span><span class="n">.</span><span class="mi">5</span><span class="o">]</span>
-</span><span class='line'>  <span class="k">end</span>
-</span><span class='line'>
-</span><span class='line'>  <span class="k">return</span> <span class="n">papers</span>
-</span><span class='line'><span class="k">end</span>
-</span></code></pre></td></tr></table></div></figure>
+<footer>
+  <span class="categories">posted in <a class='category' href='/blog/categories/r/'>R</a>, <a class='category' href='/blog/categories/data/'>data</a>, <a class='category' href='/blog/categories/docgraph/'>docgraph</a>, <a class='category' href='/blog/categories/visualizations/'>visualizations</a></span>
+</footer>
 
 
+</article>
 
 </div>
 
-
-  <footer>
-    <p class="meta">
-      
   
-
-<span class="byline author vcard">Posted by <span class="fn">Ryan Weald</span></span>
-
-      
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2011-04-05T00:00:00-07:00" pubdate data-updated="true">Apr 5<span>th</span>, 2011</time>
-      
-
-
-    </p>
-    
-      <div class="sharing">
-  
-  
-  
-</div>
-
-    
-    <p class="meta">
-      
-        <a class="basic-alignment left" href="/blog/2011/03/07/mongodb-indexes-with-rspec/" title="Previous Post: Mongodb Indexes With Rspec">&laquo; Mongodb Indexes With Rspec</a>
-      
-      
-        <a class="basic-alignment right" href="/blog/2011/05/12/2011-experimenting-with-goliath-and-EventMachine/" title="Next Post: 2011 Experimenting With Goliath And Eventmachine">2011 Experimenting With Goliath And Eventmachine &raquo;</a>
-      
-    </p>
-  </footer>
 </article>
 
 </div>

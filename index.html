@@ -9,7 +9,9 @@
   <meta name="author" content="Ryan Weald">
 
   
-  <meta name="description" content="Below is the presentation I gave at RubyConf 2012 titled, &#8220;Building Data Driven Products With Ruby.&#8221; You can view the slides on Speaker &hellip;">
+  <meta name="description" content="I recently acquired access to the DocGraph data set on
+MedStartr.
+This data set contains a social network of U.S. doctors, with each connection &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -75,6 +77,83 @@
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2012/12/13/visualizing-geographic-connections-between-us-doctors/">Visualizing the Geographic Connections Between U.S. Doctors</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2012-12-13T08:05:00-08:00" pubdate data-updated="true">Dec 13<span>th</span>, 2012</time>
+        
+         | <a href="/blog/2012/12/13/visualizing-geographic-connections-between-us-doctors/#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>I recently acquired access to the <a href="http://strata.oreilly.com/2012/11/docgraph-open-social-doctor-data.html">DocGraph</a> data set on
+<a href="http://www.medstartr.com/projects/93-phase-ii-next-level-doctor-social-graph">MedStartr</a>.
+This data set contains a social network of U.S. doctors, with each connection representing
+a physician referring a patient to another physician.
+Given this new unique data I thought it would be interesting to investigate the geographic connections between doctors. What better way to start
+analyzing the data than to make a sexy visualization.</p>
+
+<p>To create the final visualization I had to combine multiple data sets to enrich the doctor social graph with geographic coordinates.
+I began by taking a sample of 1 million connections from
+<a href="http://strata.oreilly.com/2012/11/docgraph-open-social-doctor-data.html">DocGraph</a> and joining it with the
+<a href="http://en.wikipedia.org/wiki/National_Provider_Identifier">National Provider Identifier</a> (NPI) database.
+By joining these two data sets I was able to get the zip code of each physicians practice. The final step was converting the zip codes to
+latitude-longitude coordinates using
+a <a href="http://federalgovernmentzipcodes.us/">publicly available zip code database</a>. Now that the data was in the correct format I began work on the visualization.</p>
+
+<p>The visualization I choose was heavily inspired by the great
+work of <a href="http://www.facebook.com/notes/facebook-engineering/visualizing-friendships/469716398919">Paul Butler at Facebook</a>.</p>
+
+<p>Using a similar method to the one documented in <a href="http://flowingdata.com/2011/05/11/how-to-map-connections-with-great-circles/">Nathan Yau&#8217;s tutorial</a> I graphed the
+connections between physicians using <a href="http://en.wikipedia.org/wiki/Great_circle">great circles</a>. In order to see the cluster density I layered the connections
+using Euclidean distance, with the longest paths being drawn first.
+All of the code used to generate this visualization is open source and can be found on <a href="https://github.com/rweald/docgraph-data-analysis/tree/master/visualize-geographic-connections">Github</a></p>
+
+<p>Below is the resulting visualization. Note the areas of high and low density as you move from the east coast over to the west coast.
+There are also some interesting connections from
+Hawaii and Puerto Rico to the Continental United States.</p>
+
+<p><a href="https://s3.amazonaws.com/rweald-docgraph-analysis/map-of-connections-with-text-fullsize.png">
+  <img src="https://s3.amazonaws.com/rweald-docgraph-analysis/map-of-connections-with-text-thumbnail.png" alt="Doctor to Doctor connections visualized" />
+</a></p>
+
+<p>You can download the full sized graphic <a href="https://s3.amazonaws.com/rweald-docgraph-analysis/map-of-connections-with-text-fullsize.png">here</a>.
+<span style="font-size: 0.8em; font-style: italic;">
+  I recommend you right-click and &#8220;save link as&#8221; because the file is approximately 40MB.
+</span></p>
+
+<p>This visualization is only the beginning. The added feature of geography opens the door to many interesting analyses.
+I would love to collaborate on some research related to analyzing the <a href="http://strata.oreilly.com/2012/11/docgraph-open-social-doctor-data.html">DocGraph</a>
+data set. If you are interested in collaborating on research related to <a href="http://strata.oreilly.com/2012/11/docgraph-open-social-doctor-data.html">DocGraph</a>
+ please email me ryan [at] weald.com or message me on twitter <a href="http://twitter.com/rweald">@rweald</a></p>
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -1156,6 +1235,10 @@ method within my before block.</p>
   <ul id="recent_posts">
     
       <li class="post">
+        <a href="/blog/2012/12/13/visualizing-geographic-connections-between-us-doctors/">Visualizing the Geographic Connections Between U.S. Doctors</a>
+      </li>
+    
+      <li class="post">
         <a href="/blog/2012/12/03/building-data-driven-products-with-ruby-rubyconf-2012/">Building Data Driven Products With Ruby - RubyConf 2012</a>
       </li>
     
@@ -1169,10 +1252,6 @@ method within my before block.</p>
     
       <li class="post">
         <a href="/blog/2011/05/26/mongoid-activerecord-side-by-side/">Using Mongoid Alongside ActiveRecord</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2011/05/12/2011-experimenting-with-goliath-and-EventMachine/">2011 Experimenting With Goliath And Eventmachine</a>
       </li>
     
   </ul>
