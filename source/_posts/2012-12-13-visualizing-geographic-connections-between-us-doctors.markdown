@@ -39,7 +39,10 @@ Hawaii and Puerto Rico to the Continental United States.
   <img src="https://s3.amazonaws.com/rweald-docgraph-analysis/map-of-connections-with-text-thumbnail.png" alt="Doctor to Doctor connections visualized" />
 </a>
 
-You can download the full sized graphic [here](https://s3.amazonaws.com/rweald-docgraph-analysis/map-of-connections-with-text-fullsize.png)
+You can download the full sized graphic [here](https://s3.amazonaws.com/rweald-docgraph-analysis/map-of-connections-with-text-fullsize.png).
+<span style="font-size: 0.8em; font-style: italic;">
+  I recommend you right-click and "save link as" because the file is approximately 40MB.
+</span>
 
 
 This visualization is only the beginning. The added feature of geography opens the door to many interesting analyses.
