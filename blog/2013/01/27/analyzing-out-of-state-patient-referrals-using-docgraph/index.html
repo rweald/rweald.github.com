@@ -1,0 +1,346 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>Analyzing Out-of-State Patient Referrals Using DocGraph - Ryan Weald's Blog</title>
+  <meta name="author" content="Ryan Weald">
+
+  
+  <meta name="description" content="I previously built a visualization of the U.S. medical graph using the
+DocGraph dataset.
+The visualization prompted me to ask the question, does the &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://rweald.github.com/blog/2013/01/27/analyzing-out-of-state-patient-referrals-using-docgraph/">
+  <link href="/favicon.png" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="/javascripts/ender.js"></script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <link href="/atom.xml" rel="alternate" title="Ryan Weald's Blog" type="application/atom+xml">
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+
+  
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-31780910-1']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+
+
+</head>
+
+<body   >
+  <header role="banner"><hgroup>
+  <h1><a href="/">Ryan Weald's Blog</a></h1>
+  
+</hgroup>
+
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+  
+<form action="http://google.com/search" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="q" value="site:rweald.github.com" />
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form>
+  
+<ul class="main-navigation">
+  <li><a href="/">Blog</a></li>
+  <li><a href="/blog/archives">Archives</a></li>
+  <li><a href="/about">About</a></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div>
+<article class="hentry" role="article">
+  
+  <header>
+    
+      <h1 class="entry-title">Analyzing Out-of-State Patient Referrals Using DocGraph</h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-01-27T14:38:00-08:00" pubdate data-updated="true">Jan 27<span>th</span>, 2013</time>
+        
+         | <a href="#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+<div class="entry-content"><p>I previously built a <a href="http://isurfsoftware.com/blog/2012/12/13/visualizing-geographic-connections-between-us-doctors/">visualization of the U.S. medical graph</a> using the
+<a href="http://strata.oreilly.com/2012/11/docgraph-open-social-doctor-data.html">DocGraph</a> dataset.
+The visualization prompted me to ask the question, does the state where you live affect the likelihood you will be referred to a doctor in another state?</p>
+
+<p>Using the full <a href="http://strata.oreilly.com/2012/11/docgraph-open-social-doctor-data.html">DocGraph</a> dataset I was able to answer this question; in short North Carolina had the highest percentage of patients referred out-of-state with ~ 28% of referrals going out of state. Michigan and California had the lowest percent with only ~10% of referrals going out of state.</p>
+
+<p>In the remainder of this post I shall describe the process I used to obtain these result and provide a more detailed look at the impact state has on probability of inter-state referrals.</p>
+
+<p>The first step in the analysis was joining the DocGraph referral graph with the
+<a href="http://www.cms.gov/Regulations-and-Guidance/HIPAA-Administrative-Simplification/NationalProvIdentStand/index.html">National Provider Identifier database</a>.
+By joining DocGraph with the NPI database I was able to determine the state of the referring physician as well as the state of the physician the patient was being referred to. After augmenting the DocGraph with this additional information it was simply a matter of aggregating referrals grouped by state. Once aggregated I had a state to state adjacency matrix which could be further aggregated to generate the graphs shows below.</p>
+
+<p>For details on reproducing this analysis and all the code used <a href="INSERT_LINK">visit Github</a>. There are also some limitations to this analysis that are described in the footnotes <a href="#limitations">1</a>.</p>
+
+<p>Below is a <a href="http://en.wikipedia.org/wiki/Choropleth_map">choropleth map</a> representing the percent of patients that were referred outside of the state. As you can see North Carolina, Pennsylvania have the highest percent out-of-state referrals. There is also an area of increased out-of-state referrals in the <a href="http://en.wikipedia.org/wiki/File:Census_Regions_and_Division_of_the_United_States.svg">mountain region</a>.</p>
+
+<p><em>Click on any of the images below to see a full size version</em>
+<a href="http://bit.ly/Wvyfes" >
+  <img src="https://s3.amazonaws.com/rweald-docgraph-analysis/percent-leaving-state-choropleth-dev.png" alt="percent-out-of-state-referrals" height=450 width=800 />
+</a></p>
+
+<p>A complement to the above image is shown below; The color represents the percent of patients that are referred within the same state. As you would expect the larger states such as California, Texas, and New York have the highest percentage of patients referred within the same state.</p>
+
+<p><a href="http://bit.ly/X4RRH9">
+  <img src="https://s3.amazonaws.com/rweald-docgraph-analysis/percent-in-state-choropleth-dev.png" alt="percent-in-state-referrals" height=450 width=800 />
+</a></p>
+
+<p>For those readers who want more detail on the statistical distributions of state level referrals you can find <a href="http://en.wikipedia.org/wiki/Kernel_density_estimation">kernel density estimate</a> plots in the footnotes <a href="#distributions">2</a>.</p>
+
+<p>After analyzing the probability of inter-referrals I got curious where all these out-of-state referrals were going. As a first step towards understanding out-of-state referrals I assembled a <a href="http://en.wikipedia.org/wiki/Heat_map">heat map</a>. This heat map provides some details on which states patients are being referred to. Each square in the heat map represents an entry in the state to state adjacency matrix contained in the DocGraph network.</p>
+
+<p><a href="http://bit.ly/W9mpdx">
+  <img src="https://s3.amazonaws.com/rweald-docgraph-analysis/inter-state-referrals-heatmap.png" alt="inter-state-referral-heatmap" height=450 width=800 />
+</a></p>
+
+<p>The results above should have provide a good answer to the question of the impact of state on likelihood of out-of-state referrals. In addition we can get an idea of which states have the most inter-state referral traffic. Overall I think this analysis brings us one step closer to unlocking the potential of the <a href="http://strata.oreilly.com/2012/11/docgraph-open-social-doctor-data.html">DocGraph</a> data to help us understand the U.S. health graph <a href="#limitations">1</a>.</p>
+
+<p>I hope you have enjoyed my analysis.
+I am always open to feedback and would love to collaborate on some research related to analyzing the <a href="http://strata.oreilly.com/2012/11/docgraph-open-social-doctor-data.html">DocGraph</a>
+data set.
+If you are interested in collaborating on research related to <a href="http://strata.oreilly.com/2012/11/docgraph-open-social-doctor-data.html">DocGraph</a>
+ please email me ryan [at] weald.com or message me on twitter <a href="http://twitter.com/rweald">@rweald</a></p>
+
+<div style="border-top: 1px solid grey"> </div>
+
+
+<h5>Footnotes</h5>
+
+<div style="font-size: 80%;">
+  <span style="font-style: bold:"> 1.</span>
+  <p id="limitations">
+  There are a couple of important limitations of the data to remember when interpreting this analysis. The DocGraph data set only includes data from 2011; we can assume that physician behavior is much the same today as it was in 2011, however without a sample from some other time period we can not be sure. Secondly, DocGraph only represents Medicare referrals which may not be representative of the entire healthcare system. Unfortunately a more comprehensive dataset including private referrals is not available to me at this time. Therefore, the DocGraph dataset is the best referral sample I could get as a private citizen.
+  </p>
+
+  <span style="font-style: bold:"> 2.</span>
+  <a id="distributions" href="http://bit.ly/WhQSVV">
+    <img src="https://s3.amazonaws.com/rweald-docgraph-analysis/general-statistical-plots.png" alt="percent-in-state-referrals" height=360 width=640 />
+  </a>
+</div>
+
+</div>
+
+
+  <footer>
+    <p class="meta">
+      
+  
+
+<span class="byline author vcard">Posted by <span class="fn">Ryan Weald</span></span>
+
+      
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-01-27T14:38:00-08:00" pubdate data-updated="true">Jan 27<span>th</span>, 2013</time>
+      
+
+<span class="categories">
+  
+    <a class='category' href='/blog/categories/r/'>R</a>, <a class='category' href='/blog/categories/data/'>data</a>, <a class='category' href='/blog/categories/docgraph/'>docgraph</a>, <a class='category' href='/blog/categories/visualizations/'>visualizations</a>
+  
+</span>
+
+
+    </p>
+    
+      <div class="sharing">
+  
+  
+  
+</div>
+
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/blog/2012/12/13/visualizing-geographic-connections-between-us-doctors/" title="Previous Post: Visualizing the Geographic Connections Between U.S. Doctors">&laquo; Visualizing the Geographic Connections Between U.S. Doctors</a>
+      
+      
+    </p>
+  </footer>
+</article>
+
+  <section>
+    <h1>Comments</h1>
+    <div id="disqus_thread" aria-live="polite"><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+  </section>
+
+</div>
+
+<aside class="sidebar">
+  
+    <section>
+  <h1>About Me</h1>
+  <p>
+    Hi I'm Ryan. I am currently a data scientist 
+    at <a href="http://sharethrough.com">Sharethrough</a>.
+    My main interests lie in using data and machine learning to improve peoples lives. 
+    I'm particularly interesting in health care and data driven businesses, such as advertising.
+  </p>
+  <p>
+    You can find me online at the following locations:
+    <ul id="about_me_list">
+    	<li>
+    		<a href="http://twitter.com/rweald">Twitter</a>
+    	</li>
+    	<li>
+    		<a href="http://www.linkedin.com/in/ryanweald/">LinkedIn</a>
+    	</li>
+    	<li>
+    		<a href="http://github.com/rweald">Github</a>
+    	</li>
+    </ul>
+    </p>
+</section>
+<section>
+  <h1>Recent Posts</h1>
+  <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2013/01/27/analyzing-out-of-state-patient-referrals-using-docgraph/">Analyzing Out-of-State Patient Referrals Using DocGraph</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2012/12/13/visualizing-geographic-connections-between-us-doctors/">Visualizing the Geographic Connections Between U.S. Doctors</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2012/12/03/building-data-driven-products-with-ruby-rubyconf-2012/">Building Data Driven Products With Ruby - RubyConf 2012</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2012/09/12/linear-regression-using-ruby/">Linear Regression Using Ruby</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2012/04/15/banking-your-profits/">Banking Your Profits, How to upgrade to Rails 3</a>
+      </li>
+    
+  </ul>
+</section>
+
+<section>
+  <h1>Latest Tweets</h1>
+  <ul id="tweets">
+    <li class="loading">Status updating...</li>
+  </ul>
+  <script type="text/javascript">
+    $.domReady(function(){
+      getTwitterFeed("rweald", 4, false);
+    });
+  </script>
+  <script src="/javascripts/twitter.js" type="text/javascript"> </script>
+  
+    <a href="http://twitter.com/rweald" class="twitter-follow-button" data-show-count="false">Follow @rweald</a>
+  
+</section>
+
+
+  
+</aside>
+
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+  Copyright &copy; 2013 - Ryan Weald -
+  <span class="credit" style="font-size: 0.8em;">Powered by <a href="http://octopress.org">Octopress</a>. Design by <a href="http://octopressthemes.com">Octopress Themes</a>.</span>
+</p>
+
+</footer>
+  
+
+<script type="text/javascript">
+      var disqus_shortname = 'isurfsoftware';
+      
+        
+        // var disqus_developer = 1;
+        var disqus_identifier = 'http://rweald.github.com/blog/2013/01/27/analyzing-out-of-state-patient-referrals-using-docgraph/';
+        var disqus_url = 'http://rweald.github.com/blog/2013/01/27/analyzing-out-of-state-patient-referrals-using-docgraph/';
+        var disqus_script = 'embed.js';
+      
+    (function () {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = 'http://' + disqus_shortname + '.disqus.com/' + disqus_script;
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    }());
+</script>
+
+
+
+
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = 'http://platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+
+</body>
+</html>
