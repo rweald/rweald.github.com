@@ -18,7 +18,7 @@ The first step in the analysis was joining the DocGraph referral graph with the
 [National Provider Identifier database](http://www.cms.gov/Regulations-and-Guidance/HIPAA-Administrative-Simplification/NationalProvIdentStand/index.html). 
 By joining DocGraph with the NPI database I was able to determine the state of the referring physician as well as the state of the physician the patient was being referred to. After augmenting the DocGraph with this additional information it was simply a matter of aggregating referrals grouped by state. Once aggregated I had a state to state adjacency matrix which could be further aggregated to generate the graphs shows below.
 
-For details on reproducing this analysis and all the code used [visit Github](INSERT_LINK). There are also some limitations to this analysis that are described in the footnotes [1](#limitations).
+For details on reproducing this analysis and all the code used [visit Github](https://github.com/rweald/docgraph-data-analysis/tree/master/state-level-graph-analysis). There are also some limitations to this analysis that are described in the footnotes [1](#limitations).
 
 Below is a [choropleth map](http://en.wikipedia.org/wiki/Choropleth_map) representing the percent of patients that were referred outside of the state. As you can see North Carolina, Pennsylvania have the highest percent out-of-state referrals. There is also an area of increased out-of-state referrals in the [mountain region](http://en.wikipedia.org/wiki/File:Census_Regions_and_Division_of_the_United_States.svg).
 
