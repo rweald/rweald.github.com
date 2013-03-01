@@ -35,8 +35,8 @@ There are also some interesting connections from
 Hawaii and Puerto Rico to the Continental United States.
 
 
-<a href="https://s3.amazonaws.com/rweald-docgraph-analysis/map-of-connections-with-text-fullsize.png">
-  <img src="https://s3.amazonaws.com/rweald-docgraph-analysis/map-of-connections-with-text-thumbnail.png" alt="Doctor to Doctor connections visualized" />
+<a href="https://s3.amazonaws.com/rweald-docgraph-analysis/map-of-connections-fullsize.png">
+  <img src="https://s3.amazonaws.com/rweald-docgraph-analysis/map-of-connections-thumbnail.png" alt="Doctor to Doctor connections visualized" />
 </a>
 
 You can download the full sized graphic [here](https://s3.amazonaws.com/rweald-docgraph-analysis/map-of-connections-with-text-fullsize.png).

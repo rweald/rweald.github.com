@@ -24,13 +24,13 @@ Below is a [choropleth map](http://en.wikipedia.org/wiki/Choropleth_map) represe
 
 _Click on any of the images below to see a full size version_
 <a href="http://bit.ly/Wvyfes" >
-  <img src="https://s3.amazonaws.com/rweald-docgraph-analysis/percent-leaving-state-choropleth-dev.png" alt="percent-out-of-state-referrals" height=450 width=800 />
+  <img src="http://s3.amazonaws.com/rweald-docgraph-analysis/percent-leaving-state-choropleth-dev.png" alt="percent-out-of-state-referrals" height=450 width=800 />
 </a>
 
 A complement to the above image is shown below; The color represents the percent of patients that are referred within the same state. As you would expect the larger states such as California, Texas, and New York have the highest percentage of patients referred within the same state.
 
 <a href="http://bit.ly/X4RRH9">
-  <img src="https://s3.amazonaws.com/rweald-docgraph-analysis/percent-in-state-choropleth-dev.png" alt="percent-in-state-referrals" height=450 width=800 />
+  <img src="http://s3.amazonaws.com/rweald-docgraph-analysis/percent-in-state-choropleth-dev.png" alt="percent-in-state-referrals" height=450 width=800 />
 </a>
 
 For those readers who want more detail on the statistical distributions of state level referrals you can find [kernel density estimate](http://en.wikipedia.org/wiki/Kernel_density_estimation) plots in the footnotes [2](#distributions).
@@ -39,7 +39,7 @@ For those readers who want more detail on the statistical distributions of state
 After analyzing the probability of inter-referrals I got curious where all these out-of-state referrals were going. As a first step towards understanding out-of-state referrals I assembled a [heat map](http://en.wikipedia.org/wiki/Heat_map). This heat map provides some details on which states patients are being referred to. Each square in the heat map represents an entry in the state to state adjacency matrix contained in the DocGraph network.
 
 <a href="http://bit.ly/W9mpdx">
-  <img src="https://s3.amazonaws.com/rweald-docgraph-analysis/inter-state-referrals-heatmap.png" alt="inter-state-referral-heatmap" height=450 width=800 />
+  <img src="http://s3.amazonaws.com/rweald-docgraph-analysis/inter-state-referrals-heatmap.png" alt="inter-state-referral-heatmap" height=450 width=800 />
 </a>
 
 
