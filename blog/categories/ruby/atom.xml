@@ -4,7 +4,7 @@
   <title><![CDATA[Category: ruby | Ryan Weald's Blog]]></title>
   <link href="http://rweald.github.com/blog/categories/ruby/atom.xml" rel="self"/>
   <link href="http://rweald.github.com/"/>
-  <updated>2013-03-01T08:19:55-08:00</updated>
+  <updated>2013-04-29T08:13:10-07:00</updated>
   <id>http://rweald.github.com/</id>
   <author>
     <name><![CDATA[Ryan Weald]]></name>
@@ -12,6 +12,25 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[LA RubyConf 2013 - Building Recommendation Systems in Ruby]]></title>
+    <link href="http://rweald.github.com/blog/2013/04/29/la-rubyconf-2013-building-recommendation-systems-in-ruby/"/>
+    <updated>2013-04-29T08:06:00-07:00</updated>
+    <id>http://rweald.github.com/blog/2013/04/29/la-rubyconf-2013-building-recommendation-systems-in-ruby</id>
+    <content type="html"><![CDATA[<p>Below is the presentation I gave at LA RubyConf 2013 titled, "<em>People who liked this talk also liked … Building Recommendation Systems Using Ruby</em>"</p>
+
+<iframe width="560" height="315" src="http://www.youtube.com/embed/fh1y1BUTJxE" frameborder="0" allowfullscreen></iframe>
+
+
+
+
+<script async class="speakerdeck-embed" data-id="2438b36061a7013038f7123139414c5a" data-ratio="1.2994923857868" src="http://rweald.github.com//speakerdeck.com/assets/embed.js"></script>
+
+
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Building Data Driven Products With Ruby - RubyConf 2012]]></title>
