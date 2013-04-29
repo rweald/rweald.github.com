@@ -9,7 +9,8 @@
   <meta name="author" content="Ryan Weald">
 
   
-  <meta name="description" content="Below is the presentation I gave at LA RubyConf 2013 titled, &#8221;People who liked this talk also liked … Building Recommendation Systems Using &hellip;">
+  <meta name="description" content="2013 LA RubyConf 2013 - Building Recommendation Systems in Ruby
+Apr 29 2013 posted in machine-learning, ruby Analyzing Out-of-State Patient &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -66,1287 +67,146 @@
   
 <ul class="main-navigation">
   <li><a href="/">Blog</a></li>
-  <li><a href="/blog/archives">Archives</a></li>
   <li><a href="/about">About</a></li>
 </ul>
 
 </nav>
   <div id="main">
     <div id="content">
-      <div class="blog-index">
+      <div>
+<article role="article">
+  
+  <div id="blog-archives">
   
   
   
-    <article>
-      
-  <header>
     
-      <h1 class="entry-title"><a href="/blog/2013/04/29/la-rubyconf-2013-building-recommendation-systems-in-ruby/">LA RubyConf 2013 - Building Recommendation Systems in Ruby</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
+    <h2>2013</h2>
   
-
-
-<time datetime="2013-04-29T08:06:00-07:00" pubdate data-updated="true">Apr 29<span>th</span>, 2013</time>
-        
-         | <a href="/blog/2013/04/29/la-rubyconf-2013-building-recommendation-systems-in-ruby/#disqus_thread">Comments</a>
-        
-      </p>
+  <article>
     
-  </header>
+<h1><a href="/blog/2013/04/29/la-rubyconf-2013-building-recommendation-systems-in-ruby/">LA RubyConf 2013 - Building Recommendation Systems in Ruby</a></h1>
+<time datetime="2013-04-29T08:06:00-07:00" pubdate><span class='month'>Apr</span> <span class='day'>29</span> <span class='year'>2013</span></time>
+
+<footer>
+  <span class="categories">posted in <a class='category' href='/blog/categories/machine-learning/'>machine-learning</a>, <a class='category' href='/blog/categories/ruby/'>ruby</a></span>
+</footer>
 
 
-  <div class="entry-content"><p>Below is the presentation I gave at LA RubyConf 2013 titled, &#8221;<em>People who liked this talk also liked … Building Recommendation Systems Using Ruby</em>&#8221;</p>
-
-<iframe width="560" height="315" src="http://www.youtube.com/embed/fh1y1BUTJxE" frameborder="0" allowfullscreen></iframe>
-
-
-
-
-<script async class="speakerdeck-embed" data-id="2438b36061a7013038f7123139414c5a" data-ratio="1.2994923857868" src="//speakerdeck.com/assets/embed.js"></script>
-
-
-
-</div>
+  </article>
   
   
+  
+  <article>
+    
+<h1><a href="/blog/2013/01/27/analyzing-out-of-state-patient-referrals-using-docgraph/">Analyzing Out-of-State Patient Referrals Using DocGraph</a></h1>
+<time datetime="2013-01-27T14:38:00-08:00" pubdate><span class='month'>Jan</span> <span class='day'>27</span> <span class='year'>2013</span></time>
+
+<footer>
+  <span class="categories">posted in <a class='category' href='/blog/categories/r/'>R</a>, <a class='category' href='/blog/categories/data/'>data</a>, <a class='category' href='/blog/categories/docgraph/'>docgraph</a>, <a class='category' href='/blog/categories/visualizations/'>visualizations</a></span>
+</footer>
 
 
-    </article>
+  </article>
   
   
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2013/01/27/analyzing-out-of-state-patient-referrals-using-docgraph/">Analyzing Out-of-State Patient Referrals Using DocGraph</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
   
-
-
-<time datetime="2013-01-27T14:38:00-08:00" pubdate data-updated="true">Jan 27<span>th</span>, 2013</time>
-        
-         | <a href="/blog/2013/01/27/analyzing-out-of-state-patient-referrals-using-docgraph/#disqus_thread">Comments</a>
-        
-      </p>
     
-  </header>
+    <h2>2012</h2>
+  
+  <article>
+    
+<h1><a href="/blog/2012/12/13/visualizing-geographic-connections-between-us-doctors/">Visualizing the Geographic Connections Between U.S. Doctors</a></h1>
+<time datetime="2012-12-13T08:05:00-08:00" pubdate><span class='month'>Dec</span> <span class='day'>13</span> <span class='year'>2012</span></time>
+
+<footer>
+  <span class="categories">posted in <a class='category' href='/blog/categories/r/'>R</a>, <a class='category' href='/blog/categories/data/'>data</a>, <a class='category' href='/blog/categories/docgraph/'>docgraph</a>, <a class='category' href='/blog/categories/visualizations/'>visualizations</a></span>
+</footer>
 
 
-  <div class="entry-content"><p>I previously built a <a href="http://isurfsoftware.com/blog/2012/12/13/visualizing-geographic-connections-between-us-doctors/">visualization of the U.S. medical graph</a> using the
-<a href="http://strata.oreilly.com/2012/11/docgraph-open-social-doctor-data.html">DocGraph</a> dataset.
-The visualization prompted me to ask the question, does the state where you live affect the likelihood you will be referred to a doctor in another state?</p>
-
-<p>Using the full <a href="http://strata.oreilly.com/2012/11/docgraph-open-social-doctor-data.html">DocGraph</a> dataset I was able to answer this question; in short North Carolina had the highest percentage of patients referred out-of-state with ~ 28% of referrals going out of state. Michigan and California had the lowest percent with only ~10% of referrals going out of state.</p>
-
-<p>In the remainder of this post I shall describe the process I used to obtain these result and provide a more detailed look at the impact state has on probability of inter-state referrals.</p>
-
-<p>The first step in the analysis was joining the DocGraph referral graph with the
-<a href="http://www.cms.gov/Regulations-and-Guidance/HIPAA-Administrative-Simplification/NationalProvIdentStand/index.html">National Provider Identifier database</a>.
-By joining DocGraph with the NPI database I was able to determine the state of the referring physician as well as the state of the physician the patient was being referred to. After augmenting the DocGraph with this additional information it was simply a matter of aggregating referrals grouped by state. Once aggregated I had a state to state adjacency matrix which could be further aggregated to generate the graphs shows below.</p>
-
-<p>For details on reproducing this analysis and all the code used <a href="https://github.com/rweald/docgraph-data-analysis/tree/master/state-level-graph-analysis">visit Github</a>. There are also some limitations to this analysis that are described in the footnotes <a href="#limitations">1</a>.</p>
-
-<p>Below is a <a href="http://en.wikipedia.org/wiki/Choropleth_map">choropleth map</a> representing the percent of patients that were referred outside of the state. As you can see North Carolina, Pennsylvania have the highest percent out-of-state referrals. There is also an area of increased out-of-state referrals in the <a href="http://en.wikipedia.org/wiki/File:Census_Regions_and_Division_of_the_United_States.svg">mountain region</a>.</p>
-
-<p><em>Click on any of the images below to see a full size version</em>
-<a href="http://bit.ly/Wvyfes" >
-  <img src="http://s3.amazonaws.com/rweald-docgraph-analysis/percent-leaving-state-choropleth-dev.png" alt="percent-out-of-state-referrals" height=450 width=800 />
-</a></p>
-
-<p>A complement to the above image is shown below; The color represents the percent of patients that are referred within the same state. As you would expect the larger states such as California, Texas, and New York have the highest percentage of patients referred within the same state.</p>
-
-<p><a href="http://bit.ly/X4RRH9">
-  <img src="http://s3.amazonaws.com/rweald-docgraph-analysis/percent-in-state-choropleth-dev.png" alt="percent-in-state-referrals" height=450 width=800 />
-</a></p>
-
-<p>For those readers who want more detail on the statistical distributions of state level referrals you can find <a href="http://en.wikipedia.org/wiki/Kernel_density_estimation">kernel density estimate</a> plots in the footnotes <a href="#distributions">2</a>.</p>
-
-<p>After analyzing the probability of inter-referrals I got curious where all these out-of-state referrals were going. As a first step towards understanding out-of-state referrals I assembled a <a href="http://en.wikipedia.org/wiki/Heat_map">heat map</a>. This heat map provides some details on which states patients are being referred to. Each square in the heat map represents an entry in the state to state adjacency matrix contained in the DocGraph network.</p>
-
-<p><a href="http://bit.ly/W9mpdx">
-  <img src="http://s3.amazonaws.com/rweald-docgraph-analysis/inter-state-referrals-heatmap.png" alt="inter-state-referral-heatmap" height=450 width=800 />
-</a></p>
-
-<p>The results above should have provide a good answer to the question of the impact of state on likelihood of out-of-state referrals. In addition we can get an idea of which states have the most inter-state referral traffic. Overall I think this analysis brings us one step closer to unlocking the potential of the <a href="http://strata.oreilly.com/2012/11/docgraph-open-social-doctor-data.html">DocGraph</a> data to help us understand the U.S. health graph <a href="#limitations">1</a>.</p>
-
-<p>I hope you have enjoyed my analysis.
-I am always open to feedback and would love to collaborate on some research related to analyzing the <a href="http://strata.oreilly.com/2012/11/docgraph-open-social-doctor-data.html">DocGraph</a>
-data set.
-If you are interested in collaborating on research related to <a href="http://strata.oreilly.com/2012/11/docgraph-open-social-doctor-data.html">DocGraph</a>
- please email me ryan [at] weald.com or message me on twitter <a href="http://twitter.com/rweald">@rweald</a></p>
-
-<div style="border-top: 1px solid grey"> </div>
-
-
-<h5>Footnotes</h5>
-
-<div style="font-size: 80%;">
-  <span style="font-style: bold:"> 1.</span>
-  <p id="limitations">
-  There are a couple of important limitations of the data to remember when interpreting this analysis. The DocGraph data set only includes data from 2011; we can assume that physician behavior is much the same today as it was in 2011, however without a sample from some other time period we can not be sure. Secondly, DocGraph only represents Medicare referrals which may not be representative of the entire healthcare system. Unfortunately a more comprehensive dataset including private referrals is not available to me at this time. Therefore, the DocGraph dataset is the best referral sample I could get as a private citizen.
-  </p>
-
-  <span style="font-style: bold:"> 2.</span>
-  <a id="distributions" href="http://bit.ly/WhQSVV">
-    <img src="https://s3.amazonaws.com/rweald-docgraph-analysis/general-statistical-plots.png" alt="percent-in-state-referrals" height=360 width=640 />
-  </a>
-</div>
-
-</div>
+  </article>
   
   
+  
+  <article>
+    
+<h1><a href="/blog/2012/12/03/building-data-driven-products-with-ruby-rubyconf-2012/">Building Data Driven Products With Ruby - RubyConf 2012</a></h1>
+<time datetime="2012-12-03T20:36:00-08:00" pubdate><span class='month'>Dec</span> <span class='day'>03</span> <span class='year'>2012</span></time>
+
+<footer>
+  <span class="categories">posted in <a class='category' href='/blog/categories/big-data/'>big-data</a>, <a class='category' href='/blog/categories/hadoop/'>hadoop</a>, <a class='category' href='/blog/categories/presentations/'>presentations</a>, <a class='category' href='/blog/categories/ruby/'>ruby</a></span>
+</footer>
 
 
-    </article>
+  </article>
   
   
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2012/12/13/visualizing-geographic-connections-between-us-doctors/">Visualizing the Geographic Connections Between U.S. Doctors</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
   
-
-
-<time datetime="2012-12-13T08:05:00-08:00" pubdate data-updated="true">Dec 13<span>th</span>, 2012</time>
-        
-         | <a href="/blog/2012/12/13/visualizing-geographic-connections-between-us-doctors/#disqus_thread">Comments</a>
-        
-      </p>
+  <article>
     
-  </header>
+<h1><a href="/blog/2012/09/12/linear-regression-using-ruby/">Linear Regression Using Ruby</a></h1>
+<time datetime="2012-09-12T07:45:00-07:00" pubdate><span class='month'>Sep</span> <span class='day'>12</span> <span class='year'>2012</span></time>
+
+<footer>
+  <span class="categories">posted in <a class='category' href='/blog/categories/math/'>math</a>, <a class='category' href='/blog/categories/ruby/'>ruby</a>, <a class='category' href='/blog/categories/statistics/'>statistics</a></span>
+</footer>
 
 
-  <div class="entry-content"><p>I recently acquired access to the <a href="http://strata.oreilly.com/2012/11/docgraph-open-social-doctor-data.html">DocGraph</a> data set on
-<a href="http://www.medstartr.com/projects/93-phase-ii-next-level-doctor-social-graph">MedStartr</a>.
-This data set contains a social network of U.S. doctors, with each connection representing
-a physician referring a patient to another physician.
-Given this new unique data I thought it would be interesting to investigate the geographic connections between doctors. What better way to start
-analyzing the data than to make a sexy visualization.</p>
-
-<p>To create the final visualization I had to combine multiple data sets to enrich the doctor social graph with geographic coordinates.
-I began by taking a sample of 1 million connections from
-<a href="http://strata.oreilly.com/2012/11/docgraph-open-social-doctor-data.html">DocGraph</a> and joining it with the
-<a href="http://en.wikipedia.org/wiki/National_Provider_Identifier">National Provider Identifier</a> (NPI) database.
-By joining these two data sets I was able to get the zip code of each physicians practice. The final step was converting the zip codes to
-latitude-longitude coordinates using
-a <a href="http://federalgovernmentzipcodes.us/">publicly available zip code database</a>. Now that the data was in the correct format I began work on the visualization.</p>
-
-<p>The visualization I choose was heavily inspired by the great
-work of <a href="http://www.facebook.com/notes/facebook-engineering/visualizing-friendships/469716398919">Paul Butler at Facebook</a>.</p>
-
-<p>Using a similar method to the one documented in <a href="http://flowingdata.com/2011/05/11/how-to-map-connections-with-great-circles/">Nathan Yau&#8217;s tutorial</a> I graphed the
-connections between physicians using <a href="http://en.wikipedia.org/wiki/Great_circle">great circles</a>. In order to see the cluster density I layered the connections
-using Euclidean distance, with the longest paths being drawn first.
-All of the code used to generate this visualization is open source and can be found on <a href="https://github.com/rweald/docgraph-data-analysis/tree/master/visualize-geographic-connections">Github</a></p>
-
-<p>Below is the resulting visualization. Note the areas of high and low density as you move from the east coast over to the west coast.
-There are also some interesting connections from
-Hawaii and Puerto Rico to the Continental United States.</p>
-
-<p><a href="https://s3.amazonaws.com/rweald-docgraph-analysis/map-of-connections-fullsize.png">
-  <img src="https://s3.amazonaws.com/rweald-docgraph-analysis/map-of-connections-thumbnail.png" alt="Doctor to Doctor connections visualized" />
-</a></p>
-
-<p>You can download the full sized graphic <a href="https://s3.amazonaws.com/rweald-docgraph-analysis/map-of-connections-with-text-fullsize.png">here</a>.
-<span style="font-size: 0.8em; font-style: italic;">
-  I recommend you right-click and &#8220;save link as&#8221; because the file is approximately 40MB.
-</span></p>
-
-<p>This visualization is only the beginning. The added feature of geography opens the door to many interesting analyses.
-I would love to collaborate on some research related to analyzing the <a href="http://strata.oreilly.com/2012/11/docgraph-open-social-doctor-data.html">DocGraph</a>
-data set. If you are interested in collaborating on research related to <a href="http://strata.oreilly.com/2012/11/docgraph-open-social-doctor-data.html">DocGraph</a>
- please email me ryan [at] weald.com or message me on twitter <a href="http://twitter.com/rweald">@rweald</a></p>
-</div>
+  </article>
   
   
+  
+  <article>
+    
+<h1><a href="/blog/2012/04/15/banking-your-profits/">Banking Your Profits, How to upgrade to Rails 3</a></h1>
+<time datetime="2012-04-15T00:00:00-07:00" pubdate><span class='month'>Apr</span> <span class='day'>15</span> <span class='year'>2012</span></time>
 
 
-    </article>
+  </article>
   
   
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2012/12/03/building-data-driven-products-with-ruby-rubyconf-2012/">Building Data Driven Products With Ruby - RubyConf 2012</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
   
-
-
-<time datetime="2012-12-03T20:36:00-08:00" pubdate data-updated="true">Dec 3<span>rd</span>, 2012</time>
-        
-         | <a href="/blog/2012/12/03/building-data-driven-products-with-ruby-rubyconf-2012/#disqus_thread">Comments</a>
-        
-      </p>
     
-  </header>
+    <h2>2011</h2>
+  
+  <article>
+    
+<h1><a href="/blog/2011/05/26/mongoid-activerecord-side-by-side/">Using Mongoid Alongside ActiveRecord</a></h1>
+<time datetime="2011-05-26T00:00:00-07:00" pubdate><span class='month'>May</span> <span class='day'>26</span> <span class='year'>2011</span></time>
 
 
-  <div class="entry-content"><p>Below is the presentation I gave at RubyConf 2012 titled, &#8220;Building Data Driven Products With Ruby.&#8221;</p>
-
-<p>You can view the slides on <a href="https://speakerdeck.com/rweald/building-data-driven-products-with-ruby">Speaker Deck</a></p>
-
-<iframe width="560" height="315" src="http://www.youtube.com/embed/XIqRdB5HCYM" frameborder="0" allowfullscreen></iframe>
-
-</div>
+  </article>
   
   
+  
+  <article>
+    
+<h1><a href="/blog/2011/05/12/2011-experimenting-with-goliath-and-EventMachine/">2011 Experimenting With Goliath And Eventmachine</a></h1>
+<time datetime="2011-05-12T00:00:00-07:00" pubdate><span class='month'>May</span> <span class='day'>12</span> <span class='year'>2011</span></time>
 
 
-    </article>
+  </article>
   
   
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2012/09/12/linear-regression-using-ruby/">Linear Regression Using Ruby</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
   
-
-
-<time datetime="2012-09-12T07:45:00-07:00" pubdate data-updated="true">Sep 12<span>th</span>, 2012</time>
-        
-         | <a href="/blog/2012/09/12/linear-regression-using-ruby/#disqus_thread">Comments</a>
-        
-      </p>
+  <article>
     
-  </header>
+<h1><a href="/blog/2011/04/05/caching-responses-from-external-apis/">Caching Responses From Remote APIs</a></h1>
+<time datetime="2011-04-05T00:00:00-07:00" pubdate><span class='month'>Apr</span> <span class='day'>05</span> <span class='year'>2011</span></time>
 
 
-  <div class="entry-content"><h4>*Posted on the <a href="http://www.sharethrough.com/2012/09/linear-regression-using-ruby/">Sharethrough Engineering Blog</a></h4>
-
-<p><em>Abstract:</em></p>
-
-<p>I walk you through the basics of
-linear regression, and show you how you can perform <em>simple linear regression</em> using Ruby</p>
-</div>
+  </article>
   
   
-
-
-    </article>
   
+  <article>
+    
+<h1><a href="/blog/2011/03/07/mongodb-indexes-with-rspec/">Mongodb Indexes With Rspec</a></h1>
+<time datetime="2011-03-07T00:00:00-08:00" pubdate><span class='month'>Mar</span> <span class='day'>07</span> <span class='year'>2011</span></time>
+
+
+  </article>
   
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2012/04/15/banking-your-profits/">Banking Your Profits, How to Upgrade to Rails 3</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2012-04-15T00:00:00-07:00" pubdate data-updated="true">Apr 15<span>th</span>, 2012</time>
-        
-         | <a href="/blog/2012/04/15/banking-your-profits/#disqus_thread">Comments</a>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>Let me start off by saying this is not a post touting all the great new features available in the latest version of Rails. I am not going to try and convince you that there is no way you can be productive staying on your current version of Rails. Instead this is a post about the way you can improve the overall quality of your codebase and reduce technical debt even if you never fully complete the upgrade. I am going to outline the process that we used at <a href="http://sharethrough.github.com">Sharethrough</a> to improve the quality of our codebase while upgrading from Rails 2 to Rails 3.</p>
-
-<p>The driving principle behind this post is &#8220;Banking your profits&#8221;. In
-software development that means making small focused commits on your
-master branch and using <em>continuous integration</em>[<a href="#ci">1</a>] to get those small changes integrated with the rest of your production code. By banking these profits along the way you gaining value even if you never succeed with the larger effort.</p>
-
-<p>So how can you possibly make small focused commits when you are working on an undertaking as monumental as a Rails 3 upgrade?
-The key to our success was small short lived Branches. The rules that governed these branches are as follows:</p>
-
-<p>1) No branch may live longer than 24 hours</p>
-
-<p>2) You can not make any unnecessary changes that could not be backported.</p>
-
-<p>Following these rules you are able to shift your mindset. Rather than an
-all or nothing sprint we instead methodically identified technical debt
-that was hindering the upgrade but not directly a result of Rails API
-incompatibilities. It was really quite amazing how much of the upgrade
-pain was actually the result of tight coupling and
-<em>SOLID</em>[<a href="#solid">2</a>] design principle violations rather than Rails 3 incompatibilities.</p>
-
-<p>Whenever we encountered a piece of debt that was hindering our upgrade we would switch back to the master branch and fix the code. Following this method the all or nothing part of the upgrade only took 2 days! The best part was even if we had never succeeded on the final portion of the upgrade we would have drastically improved the quality of the code allowing the team to move faster.</p>
-
-<p>If you follow the technique outlined here you will improve the quality of your codebase regardless of whether the upgrade is successful.</p>
-
-<p>P.S.</p>
-
-<p>Want to work with me tackling hard problems across the stack using TDD and pair programming?
-<a href="http://www.sharethrough.com/engineering/">Sharethrough is hiring talented engineers</a></p>
-
-<p><a name="ci"></a> [1] <a href="http://en.wikipedia.org/wiki/Continuous_integration">http://en.wikipedia.org/wiki/Continuous_integration</a></p>
-
-<p><a name="solid"></a> [2] <a href="http://en.wikipedia.org/wiki/SOLID_(object-oriented_design)">http://en.wikipedia.org/wiki/SOLID_(object-oriented_design)</a></p>
-</div>
-  
-  
-
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2011/05/26/mongoid-activerecord-side-by-side/">Using Mongoid Alongside ActiveRecord</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2011-05-26T00:00:00-07:00" pubdate data-updated="true">May 26<span>th</span>, 2011</time>
-        
-         | <a href="/blog/2011/05/26/mongoid-activerecord-side-by-side/#disqus_thread">Comments</a>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>MongoDB is a very popular document oriented database and more apps are
-using it every day. However, we all know about the problems that mongo
-has with data durability. So you might not want to use it as a complete
-replacment for ActiveRecord and your favorite sql store.
-<a href="http://mongoid.org">Mongoid</a> is an ActiveModel compliant ORM for
-MongoDB. Below I will outline how you can use Mongoid alongside
-ActiveRecord in your rails 3 app.</p>
-
-<p>1) Add mongoid to your gemfile</p>
-
-<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-</pre></td><td class='code'><pre><code class='ruby'><span class='line'>  <span class="n">gem</span> <span class="s2">&quot;mongoid&quot;</span><span class="p">,</span> <span class="s2">&quot;~&gt; 2.0&quot;</span>
-</span><span class='line'>  <span class="n">gem</span> <span class="s2">&quot;bson_ext&quot;</span><span class="p">,</span> <span class="s2">&quot;~&gt; 1.3&quot;</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p>2) Run the mongoid generator in your projects root directory</p>
-
-<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="n">rails</span> <span class="n">generate</span> <span class="n">mongoid</span><span class="ss">:config</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p>This will generate a config/mongoid.yml file where you can configure
-your connection to mongodb.</p>
-
-<p>3) Right now mongoid has overriden activerecord as the default orm so
-any attempts to generate migrations or ActiveRecord models will fail.
-Therefore we must configure our default generators so we can still use
-activerecord.</p>
-
-<p>To do that simple add the following line to your config/application.rb
-file</p>
-
-<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-</pre></td><td class='code'><pre><code class='ruby'><span class='line'>  <span class="n">config</span><span class="o">.</span><span class="n">generators</span> <span class="k">do</span> <span class="o">|</span><span class="n">g</span><span class="o">|</span>
-</span><span class='line'>    <span class="n">g</span><span class="o">.</span><span class="n">orm</span> <span class="ss">:active_record</span>
-</span><span class='line'>  <span class="k">end</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-
-</div>
-  
-  
-
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2011/05/12/2011-experimenting-with-goliath-and-EventMachine/">2011 Experimenting With Goliath and Eventmachine</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2011-05-12T00:00:00-07:00" pubdate data-updated="true">May 12<span>th</span>, 2011</time>
-        
-         | <a href="/blog/2011/05/12/2011-experimenting-with-goliath-and-EventMachine/#disqus_thread">Comments</a>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>After hearing lots of buzz surrounding <a href="https://github.com/postrank-labs/goliath">Goliath</a> the new asynchronous web server for ruby I thought I would give it a try for a particular problem I had. As part of <a href="https://github.com/icl/cove">COVE</a>, an open source online video ethnography tool, we have to handle large video file uploads. The application is written in Rails which is great except when you have really long running connections. With long running connections it ties up your mongrels and reduces your ability to service request.</p>
-
-<p>  The reason for this is because Rails is an inherently I/O blocking.
-When you run your application in production using
-<a href="http://www.modrails.com/">Passenger</a> or <a href="https://github.com/blog/517-unicorn">Unicorn</a> you essentially fork worker processes which are each responsible for servicing 1 requests at a time. To prevent memory bloating if a worker takes to long to respond or consumes too much memory it is killed. Well that presents a bit of a problem when you are talking about streaming file uploads that will require an active connection be left open while the file is uploaded. This large file upload request will block one of our worker processes which present an interesting problem. Since our process is blocked it is unable to service any additional request. This will lead to serious response time issues as our worker will be tied up handling these slow requests. To solve this we could spin up more worker processes, but this in turn takes more memory and more CPU and more resources in general.There must be a simpler solution!</p>
-
-<p>  It turns out there is in fact a simpler solution&#8230;<a href="http://en.wikipedia.org/wiki/Reactor_pattern">Event Driven Programming</a> and the
-<a href="http://en.wikipedia.org/wiki/Event-driven_programming">Reactor Pattern</a>. I know what you are thinking, He&#8217;s talking about NodeJS. Well yes and no, NodeJS is indeed a javascript event based asyncronous web server. However, I like ruby and I want to program my web service in ruby so where does that leave me; <a href="http://rubyeventmachine.com/">Eventmachine</a>. EventMachine is a c++ based event-processing library with a rich ruby API that allows for event oriented programming using an event loop and callbacks. Programming a web service using EventMachine can be a little bit of a pain in the ass as your code quickly starts to look like spaghetti and that is where Goliath comes in.</p>
-
-<p>  Goliath is described as &#8220;Non-blocking, Ruby 1.9 Web Server.&#8221; It supports
-the full rack API and utilizes ruby 1.9.2&#8217;s fibers to make readable top
-down code. If you want to learn more you can check out some great
-articles by <a href="http://www.igvita.com/2011/03/08/goliath-non-blocking-ruby-19-web-server/">Ilya Grigorik</a>. Essentially goliath gives us a great way to write code that follows a top down flow and it easy to read, but in reality it is running asynchronously using EventMachine. Now what the heck does that mean to me you ask. Well what that means is in under 30 lines of code I was able to write an asynchronous file upload server.</p>
-
-<p>And here it is:</p>
-
-<div><script src='https://gist.github.com/969981.js?file='></script>
-<noscript><pre><code>&lt;!DOCTYPE html&gt;
-&lt;html&gt;
-  &lt;head prefix=&quot;og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# githubog: http://ogp.me/ns/fb/githubog#&quot;&gt;
-    &lt;meta charset='utf-8'&gt;
-    &lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;IE=edge&quot;&gt;
-        &lt;title&gt;Server Error · GitHub&lt;/title&gt;
-    &lt;link rel=&quot;search&quot; type=&quot;application/opensearchdescription+xml&quot; href=&quot;/opensearch.xml&quot; title=&quot;GitHub&quot; /&gt;
-    &lt;link rel=&quot;fluid-icon&quot; href=&quot;http://github.com/fluidicon.png&quot; title=&quot;GitHub&quot; /&gt;
-    &lt;link rel=&quot;apple-touch-icon-precomposed&quot; sizes=&quot;57x57&quot; href=&quot;apple-touch-icon-114.png&quot; /&gt;
-    &lt;link rel=&quot;apple-touch-icon-precomposed&quot; sizes=&quot;114x114&quot; href=&quot;apple-touch-icon-114.png&quot; /&gt;
-    &lt;link rel=&quot;apple-touch-icon-precomposed&quot; sizes=&quot;72x72&quot; href=&quot;apple-touch-icon-144.png&quot; /&gt;
-    &lt;link rel=&quot;apple-touch-icon-precomposed&quot; sizes=&quot;144x144&quot; href=&quot;apple-touch-icon-144.png&quot; /&gt;
-
-    
-    
-    &lt;link rel=&quot;icon&quot; type=&quot;image/x-icon&quot; href=&quot;/favicon.png&quot; /&gt;
-
-    &lt;meta content=&quot;authenticity_token&quot; name=&quot;csrf-param&quot; /&gt;
-&lt;meta content=&quot;VbKnrox0gfmVve2V14mMMnkwttWgMHzJhow6TYD+dIg=&quot; name=&quot;csrf-token&quot; /&gt;
-
-    &lt;link href=&quot;https://a248.e.akamai.net/assets.github.com/assets/github-a49d58ce18e6b9d05e6a5dfec4630525766e1ece.css&quot; media=&quot;screen&quot; rel=&quot;stylesheet&quot; type=&quot;text/css&quot; /&gt;
-    &lt;link href=&quot;https://a248.e.akamai.net/assets.github.com/assets/github2-c8326b04f9d01e175322b58e4789bc4520b7016a.css&quot; media=&quot;screen&quot; rel=&quot;stylesheet&quot; type=&quot;text/css&quot; /&gt;
-    
-
-
-    &lt;script src=&quot;https://a248.e.akamai.net/assets.github.com/assets/frameworks-0f165a24ede5fce08cc34dbaba10d16d4ce5e4ac.js&quot; type=&quot;text/javascript&quot;&gt;&lt;/script&gt;
-    
-    &lt;script defer=&quot;defer&quot; src=&quot;https://a248.e.akamai.net/assets.github.com/assets/github-b7618679cbb78275710b9e29160ab1c26a3d09a8.js&quot; type=&quot;text/javascript&quot;&gt;&lt;/script&gt;
-    
-    
-
-    
-  &lt;/head&gt;
-
-
-  &lt;body class=&quot;logged_out    env-production &quot;&gt;
-    &lt;div id=&quot;wrapper&quot;&gt;
-
-    
-    
-
-      &lt;div id=&quot;header&quot; class=&quot;true clearfix&quot;&gt;
-        &lt;div class=&quot;container clearfix&quot;&gt;
-          &lt;a class=&quot;site-logo &quot; href=&quot;http://github.com/&quot;&gt;
-            &lt;img alt=&quot;GitHub&quot; class=&quot;github-logo-4x&quot; height=&quot;30&quot; src=&quot;https://a248.e.akamai.net/assets.github.com/images/modules/header/logov7@4x.png?1340659530&quot; /&gt;
-            &lt;img alt=&quot;GitHub&quot; class=&quot;github-logo-4x-hover&quot; height=&quot;30&quot; src=&quot;https://a248.e.akamai.net/assets.github.com/images/modules/header/logov7@4x-hover.png?1340659530&quot; /&gt;
-          &lt;/a&gt;
-
-
-                  &lt;!--
-      make sure to use fully qualified URLs here since this nav
-      is used on error pages on other domains
-    --&gt;
-    &lt;ul class=&quot;top-nav logged_out&quot;&gt;
-        &lt;li class=&quot;pricing&quot;&gt;&lt;a href=&quot;https://github.com/plans&quot;&gt;Signup and Pricing&lt;/a&gt;&lt;/li&gt;
-        &lt;li class=&quot;explore&quot;&gt;&lt;a href=&quot;https://github.com/explore&quot;&gt;Explore GitHub&lt;/a&gt;&lt;/li&gt;
-      &lt;li class=&quot;features&quot;&gt;&lt;a href=&quot;https://github.com/features&quot;&gt;Features&lt;/a&gt;&lt;/li&gt;
-        &lt;li class=&quot;blog&quot;&gt;&lt;a href=&quot;https://github.com/blog&quot;&gt;Blog&lt;/a&gt;&lt;/li&gt;
-      &lt;li class=&quot;login&quot;&gt;&lt;a href=&quot;https://github.com/login&quot;&gt;Sign in&lt;/a&gt;&lt;/li&gt;
-    &lt;/ul&gt;
-
-
-
-          
-        &lt;/div&gt;
-      &lt;/div&gt;
-
-      
-
-      
-
-        &lt;div class=&quot;site clearfix&quot;&gt;
-          &lt;div id=&quot;site-container&quot; class=&quot;container&quot; data-pjax-container&gt;
-            
-            
-&lt;div class=&quot;markdown-body standard&quot;&gt;
-  &lt;div class=&quot;center&quot; id=&quot;error_502&quot;&gt;&lt;img alt=&quot;Unicorn is angry&quot; height=&quot;205&quot; src=&quot;https://a248.e.akamai.net/assets.github.com/images/error/angry_unicorn.png?1340659530&quot; width=&quot;200&quot; /&gt;&lt;/div&gt;
-  &lt;h1&gt;Page did not respond in a timely fashion.&lt;/h1&gt;
-  &lt;p&gt;&lt;a href=&quot;http://status.github.com&quot;&gt;Check our status site for alerts.&lt;/a&gt;&lt;/p&gt;
-  &lt;p&gt;
-    Either you found a page that took too long to render or&lt;br /&gt;
-    we're getting more requests right now than we can handle.
-  &lt;/p&gt;
-  &lt;ul&gt;
-    &lt;li&gt;
-      You can try
-      &lt;a href=&quot;javascript: window.location.reload()&quot;&gt;refreshing the page,&lt;/a&gt;
-      the problem may be temporary.
-    &lt;/li&gt;
-    &lt;li&gt;
-      &lt;a href=&quot;http://github.s3.amazonaws.com/misc/down.html&quot;&gt;
-        Learn how to deal with GitHub outages and other access problems.
-      &lt;/a&gt;
-    &lt;/li&gt;
-  &lt;/ul&gt;
-&lt;/div&gt;
-
-          &lt;/div&gt;
-          &lt;div class=&quot;context-overlay&quot;&gt;&lt;/div&gt;
-        &lt;/div&gt;
-      &lt;div id=&quot;footer-push&quot;&gt;&lt;/div&gt;&lt;!-- hack for sticky footer --&gt;
-    &lt;/div&gt;&lt;!-- end of wrapper - hack for sticky footer --&gt;
-
-      &lt;!-- footer --&gt;
-      &lt;div id=&quot;footer&quot; &gt;
-        
-  &lt;div class=&quot;upper_footer&quot;&gt;
-     &lt;div class=&quot;container clearfix&quot;&gt;
-
-       &lt;!--[if IE]&gt;&lt;h4 id=&quot;blacktocat_ie&quot;&gt;GitHub Links&lt;/h4&gt;&lt;![endif]--&gt;
-       &lt;![if !IE]&gt;&lt;h4 id=&quot;blacktocat&quot;&gt;GitHub Links&lt;/h4&gt;&lt;![endif]&gt;
-
-       &lt;ul class=&quot;footer_nav&quot;&gt;
-         &lt;h4&gt;GitHub&lt;/h4&gt;
-         &lt;li&gt;&lt;a href=&quot;https://github.com/about&quot;&gt;About&lt;/a&gt;&lt;/li&gt;
-         &lt;li&gt;&lt;a href=&quot;https://github.com/blog&quot;&gt;Blog&lt;/a&gt;&lt;/li&gt;
-         &lt;li&gt;&lt;a href=&quot;https://github.com/features&quot;&gt;Features&lt;/a&gt;&lt;/li&gt;
-         &lt;li&gt;&lt;a href=&quot;https://github.com/contact&quot;&gt;Contact &amp;amp; Support&lt;/a&gt;&lt;/li&gt;
-         &lt;li&gt;&lt;a href=&quot;https://github.com/training&quot;&gt;Training&lt;/a&gt;&lt;/li&gt;
-         &lt;li&gt;&lt;a href=&quot;http://enterprise.github.com/&quot;&gt;GitHub Enterprise&lt;/a&gt;&lt;/li&gt;
-         &lt;li&gt;&lt;a href=&quot;http://status.github.com/&quot;&gt;Site Status&lt;/a&gt;&lt;/li&gt;
-       &lt;/ul&gt;
-
-       &lt;ul class=&quot;footer_nav&quot;&gt;
-         &lt;h4&gt;Clients&lt;/h4&gt;
-         &lt;li&gt;&lt;a href=&quot;http://mac.github.com/&quot;&gt;GitHub for Mac&lt;/a&gt;&lt;/li&gt;
-         &lt;li&gt;&lt;a href=&quot;http://windows.github.com/&quot;&gt;GitHub for Windows&lt;/a&gt;&lt;/li&gt;
-         &lt;li&gt;&lt;a href=&quot;http://eclipse.github.com/&quot;&gt;GitHub for Eclipse&lt;/a&gt;&lt;/li&gt;
-         &lt;li&gt;&lt;a href=&quot;http://mobile.github.com/&quot;&gt;GitHub Mobile Apps&lt;/a&gt;&lt;/li&gt;
-       &lt;/ul&gt;
-
-       &lt;ul class=&quot;footer_nav&quot;&gt;
-         &lt;h4&gt;Tools&lt;/h4&gt;
-         &lt;li&gt;&lt;a href=&quot;http://get.gaug.es/&quot;&gt;Gauges: Web analytics&lt;/a&gt;&lt;/li&gt;
-         &lt;li&gt;&lt;a href=&quot;http://speakerdeck.com&quot;&gt;Speaker Deck: Presentations&lt;/a&gt;&lt;/li&gt;
-         &lt;li&gt;&lt;a href=&quot;https://gist.github.com&quot;&gt;Gist: Code snippets&lt;/a&gt;&lt;/li&gt;
-
-         &lt;h4 class=&quot;second&quot;&gt;Extras&lt;/h4&gt;
-         &lt;li&gt;&lt;a href=&quot;http://jobs.github.com/&quot;&gt;Job Board&lt;/a&gt;&lt;/li&gt;
-         &lt;li&gt;&lt;a href=&quot;http://shop.github.com/&quot;&gt;GitHub Shop&lt;/a&gt;&lt;/li&gt;
-         &lt;li&gt;&lt;a href=&quot;http://octodex.github.com/&quot;&gt;The Octodex&lt;/a&gt;&lt;/li&gt;
-       &lt;/ul&gt;
-
-       &lt;ul class=&quot;footer_nav&quot;&gt;
-         &lt;h4&gt;Documentation&lt;/h4&gt;
-         &lt;li&gt;&lt;a href=&quot;http://help.github.com/&quot;&gt;GitHub Help&lt;/a&gt;&lt;/li&gt;
-         &lt;li&gt;&lt;a href=&quot;http://developer.github.com/&quot;&gt;Developer API&lt;/a&gt;&lt;/li&gt;
-         &lt;li&gt;&lt;a href=&quot;http://github.github.com/github-flavored-markdown/&quot;&gt;GitHub Flavored Markdown&lt;/a&gt;&lt;/li&gt;
-         &lt;li&gt;&lt;a href=&quot;http://pages.github.com/&quot;&gt;GitHub Pages&lt;/a&gt;&lt;/li&gt;
-       &lt;/ul&gt;
-
-     &lt;/div&gt;&lt;!-- /.site --&gt;
-  &lt;/div&gt;&lt;!-- /.upper_footer --&gt;
-
-&lt;div class=&quot;lower_footer&quot;&gt;
-  &lt;div class=&quot;container clearfix&quot;&gt;
-    &lt;!--[if IE]&gt;&lt;div id=&quot;legal_ie&quot;&gt;&lt;![endif]--&gt;
-    &lt;![if !IE]&gt;&lt;div id=&quot;legal&quot;&gt;&lt;![endif]&gt;
-      &lt;ul&gt;
-          &lt;li&gt;&lt;a href=&quot;https://github.com/site/terms&quot;&gt;Terms of Service&lt;/a&gt;&lt;/li&gt;
-          &lt;li&gt;&lt;a href=&quot;https://github.com/site/privacy&quot;&gt;Privacy&lt;/a&gt;&lt;/li&gt;
-          &lt;li&gt;&lt;a href=&quot;https://github.com/security&quot;&gt;Security&lt;/a&gt;&lt;/li&gt;
-      &lt;/ul&gt;
-
-      &lt;p&gt;&amp;copy; 2012 &lt;span title=&quot;s from fe17.rs.github.com&quot;&gt;GitHub&lt;/span&gt; Inc. All rights reserved.&lt;/p&gt;
-    &lt;/div&gt;&lt;!-- /#legal or /#legal_ie--&gt;
-
-  &lt;/div&gt;&lt;!-- /.site --&gt;
-&lt;/div&gt;&lt;!-- /.lower_footer --&gt;
-
-      &lt;/div&gt;&lt;!-- /#footer --&gt;
-
-    
-
-&lt;div id=&quot;keyboard_shortcuts_pane&quot; class=&quot;instapaper_ignore readability-extra&quot; style=&quot;display:none&quot;&gt;
-  &lt;h2&gt;Keyboard Shortcuts &lt;small&gt;&lt;a href=&quot;#&quot; class=&quot;js-see-all-keyboard-shortcuts&quot;&gt;(see all)&lt;/a&gt;&lt;/small&gt;&lt;/h2&gt;
-
-  &lt;div class=&quot;columns threecols&quot;&gt;
-    &lt;div class=&quot;column first&quot;&gt;
-      &lt;h3&gt;Site wide shortcuts&lt;/h3&gt;
-      &lt;dl class=&quot;keyboard-mappings&quot;&gt;
-        &lt;dt&gt;s&lt;/dt&gt;
-        &lt;dd&gt;Focus site search&lt;/dd&gt;
-      &lt;/dl&gt;
-      &lt;dl class=&quot;keyboard-mappings&quot;&gt;
-        &lt;dt&gt;?&lt;/dt&gt;
-        &lt;dd&gt;Bring up this help dialog&lt;/dd&gt;
-      &lt;/dl&gt;
-    &lt;/div&gt;&lt;!-- /.column.first --&gt;
-
-    &lt;div class=&quot;column middle&quot; style='display:none'&gt;
-      &lt;h3&gt;Commit list&lt;/h3&gt;
-      &lt;dl class=&quot;keyboard-mappings&quot;&gt;
-        &lt;dt&gt;j&lt;/dt&gt;
-        &lt;dd&gt;Move selection down&lt;/dd&gt;
-      &lt;/dl&gt;
-      &lt;dl class=&quot;keyboard-mappings&quot;&gt;
-        &lt;dt&gt;k&lt;/dt&gt;
-        &lt;dd&gt;Move selection up&lt;/dd&gt;
-      &lt;/dl&gt;
-      &lt;dl class=&quot;keyboard-mappings&quot;&gt;
-        &lt;dt&gt;c &lt;em&gt;or&lt;/em&gt; o &lt;em&gt;or&lt;/em&gt; enter&lt;/dt&gt;
-        &lt;dd&gt;Open commit&lt;/dd&gt;
-      &lt;/dl&gt;
-      &lt;dl class=&quot;keyboard-mappings&quot;&gt;
-        &lt;dt&gt;y&lt;/dt&gt;
-        &lt;dd&gt;Expand URL to its canonical form&lt;/dd&gt;
-      &lt;/dl&gt;
-    &lt;/div&gt;&lt;!-- /.column.first --&gt;
-
-    &lt;div class=&quot;column last js-hidden-pane&quot; style='display:none'&gt;
-      &lt;h3&gt;Pull request list&lt;/h3&gt;
-      &lt;dl class=&quot;keyboard-mappings&quot;&gt;
-        &lt;dt&gt;j&lt;/dt&gt;
-        &lt;dd&gt;Move selection down&lt;/dd&gt;
-      &lt;/dl&gt;
-      &lt;dl class=&quot;keyboard-mappings&quot;&gt;
-        &lt;dt&gt;k&lt;/dt&gt;
-        &lt;dd&gt;Move selection up&lt;/dd&gt;
-      &lt;/dl&gt;
-      &lt;dl class=&quot;keyboard-mappings&quot;&gt;
-        &lt;dt&gt;o &lt;em&gt;or&lt;/em&gt; enter&lt;/dt&gt;
-        &lt;dd&gt;Open issue&lt;/dd&gt;
-      &lt;/dl&gt;
-      &lt;dl class=&quot;keyboard-mappings&quot;&gt;
-        &lt;dt&gt;&lt;span class=&quot;platform-mac&quot;&gt;⌘&lt;/span&gt;&lt;span class=&quot;platform-other&quot;&gt;ctrl&lt;/span&gt; &lt;em&gt;+&lt;/em&gt; enter&lt;/dt&gt;
-        &lt;dd&gt;Submit comment&lt;/dd&gt;
-      &lt;/dl&gt;
-      &lt;dl class=&quot;keyboard-mappings&quot;&gt;
-        &lt;dt&gt;&lt;span class=&quot;platform-mac&quot;&gt;⌘&lt;/span&gt;&lt;span class=&quot;platform-other&quot;&gt;ctrl&lt;/span&gt; &lt;em&gt;+&lt;/em&gt; shift p&lt;/dt&gt;
-        &lt;dd&gt;Preview comment&lt;/dd&gt;
-      &lt;/dl&gt;
-    &lt;/div&gt;&lt;!-- /.columns.last --&gt;
-
-  &lt;/div&gt;&lt;!-- /.columns.equacols --&gt;
-
-  &lt;div class=&quot;js-hidden-pane&quot; style='display:none'&gt;
-    &lt;div class=&quot;rule&quot;&gt;&lt;/div&gt;
-
-    &lt;h3&gt;Issues&lt;/h3&gt;
-
-    &lt;div class=&quot;columns threecols&quot;&gt;
-      &lt;div class=&quot;column first&quot;&gt;
-        &lt;dl class=&quot;keyboard-mappings&quot;&gt;
-          &lt;dt&gt;j&lt;/dt&gt;
-          &lt;dd&gt;Move selection down&lt;/dd&gt;
-        &lt;/dl&gt;
-        &lt;dl class=&quot;keyboard-mappings&quot;&gt;
-          &lt;dt&gt;k&lt;/dt&gt;
-          &lt;dd&gt;Move selection up&lt;/dd&gt;
-        &lt;/dl&gt;
-        &lt;dl class=&quot;keyboard-mappings&quot;&gt;
-          &lt;dt&gt;x&lt;/dt&gt;
-          &lt;dd&gt;Toggle selection&lt;/dd&gt;
-        &lt;/dl&gt;
-        &lt;dl class=&quot;keyboard-mappings&quot;&gt;
-          &lt;dt&gt;o &lt;em&gt;or&lt;/em&gt; enter&lt;/dt&gt;
-          &lt;dd&gt;Open issue&lt;/dd&gt;
-        &lt;/dl&gt;
-        &lt;dl class=&quot;keyboard-mappings&quot;&gt;
-          &lt;dt&gt;&lt;span class=&quot;platform-mac&quot;&gt;⌘&lt;/span&gt;&lt;span class=&quot;platform-other&quot;&gt;ctrl&lt;/span&gt; &lt;em&gt;+&lt;/em&gt; enter&lt;/dt&gt;
-          &lt;dd&gt;Submit comment&lt;/dd&gt;
-        &lt;/dl&gt;
-        &lt;dl class=&quot;keyboard-mappings&quot;&gt;
-          &lt;dt&gt;&lt;span class=&quot;platform-mac&quot;&gt;⌘&lt;/span&gt;&lt;span class=&quot;platform-other&quot;&gt;ctrl&lt;/span&gt; &lt;em&gt;+&lt;/em&gt; shift p&lt;/dt&gt;
-          &lt;dd&gt;Preview comment&lt;/dd&gt;
-        &lt;/dl&gt;
-      &lt;/div&gt;&lt;!-- /.column.first --&gt;
-      &lt;div class=&quot;column last&quot;&gt;
-        &lt;dl class=&quot;keyboard-mappings&quot;&gt;
-          &lt;dt&gt;c&lt;/dt&gt;
-          &lt;dd&gt;Create issue&lt;/dd&gt;
-        &lt;/dl&gt;
-        &lt;dl class=&quot;keyboard-mappings&quot;&gt;
-          &lt;dt&gt;l&lt;/dt&gt;
-          &lt;dd&gt;Create label&lt;/dd&gt;
-        &lt;/dl&gt;
-        &lt;dl class=&quot;keyboard-mappings&quot;&gt;
-          &lt;dt&gt;i&lt;/dt&gt;
-          &lt;dd&gt;Back to inbox&lt;/dd&gt;
-        &lt;/dl&gt;
-        &lt;dl class=&quot;keyboard-mappings&quot;&gt;
-          &lt;dt&gt;u&lt;/dt&gt;
-          &lt;dd&gt;Back to issues&lt;/dd&gt;
-        &lt;/dl&gt;
-        &lt;dl class=&quot;keyboard-mappings&quot;&gt;
-          &lt;dt&gt;/&lt;/dt&gt;
-          &lt;dd&gt;Focus issues search&lt;/dd&gt;
-        &lt;/dl&gt;
-      &lt;/div&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;
-
-  &lt;div class=&quot;js-hidden-pane&quot; style='display:none'&gt;
-    &lt;div class=&quot;rule&quot;&gt;&lt;/div&gt;
-
-    &lt;h3&gt;Issues Dashboard&lt;/h3&gt;
-
-    &lt;div class=&quot;columns threecols&quot;&gt;
-      &lt;div class=&quot;column first&quot;&gt;
-        &lt;dl class=&quot;keyboard-mappings&quot;&gt;
-          &lt;dt&gt;j&lt;/dt&gt;
-          &lt;dd&gt;Move selection down&lt;/dd&gt;
-        &lt;/dl&gt;
-        &lt;dl class=&quot;keyboard-mappings&quot;&gt;
-          &lt;dt&gt;k&lt;/dt&gt;
-          &lt;dd&gt;Move selection up&lt;/dd&gt;
-        &lt;/dl&gt;
-        &lt;dl class=&quot;keyboard-mappings&quot;&gt;
-          &lt;dt&gt;o &lt;em&gt;or&lt;/em&gt; enter&lt;/dt&gt;
-          &lt;dd&gt;Open issue&lt;/dd&gt;
-        &lt;/dl&gt;
-      &lt;/div&gt;&lt;!-- /.column.first --&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;
-
-  &lt;div class=&quot;js-hidden-pane&quot; style='display:none'&gt;
-    &lt;div class=&quot;rule&quot;&gt;&lt;/div&gt;
-
-    &lt;h3&gt;Network Graph&lt;/h3&gt;
-    &lt;div class=&quot;columns equacols&quot;&gt;
-      &lt;div class=&quot;column first&quot;&gt;
-        &lt;dl class=&quot;keyboard-mappings&quot;&gt;
-          &lt;dt&gt;&lt;span class=&quot;badmono&quot;&gt;←&lt;/span&gt; &lt;em&gt;or&lt;/em&gt; h&lt;/dt&gt;
-          &lt;dd&gt;Scroll left&lt;/dd&gt;
-        &lt;/dl&gt;
-        &lt;dl class=&quot;keyboard-mappings&quot;&gt;
-          &lt;dt&gt;&lt;span class=&quot;badmono&quot;&gt;→&lt;/span&gt; &lt;em&gt;or&lt;/em&gt; l&lt;/dt&gt;
-          &lt;dd&gt;Scroll right&lt;/dd&gt;
-        &lt;/dl&gt;
-        &lt;dl class=&quot;keyboard-mappings&quot;&gt;
-          &lt;dt&gt;&lt;span class=&quot;badmono&quot;&gt;↑&lt;/span&gt; &lt;em&gt;or&lt;/em&gt; k&lt;/dt&gt;
-          &lt;dd&gt;Scroll up&lt;/dd&gt;
-        &lt;/dl&gt;
-        &lt;dl class=&quot;keyboard-mappings&quot;&gt;
-          &lt;dt&gt;&lt;span class=&quot;badmono&quot;&gt;↓&lt;/span&gt; &lt;em&gt;or&lt;/em&gt; j&lt;/dt&gt;
-          &lt;dd&gt;Scroll down&lt;/dd&gt;
-        &lt;/dl&gt;
-        &lt;dl class=&quot;keyboard-mappings&quot;&gt;
-          &lt;dt&gt;t&lt;/dt&gt;
-          &lt;dd&gt;Toggle visibility of head labels&lt;/dd&gt;
-        &lt;/dl&gt;
-      &lt;/div&gt;&lt;!-- /.column.first --&gt;
-      &lt;div class=&quot;column last&quot;&gt;
-        &lt;dl class=&quot;keyboard-mappings&quot;&gt;
-          &lt;dt&gt;shift &lt;span class=&quot;badmono&quot;&gt;←&lt;/span&gt; &lt;em&gt;or&lt;/em&gt; shift h&lt;/dt&gt;
-          &lt;dd&gt;Scroll all the way left&lt;/dd&gt;
-        &lt;/dl&gt;
-        &lt;dl class=&quot;keyboard-mappings&quot;&gt;
-          &lt;dt&gt;shift &lt;span class=&quot;badmono&quot;&gt;→&lt;/span&gt; &lt;em&gt;or&lt;/em&gt; shift l&lt;/dt&gt;
-          &lt;dd&gt;Scroll all the way right&lt;/dd&gt;
-        &lt;/dl&gt;
-        &lt;dl class=&quot;keyboard-mappings&quot;&gt;
-          &lt;dt&gt;shift &lt;span class=&quot;badmono&quot;&gt;↑&lt;/span&gt; &lt;em&gt;or&lt;/em&gt; shift k&lt;/dt&gt;
-          &lt;dd&gt;Scroll all the way up&lt;/dd&gt;
-        &lt;/dl&gt;
-        &lt;dl class=&quot;keyboard-mappings&quot;&gt;
-          &lt;dt&gt;shift &lt;span class=&quot;badmono&quot;&gt;↓&lt;/span&gt; &lt;em&gt;or&lt;/em&gt; shift j&lt;/dt&gt;
-          &lt;dd&gt;Scroll all the way down&lt;/dd&gt;
-        &lt;/dl&gt;
-      &lt;/div&gt;&lt;!-- /.column.last --&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;
-
-  &lt;div class=&quot;js-hidden-pane&quot; style='display:none'&gt;
-    &lt;div class=&quot;rule&quot;&gt;&lt;/div&gt;
-    &lt;div class=&quot;columns threecols&quot;&gt;
-      &lt;div class=&quot;column first js-hidden-pane&quot; style='display:none'&gt;
-        &lt;h3&gt;Source Code Browsing&lt;/h3&gt;
-        &lt;dl class=&quot;keyboard-mappings&quot;&gt;
-          &lt;dt&gt;t&lt;/dt&gt;
-          &lt;dd&gt;Activates the file finder&lt;/dd&gt;
-        &lt;/dl&gt;
-        &lt;dl class=&quot;keyboard-mappings&quot;&gt;
-          &lt;dt&gt;l&lt;/dt&gt;
-          &lt;dd&gt;Jump to line&lt;/dd&gt;
-        &lt;/dl&gt;
-        &lt;dl class=&quot;keyboard-mappings&quot;&gt;
-          &lt;dt&gt;w&lt;/dt&gt;
-          &lt;dd&gt;Switch branch/tag&lt;/dd&gt;
-        &lt;/dl&gt;
-        &lt;dl class=&quot;keyboard-mappings&quot;&gt;
-          &lt;dt&gt;y&lt;/dt&gt;
-          &lt;dd&gt;Expand URL to its canonical form&lt;/dd&gt;
-        &lt;/dl&gt;
-      &lt;/div&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;
-
-  &lt;div class=&quot;js-hidden-pane&quot; style='display:none'&gt;
-    &lt;div class=&quot;rule&quot;&gt;&lt;/div&gt;
-    &lt;div class=&quot;columns threecols&quot;&gt;
-      &lt;div class=&quot;column first&quot;&gt;
-        &lt;h3&gt;Browsing Commits&lt;/h3&gt;
-        &lt;dl class=&quot;keyboard-mappings&quot;&gt;
-          &lt;dt&gt;&lt;span class=&quot;platform-mac&quot;&gt;⌘&lt;/span&gt;&lt;span class=&quot;platform-other&quot;&gt;ctrl&lt;/span&gt; &lt;em&gt;+&lt;/em&gt; enter&lt;/dt&gt;
-          &lt;dd&gt;Submit comment&lt;/dd&gt;
-        &lt;/dl&gt;
-        &lt;dl class=&quot;keyboard-mappings&quot;&gt;
-          &lt;dt&gt;escape&lt;/dt&gt;
-          &lt;dd&gt;Close form&lt;/dd&gt;
-        &lt;/dl&gt;
-        &lt;dl class=&quot;keyboard-mappings&quot;&gt;
-          &lt;dt&gt;p&lt;/dt&gt;
-          &lt;dd&gt;Parent commit&lt;/dd&gt;
-        &lt;/dl&gt;
-        &lt;dl class=&quot;keyboard-mappings&quot;&gt;
-          &lt;dt&gt;o&lt;/dt&gt;
-          &lt;dd&gt;Other parent commit&lt;/dd&gt;
-        &lt;/dl&gt;
-      &lt;/div&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;
-
-  &lt;div class=&quot;js-hidden-pane&quot; style='display:none'&gt;
-    &lt;div class=&quot;rule&quot;&gt;&lt;/div&gt;
-    &lt;h3&gt;Notifications&lt;/h3&gt;
-
-    &lt;div class=&quot;columns threecols&quot;&gt;
-      &lt;div class=&quot;column first&quot;&gt;
-        &lt;dl class=&quot;keyboard-mappings&quot;&gt;
-          &lt;dt&gt;j&lt;/dt&gt;
-          &lt;dd&gt;Move selection down&lt;/dd&gt;
-        &lt;/dl&gt;
-        &lt;dl class=&quot;keyboard-mappings&quot;&gt;
-          &lt;dt&gt;k&lt;/dt&gt;
-          &lt;dd&gt;Move selection up&lt;/dd&gt;
-        &lt;/dl&gt;
-        &lt;dl class=&quot;keyboard-mappings&quot;&gt;
-          &lt;dt&gt;o &lt;em&gt;or&lt;/em&gt; enter&lt;/dt&gt;
-          &lt;dd&gt;Open notification&lt;/dd&gt;
-        &lt;/dl&gt;
-      &lt;/div&gt;&lt;!-- /.column.first --&gt;
-
-      &lt;div class=&quot;column second&quot;&gt;
-        &lt;dl class=&quot;keyboard-mappings&quot;&gt;
-          &lt;dt&gt;e &lt;em&gt;or&lt;/em&gt; shift i &lt;em&gt;or&lt;/em&gt; y&lt;/dt&gt;
-          &lt;dd&gt;Mark as read&lt;/dd&gt;
-        &lt;/dl&gt;
-        &lt;dl class=&quot;keyboard-mappings&quot;&gt;
-          &lt;dt&gt;shift m&lt;/dt&gt;
-          &lt;dd&gt;Mute thread&lt;/dd&gt;
-        &lt;/dl&gt;
-      &lt;/div&gt;&lt;!-- /.column.first --&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;
-
-&lt;/div&gt;
-
-    &lt;div id=&quot;markdown-help&quot; class=&quot;instapaper_ignore readability-extra&quot;&gt;
-  &lt;h2&gt;Markdown Cheat Sheet&lt;/h2&gt;
-
-  &lt;div class=&quot;cheatsheet-content&quot;&gt;
-
-  &lt;div class=&quot;mod&quot;&gt;
-    &lt;div class=&quot;col&quot;&gt;
-      &lt;h3&gt;Format Text&lt;/h3&gt;
-      &lt;p&gt;Headers&lt;/p&gt;
-      &lt;pre&gt;
-# This is an &amp;lt;h1&amp;gt; tag
-## This is an &amp;lt;h2&amp;gt; tag
-###### This is an &amp;lt;h6&amp;gt; tag&lt;/pre&gt;
-     &lt;p&gt;Text styles&lt;/p&gt;
-     &lt;pre&gt;
-*This text will be italic*
-_This will also be italic_
-**This text will be bold**
-__This will also be bold__
-
-*You **can** combine them*
-&lt;/pre&gt;
-    &lt;/div&gt;
-    &lt;div class=&quot;col&quot;&gt;
-      &lt;h3&gt;Lists&lt;/h3&gt;
-      &lt;p&gt;Unordered&lt;/p&gt;
-      &lt;pre&gt;
-* Item 1
-* Item 2
-  * Item 2a
-  * Item 2b&lt;/pre&gt;
-     &lt;p&gt;Ordered&lt;/p&gt;
-     &lt;pre&gt;
-1. Item 1
-2. Item 2
-3. Item 3
-   * Item 3a
-   * Item 3b&lt;/pre&gt;
-    &lt;/div&gt;
-    &lt;div class=&quot;col&quot;&gt;
-      &lt;h3&gt;Miscellaneous&lt;/h3&gt;
-      &lt;p&gt;Images&lt;/p&gt;
-      &lt;pre&gt;
-![GitHub Logo](/images/logo.png)
-Format: ![Alt Text](url)
-&lt;/pre&gt;
-     &lt;p&gt;Links&lt;/p&gt;
-     &lt;pre&gt;
-http://github.com - automatic!
-[GitHub](http://github.com)&lt;/pre&gt;
-&lt;p&gt;Blockquotes&lt;/p&gt;
-     &lt;pre&gt;
-As Kanye West said:
-
-&gt; We're living the future so
-&gt; the present is our past.
-&lt;/pre&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;
-  &lt;div class=&quot;rule&quot;&gt;&lt;/div&gt;
-
-  &lt;h3&gt;Code Examples in Markdown&lt;/h3&gt;
-  &lt;div class=&quot;col&quot;&gt;
-      &lt;p&gt;Syntax highlighting with &lt;a href=&quot;http://github.github.com/github-flavored-markdown/&quot; title=&quot;GitHub Flavored Markdown&quot; target=&quot;_blank&quot;&gt;GFM&lt;/a&gt;&lt;/p&gt;
-      &lt;pre&gt;
-```javascript
-function fancyAlert(arg) {
-  if(arg) {
-    $.facebox({div:'#foo'})
-  }
-}
-```&lt;/pre&gt;
-    &lt;/div&gt;
-    &lt;div class=&quot;col&quot;&gt;
-      &lt;p&gt;Or, indent your code 4 spaces&lt;/p&gt;
-      &lt;pre&gt;
-Here is a Python code example
-without syntax highlighting:
-
-    def foo:
-      if not bar:
-        return true&lt;/pre&gt;
-    &lt;/div&gt;
-    &lt;div class=&quot;col&quot;&gt;
-      &lt;p&gt;Inline code for comments&lt;/p&gt;
-      &lt;pre&gt;
-I think you should use an
-`&amp;lt;addr&amp;gt;` element here instead.&lt;/pre&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;
-
-  &lt;/div&gt;
-&lt;/div&gt;
-
-
-    &lt;div id=&quot;ajax-error-message&quot; class=&quot;flash flash-error&quot;&gt;
-      &lt;span class=&quot;mini-icon mini-icon-exclamation&quot;&gt;&lt;/span&gt;
-      Something went wrong with that request. Please try again.
-      &lt;a href=&quot;#&quot; class=&quot;mini-icon mini-icon-remove-close ajax-error-dismiss&quot;&gt;&lt;/a&gt;
-    &lt;/div&gt;
-
-    &lt;div id=&quot;logo-popup&quot;&gt;
-      &lt;h2&gt;Looking for the GitHub logo?&lt;/h2&gt;
-      &lt;ul&gt;
-        &lt;li&gt;
-          &lt;h4&gt;GitHub Logo&lt;/h4&gt;
-          &lt;a href=&quot;http://github-media-downloads.s3.amazonaws.com/GitHub_Logos.zip&quot;&gt;&lt;img alt=&quot;Github_logo&quot; src=&quot;https://a248.e.akamai.net/assets.github.com/images/modules/about_page/github_logo.png?1340659530&quot; /&gt;&lt;/a&gt;
-          &lt;a href=&quot;http://github-media-downloads.s3.amazonaws.com/GitHub_Logos.zip&quot; class=&quot;minibutton download&quot;&gt;Download&lt;/a&gt;
-        &lt;/li&gt;
-        &lt;li&gt;
-          &lt;h4&gt;The Octocat&lt;/h4&gt;
-          &lt;a href=&quot;http://github-media-downloads.s3.amazonaws.com/Octocats.zip&quot;&gt;&lt;img alt=&quot;Octocat&quot; src=&quot;https://a248.e.akamai.net/assets.github.com/images/modules/about_page/octocat.png?1340659530&quot; /&gt;&lt;/a&gt;
-          &lt;a href=&quot;http://github-media-downloads.s3.amazonaws.com/Octocats.zip&quot; class=&quot;minibutton download&quot;&gt;Download&lt;/a&gt;
-        &lt;/li&gt;
-      &lt;/ul&gt;
-    &lt;/div&gt;
-
-    
-    
-    
-    
-  &lt;/body&gt;
-&lt;/html&gt;
-</code></pre></noscript></div>
-
-
-<p>  This was just my first plunge into the world of Non-blocking evented code so I am by no means an expert. If you see that I have made a terrible mistake or just want to give me some pointers feel free to do some.
-Just remember I am still young and while my college peers were out partying I was writing this code so try and make all criticism constructive</p>
-
-<p>  In my next post I will document the upload client that also takes
-advantaged of EventMachine and fibers to compute checksums and upload
-files to the web service.</p>
-</div>
-  
-  
-
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2011/04/05/caching-responses-from-external-apis/">Caching Responses From Remote APIs</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2011-04-05T00:00:00-07:00" pubdate data-updated="true">Apr 5<span>th</span>, 2011</time>
-        
-         | <a href="/blog/2011/04/05/caching-responses-from-external-apis/#disqus_thread">Comments</a>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>  <a href="http://secure.dokbot.com">Dokbot</a>, the project that I am currently
-working on, utilizes the mendeley API to add citations to posts. To
-achieve this the application allows users to click an add citation
-button which brings up a modal view where the user can enter a search
-term that will be sent off the the mendeley API. To provide the a
-positive user experience the search form must be highly responsive. This
-presented a problem because the <a href="http://mendeley.com">mendeley</a> API
-although resonably responsible was not quite snappy enought to provide
-the UX we were looking for.</p>
-
-<p>  To remidy this problem we decided to route the search request through
-our own application servers. Although at first glance this might appear
-to be a bad idea as it would increase latency, it turns out it actual
-decreased the average latency. The cause for this decrease in
-latency; caching. It turns out that most users enter the same search
-term almost every time they enter a citation. With this in mind we wrote
-some code in our application that caches the responses from mendeley API
-that way for any given search query we only have to make 1 request to
-the mendeley API. All subsequent requests for the search term will be
-returned from our application cache rather than a request to the API.</p>
-
-<p>  Caching was also a resonable solution for this particular problem
-because the mendeley search results change very infrequently.</p>
-
-<p>You can see the code below that was used to cache the mendeley API
-response using whatever cache <a href="http://guides.rubyonrails.org/caching_with_rails.html">Rails</a> is configured to use.</p>
-
-<h4>The Code</h4>
-
-<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-<span class='line-number'>8</span>
-<span class='line-number'>9</span>
-<span class='line-number'>10</span>
-</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="k">def</span> <span class="nc">self</span><span class="o">.</span><span class="nf">search_mendeley</span><span class="p">(</span><span class="n">query</span><span class="o">=</span><span class="kp">nil</span><span class="p">)</span>
-</span><span class='line'>  <span class="k">raise</span> <span class="s2">&quot;no query specified&quot;</span> <span class="k">unless</span> <span class="n">query</span>
-</span><span class='line'>
-</span><span class='line'>  <span class="n">papers</span> <span class="o">=</span> <span class="no">Rails</span><span class="o">.</span><span class="n">cache</span><span class="o">.</span><span class="n">fetch</span><span class="p">(</span><span class="n">query</span><span class="p">)</span> <span class="k">do</span> <span class="o">|</span><span class="n">query</span><span class="o">|</span>
-</span><span class='line'>    <span class="n">response</span> <span class="o">=</span> <span class="no">Mendeley</span><span class="o">::</span><span class="no">API</span><span class="o">::</span><span class="no">Documents</span><span class="o">.</span><span class="n">search</span><span class="p">(</span><span class="n">query</span><span class="p">)</span>
-</span><span class='line'>    <span class="n">papers</span> <span class="o">=</span> <span class="n">response</span><span class="o">[</span><span class="s2">&quot;documents&quot;</span><span class="o">][</span><span class="mi">0</span><span class="o">.</span><span class="n">.</span><span class="mi">5</span><span class="o">]</span>
-</span><span class='line'>  <span class="k">end</span>
-</span><span class='line'>
-</span><span class='line'>  <span class="k">return</span> <span class="n">papers</span>
-</span><span class='line'><span class="k">end</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-
-</div>
-  
-  
-
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2011/03/07/mongodb-indexes-with-rspec/">Mongodb Indexes With Rspec</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2011-03-07T00:00:00-08:00" pubdate data-updated="true">Mar 7<span>th</span>, 2011</time>
-        
-         | <a href="/blog/2011/03/07/mongodb-indexes-with-rspec/#disqus_thread">Comments</a>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>I recently had need to test some geospatial queries in a rails
-application.
-At first this seems like nothing out of the ordinary but there are
-a couple of minor details that if forgotten can result in failing tests</p>
-
-<p>The main difference between geo queries and your average run of the mill
-query is the need for and index.
-Normally when a simple unit test suite is run you don&#8217;t worry about
-building indexes as you wont be querying large amounts of data to speed
-is not an issue. Besides if you are reading this you are using Rspec
-which means you are not too concerned with your test speed.</p>
-
-<p>However, if you want to test geo queries in MongoDB you will have to
-ensure that your index is built or the query can not be executed.
-This is because geospatial queries can only be run against a special 2D index
-and not against the underlying data.</p>
-
-<p>Now the obvious solution would be to place some code in your
-spec_helper file that will create the indexes.
-I felt like this was a bit to heavy handed since I only wanted
-to test the geospatial queries in 1 describe block.</p>
-
-<p>So to fix the problem I choose to add a call to Mongoid::Indexes create_indexes
-method within my before block.</p>
-
-<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-<span class='line-number'>8</span>
-</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="n">describe</span> <span class="s2">&quot;.guides_nearby&quot;</span> <span class="k">do</span>
-</span><span class='line'>  <span class="n">before</span><span class="p">(</span><span class="ss">:each</span><span class="p">)</span> <span class="k">do</span>
-</span><span class='line'>    <span class="vi">@guide</span> <span class="o">=</span> <span class="no">Factory</span><span class="p">(</span><span class="ss">:guide</span><span class="p">)</span>
-</span><span class='line'>    <span class="no">Guide</span><span class="o">.</span><span class="n">create_indexes</span>
-</span><span class='line'>    <span class="vi">@result</span> <span class="o">=</span> <span class="no">Guide</span><span class="o">.</span><span class="n">guides_nearby</span><span class="p">(</span><span class="s2">&quot;San Diego,United States&quot;</span><span class="p">)</span>
-</span><span class='line'>  <span class="k">end</span>
-</span><span class='line'>  <span class="n">it</span> <span class="p">{</span><span class="vi">@result</span><span class="o">.</span><span class="n">first</span><span class="o">.</span><span class="n">should</span> <span class="o">==</span> <span class="vi">@guide</span><span class="p">}</span>
-</span><span class='line'><span class="k">end</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-
-</div>
-  
-  
-
-
-    </article>
-  
-  <div class="pagination">
-    
-    <a href="/blog/archives">Blog Archives</a>
-    
-  </div>
 </div>
 <aside class="sidebar">
   
@@ -1419,6 +279,96 @@ method within my before block.</p>
 
   
 </aside>
+
+  
+    <footer>
+      
+      
+        <div class="sharing">
+  
+  
+  
+</div>
+
+      
+    </footer>
+  
+</article>
+
+</div>
+
+<aside class="sidebar">
+  
+    <section>
+  <h1>About Me</h1>
+  <p>
+    Hi I'm Ryan. I am currently a data scientist 
+    at <a href="http://sharethrough.com">Sharethrough</a>.
+    My main interests lie in using data and machine learning to improve peoples lives. 
+    I'm particularly interesting in health care and data driven businesses, such as advertising.
+  </p>
+  <p>
+    You can find me online at the following locations:
+    <ul id="about_me_list">
+    	<li>
+    		<a href="http://twitter.com/rweald">Twitter</a>
+    	</li>
+    	<li>
+    		<a href="http://www.linkedin.com/in/ryanweald/">LinkedIn</a>
+    	</li>
+    	<li>
+    		<a href="http://github.com/rweald">Github</a>
+    	</li>
+    </ul>
+    </p>
+</section>
+<section>
+  <h1>Recent Posts</h1>
+  <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2013/04/29/la-rubyconf-2013-building-recommendation-systems-in-ruby/">LA RubyConf 2013 - Building Recommendation Systems in Ruby</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/01/27/analyzing-out-of-state-patient-referrals-using-docgraph/">Analyzing Out-of-State Patient Referrals Using DocGraph</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2012/12/13/visualizing-geographic-connections-between-us-doctors/">Visualizing the Geographic Connections Between U.S. Doctors</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2012/12/03/building-data-driven-products-with-ruby-rubyconf-2012/">Building Data Driven Products With Ruby - RubyConf 2012</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2012/09/12/linear-regression-using-ruby/">Linear Regression Using Ruby</a>
+      </li>
+    
+  </ul>
+</section>
+
+<section>
+  <h1>Latest Tweets</h1>
+  <ul id="tweets">
+    <li class="loading">Status updating...</li>
+  </ul>
+  <script type="text/javascript">
+    $.domReady(function(){
+      getTwitterFeed("rweald", 4, false);
+    });
+  </script>
+  <script src="/javascripts/twitter.js" type="text/javascript"> </script>
+  
+    <a href="http://twitter.com/rweald" class="twitter-follow-button" data-show-count="false">Follow @rweald</a>
+  
+</section>
+
+
+  
+</aside>
+
 
     </div>
   </div>
