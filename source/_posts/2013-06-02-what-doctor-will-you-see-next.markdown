@@ -12,14 +12,14 @@ In my previous posts analyzing the [DocGraph](http://docgraph.org/?page_id=4) da
 directions from geographic analysis and instead focus on the different types of providers involved in patient referrals. In particular I wanted to take a crack at answering the question:
 "what type of doctor will you see next?"
 
-As always the first step to answering this question was to enrich the DocGraph data with data from the NPI database. In particular we need the taxonomy code for each of the nodes in the docgraph dataset.
+As always the first step to answering this question was to enrich the [DocGraph](http://docgraph.org/?page_id=4) data with data from the NPI database. In particular we need the taxonomy code for each of the nodes in the [DocGraph](http://docgraph.org/?page_id=4) dataset.
 After the we have added taxonomy code to all the nodes we then want to aggregate all referrals by taxonomy code to shrink the size of our dataset down into something that is more easily managed on a single machine.
-In order to achieve this goal with short iteration time I used [Amazon EMR](http://bit.ly/10RKWmf) and [Apache Hive](http://hive.apache.org/). The distributed nature of Hadoop and Hive enabled me to join the large
-NPI database with the even larger DocGraph dataset in under 20 minutes and cost only $1.04. You can find the Hive script I used on [Github](http://bit.ly/16Br1Qo).
+In order to achieve this goal with short iteration time I used [Amazon EMR](http://bit.ly/10RKWmf) and [Apache Hive](http://hive.apache.org/). The distributed nature of [Hadoop](http://hadoop.apache.org/) and [Hive](http://hive.apache.org/) enabled me to join the large
+NPI database with the even larger [DocGraph](http://docgraph.org/?page_id=4) dataset and perform the necessary aggregation all in under 20 minutes with a cost of only $1.04. You can find the Hive script I used to perform the join and aggregation on [Github](http://bit.ly/16Br1Qo).
 
 Once the Docgraph dataset had been aggregated by taxonomy code it was a simple matter of converting the taxonomy code to the human readable provider type. This was achieved using the [Health Care Provider Taxonomy dataset](http://www.nucc.org/index.php?option=com_content&view=article&id=14&Itemid=125) 
 and some R code that you can find on [Github](http://bit.ly/11O4FrY). A little bit more aggregation to account for the multiple levels of taxonomy codes, including specialization, and the data needed to answer our question was ready. I also removed any referrals where both nodes were of the same provider
-type as these are most likely noise in the dataset caused by the billing method through which the DocGraph data was collected.
+type as these are most likely noise in the dataset caused by the billing method through which the [DocGraph](http://docgraph.org/?page_id=4) data was collected.
 
 Below is a table showing the top 20 referrals between provider types. Not surprisingly we can see that the vast majority of patients are being referred for to Radiology 
 for various types of test such as X-rays, CT scans, and MRIs. They are then referred back to an _Internal Medicine_ doctor which I hypothesize is the physician acting as primary care.
@@ -202,7 +202,7 @@ related to _Internal Medicine - Cardiovascular Disease_.
 
 If you would like to see more than just the top 20 referrals by provider type you can download the complete list [here](http://bit.ly/19zzTER)
 
-Finally, I can't resist a sexy visualization that helps to convey the elegance of the DocGraph dataset. Below you will find a visualization of the
+Finally, I can't resist a sexy visualization that helps to convey the elegance of the [DocGraph](http://docgraph.org/?page_id=4) dataset. Below you will find a visualization of the
 referrals between provider types. The thickness of the edge reflects the number of patients that are referred between the two provider types.
 
 <a href="http://rweald-docgraph-analysis.s3.amazonaws.com/referrals-by-provider-graph.png">
