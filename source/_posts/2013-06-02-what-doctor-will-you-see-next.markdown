@@ -203,7 +203,7 @@ related to _Internal Medicine - Cardiovascular Disease_.
 If you would like to see more than just the top 20 referrals by provider type you can download the complete list [here](http://bit.ly/19zzTER)
 
 Finally, I can't resist a sexy visualization that helps to convey the elegance of the [DocGraph](http://docgraph.org/?page_id=4) dataset. Below you will find a visualization of the
-referrals between provider types. The thickness of the edge reflects the number of patients that are referred between the two provider types.
+referrals between provider types. The thickness of the edge reflects the number of patients that are referred between the two provider types. To create the visualization I used the open source [Gephi](http://gephi.org/) graph visualization platform.
 
 
 <span style="font-size: 0.8em; font-style: italic;">
@@ -214,4 +214,6 @@ referrals between provider types. The thickness of the edge reflects the number 
   <img src="http://rweald-docgraph-analysis.s3.amazonaws.com/referrals-by-provider-graph.png" width=800 height=800 alt="visualization of referrals by provider"/>
 </a>
 
-This visualization was created using the open source [Gephi](http://gephi.org/) graph visualization platform.
+I hope you have enjoyed my analysis. 
+I am always open to feedback and would love to collaborate on analysis related [DocGraph](http://strata.oreilly.com/2012/11/docgraph-open-social-doctor-data.html) or open health data in general.
+If you are interested in collaborating please email me ryan \[at\] weald.com or message me on twitter [@rweald](http://twitter.com/rweald)
