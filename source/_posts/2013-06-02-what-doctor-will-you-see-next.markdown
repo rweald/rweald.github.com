@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "What Doctor Will You See Next"
+title: "Analyzing DocGraph - What Type of Doctor Will You See Next?"
 date: 2013-06-02 09:29
 comments: true
 categories: data R docgraph
