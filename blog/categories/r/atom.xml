@@ -4,7 +4,7 @@
   <title><![CDATA[Category: R | Ryan Weald's Blog]]></title>
   <link href="http://rweald.github.com/blog/categories/r/atom.xml" rel="self"/>
   <link href="http://rweald.github.com/"/>
-  <updated>2013-06-02T11:19:09-07:00</updated>
+  <updated>2013-06-02T11:20:38-07:00</updated>
   <id>http://rweald.github.com/</id>
   <author>
     <name><![CDATA[Ryan Weald]]></name>
@@ -44,9 +44,9 @@ related to <em>Internal Medicine - Cardiovascular Disease</em>.</p>
 <table border=0 class="table table-bordered table-striped">
   <tbody> 
     <tr class= firstline > 
-      <th>type.x  </th>
-      <th>type.y  </th>
-      <th>num_patients</th> 
+      <th>Provider Type Seen First </th>
+      <th>Provider Type Seen Second </th>
+      <th>Number of Patients</th> 
     </tr> 
     <tr> 
       <td class=cellinside>Radiology - Diagnostic Radiology
