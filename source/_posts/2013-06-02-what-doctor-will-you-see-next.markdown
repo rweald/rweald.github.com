@@ -24,7 +24,7 @@ type as these are most likely noise in the dataset caused by the billing method 
 Below is a table showing the top 20 referrals between provider types. Not surprisingly we can see that the vast majority of patients are being referred for to Radiology 
 for various types of test such as X-rays, CT scans, and MRIs. They are then referred back to an _Internal Medicine_ doctor which I hypothesize is the physician acting as primary care.
 Another interesting, but not all that surprising, relationship is the number of referrals between _Emergency Medicine_ and _Internal Medicine_. Here I hypothesize that patients are being
-seen for some emergency medical condition and then receiving follow-up care from their primary care provider.
+seen for some emergency medical condition and then receive follow-up care from their primary care provider.
 
 Perhaps the most interesting observation from this top 20 list is the number of times _Internal Medicine - Cardiovascular Disease_ appears. I always knew that America had a problem with heart disease but I was still a bit surprised at the volume of this type of referral. I would love to hear if anyone else has a hypothesis for why there are so many referrals 
 related to _Internal Medicine - Cardiovascular Disease_.
@@ -204,6 +204,11 @@ If you would like to see more than just the top 20 referrals by provider type yo
 
 Finally, I can't resist a sexy visualization that helps to convey the elegance of the [DocGraph](http://docgraph.org/?page_id=4) dataset. Below you will find a visualization of the
 referrals between provider types. The thickness of the edge reflects the number of patients that are referred between the two provider types.
+
+
+<span style="font-size: 0.8em; font-style: italic;">
+  click on the image below to see the full size version
+</span>
 
 <a href="http://rweald-docgraph-analysis.s3.amazonaws.com/referrals-by-provider-graph.png">
   <img src="http://rweald-docgraph-analysis.s3.amazonaws.com/referrals-by-provider-graph.png" width=800 height=800 alt="visualization of referrals by provider"/>
