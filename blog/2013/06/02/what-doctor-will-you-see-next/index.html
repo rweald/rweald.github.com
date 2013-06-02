@@ -1,0 +1,495 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>Analyzing DocGraph - What Type of Doctor Will You See Next? - Ryan Weald's Blog</title>
+  <meta name="author" content="Ryan Weald">
+
+  
+  <meta name="description" content="In my previous posts analyzing the DocGraph dataset I have looked at
+the geographic connections between referrals and
+out of state referrals. In this &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://rweald.github.com/blog/2013/06/02/what-doctor-will-you-see-next/">
+  <link href="/favicon.png" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="/javascripts/ender.js"></script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <link href="/atom.xml" rel="alternate" title="Ryan Weald's Blog" type="application/atom+xml">
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+
+  
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-31780910-1']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+
+
+</head>
+
+<body   >
+  <header role="banner"><hgroup>
+  <h1><a href="/">Ryan Weald's Blog</a></h1>
+  
+</hgroup>
+
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+  
+<form action="http://google.com/search" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="q" value="site:rweald.github.com" />
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form>
+  
+<ul class="main-navigation">
+  <li><a href="/">Blog</a></li>
+  <li><a href="/about">About</a></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div>
+<article class="hentry" role="article">
+  
+  <header>
+    
+      <h1 class="entry-title">Analyzing DocGraph - What Type of Doctor Will You See Next?</h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-06-02T09:29:00-07:00" pubdate data-updated="true">Jun 2<span>nd</span>, 2013</time>
+        
+         | <a href="#disqus_thread">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+<div class="entry-content"><p>In my previous posts analyzing the <a href="http://docgraph.org/?page_id=4">DocGraph</a> dataset I have looked at
+<a href="http://isurfsoftware.com/blog/2012/12/13/visualizing-geographic-connections-between-us-doctors/">the geographic connections between referrals</a> and
+<a href="http://isurfsoftware.com/blog/2013/01/27/analyzing-out-of-state-patient-referrals-using-docgraph/">out of state referrals</a>. In this post I decided to change
+directions from geographic analysis and instead focus on the different types of providers involved in patient referrals. In particular I wanted to take a crack at answering the question:
+&#8220;what type of doctor will you see next?&#8221;</p>
+
+<p>As always the first step to answering this question was to enrich the <a href="http://docgraph.org/?page_id=4">DocGraph</a> data with data from the NPI database. In particular we need the taxonomy code for each of the nodes in the <a href="http://docgraph.org/?page_id=4">DocGraph</a> dataset.
+After the we have added taxonomy code to all the nodes we then want to aggregate all referrals by taxonomy code to shrink the size of our dataset down into something that is more easily managed on a single machine.
+In order to achieve this goal with short iteration time I used <a href="http://bit.ly/10RKWmf">Amazon EMR</a> and <a href="http://hive.apache.org/">Apache Hive</a>. The distributed nature of <a href="http://hadoop.apache.org/">Hadoop</a> and <a href="http://hive.apache.org/">Hive</a> enabled me to join the large
+NPI database with the even larger <a href="http://docgraph.org/?page_id=4">DocGraph</a> dataset and perform the necessary aggregation all in under 20 minutes with a cost of only $1.04. You can find the Hive script I used to perform the join and aggregation on <a href="http://bit.ly/16Br1Qo">Github</a>.</p>
+
+<p>Once the Docgraph dataset had been aggregated by taxonomy code it was a simple matter of converting the taxonomy code to the human readable provider type. This was achieved using the <a href="http://www.nucc.org/index.php?option=com_content&amp;view=article&amp;id=14&amp;Itemid=125">Health Care Provider Taxonomy dataset</a>
+and some R code that you can find on <a href="http://bit.ly/11O4FrY">Github</a>. A little bit more aggregation to account for the multiple levels of taxonomy codes, including specialization, and the data needed to answer our question was ready. I also removed any referrals where both nodes were of the same provider
+type as these are most likely noise in the dataset caused by the billing method through which the <a href="http://docgraph.org/?page_id=4">DocGraph</a> data was collected.</p>
+
+<p>Below is a table showing the top 20 referrals between provider types. Not surprisingly we can see that the vast majority of patients are being referred for to Radiology
+for various types of test such as X-rays, CT scans, and MRIs. They are then referred back to an <em>Internal Medicine</em> doctor which I hypothesize is the physician acting as primary care.
+Another interesting, but not all that surprising, relationship is the number of referrals between <em>Emergency Medicine</em> and <em>Internal Medicine</em>. Here I hypothesize that patients are being
+seen for some emergency medical condition and then receive follow-up care from their primary care provider.</p>
+
+<p>Perhaps the most interesting observation from this top 20 list is the number of times <em>Internal Medicine - Cardiovascular Disease</em> appears. I always knew that America had a problem with heart disease but I was still a bit surprised at the volume of this type of referral. I would love to hear if anyone else has a hypothesis for why there are so many referrals
+related to <em>Internal Medicine - Cardiovascular Disease</em>.</p>
+
+<table border=0 class="table table-bordered table-striped">
+  <tbody> 
+    <tr class= firstline > 
+      <th>type.x  </th>
+      <th>type.y  </th>
+      <th>num_patients</th> 
+    </tr> 
+    <tr> 
+      <td class=cellinside>Radiology - Diagnostic Radiology
+      </td>
+      <td class=cellinside>Internal Medicine - General
+      </td>
+      <td class=cellinside>115,602,860
+    </td></tr>
+
+    <tr> 
+      <td class=cellinside>Internal Medicine - General
+      </td>
+      <td class=cellinside>Radiology - Diagnostic Radiology
+      </td>
+      <td class=cellinside> 91,632,055
+    </td></tr>
+
+    <tr> 
+      <td class=cellinside>Internal Medicine - Cardiovascular Disease
+      </td>
+      <td class=cellinside>Internal Medicine - General
+      </td>
+      <td class=cellinside> 54,260,749
+    </td></tr>
+
+    <tr> 
+      <td class=cellinside>Radiology - Diagnostic Radiology
+      </td>
+      <td class=cellinside>Internal Medicine - Cardiovascular Disease
+      </td>
+      <td class=cellinside> 49,406,691
+    </td></tr>
+
+    <tr> 
+      <td class=cellinside>Internal Medicine - Cardiovascular Disease
+      </td>
+      <td class=cellinside>Radiology - Diagnostic Radiology
+      </td>
+      <td class=cellinside> 47,820,945
+    </td></tr>
+
+    <tr> 
+      <td class=cellinside>Internal Medicine - General
+      </td>
+      <td class=cellinside>Internal Medicine - Cardiovascular Disease
+      </td>
+      <td class=cellinside> 47,351,852
+    </td></tr>
+
+    <tr> 
+      <td class=cellinside>Radiology - Diagnostic Radiology
+      </td>
+      <td class=cellinside>Family Medicine - General
+      </td>
+      <td class=cellinside> 45,078,839
+    </td></tr>
+
+    <tr> 
+      <td class=cellinside>Family Medicine - General
+      </td>
+      <td class=cellinside>Radiology - Diagnostic Radiology
+      </td>
+      <td class=cellinside> 40,181,846
+    </td></tr>
+
+    <tr> 
+      <td class=cellinside>Emergency Medicine - General
+      </td>
+      <td class=cellinside>Radiology - Diagnostic Radiology
+      </td>
+      <td class=cellinside> 33,797,598
+    </td></tr>
+
+    <tr> 
+      <td class=cellinside>Emergency Medicine - General
+      </td>
+      <td class=cellinside>Internal Medicine - General
+      </td>
+      <td class=cellinside> 32,236,140
+    </td></tr>
+
+    <tr> 
+      <td class=cellinside>Radiology - Diagnostic Radiology
+      </td>
+      <td class=cellinside>Specialist - General
+      </td>
+      <td class=cellinside> 27,710,610
+    </td></tr>
+
+    <tr> 
+      <td class=cellinside>Specialist - General
+      </td>
+      <td class=cellinside>Internal Medicine - General
+      </td>
+      <td class=cellinside> 26,478,301
+    </td></tr>
+
+    <tr> 
+      <td class=cellinside>Internal Medicine - General
+      </td>
+      <td class=cellinside>Specialist - General
+      </td>
+      <td class=cellinside> 24,876,128
+    </td></tr>
+
+    <tr> 
+      <td class=cellinside>Specialist - General
+      </td>
+      <td class=cellinside>Radiology - Diagnostic Radiology
+      </td>
+      <td class=cellinside> 23,929,823
+    </td></tr>
+
+    <tr> 
+      <td class=cellinside>Radiology - Diagnostic Radiology
+      </td>
+      <td class=cellinside>Emergency Medicine - General
+      </td>
+      <td class=cellinside> 23,424,750
+    </td></tr>
+
+    <tr> 
+      <td class=cellinside>Internal Medicine - General
+      </td>
+      <td class=cellinside>Family Medicine - General
+      </td>
+      <td class=cellinside> 22,561,522
+    </td></tr>
+
+    <tr> 
+      <td class=cellinside>Radiology - Diagnostic Radiology
+      </td>
+      <td class=cellinside>Internal Medicine - Nephrology
+      </td>
+      <td class=cellinside> 22,479,825
+    </td></tr>
+
+    <tr> 
+      <td class=cellinside>Radiology - Diagnostic Radiology
+      </td>
+      <td class=cellinside>Internal Medicine - Pulmonary Disease
+      </td>
+      <td class=cellinside> 21,796,186
+    </td></tr>
+
+    <tr> 
+      <td class=cellinside>Family Medicine - General
+      </td>
+      <td class=cellinside>Internal Medicine - General
+      </td>
+      <td class=cellinside> 20,872,086
+    </td></tr>
+
+    <tr> 
+      <td class=cellinside>Internal Medicine - Cardiovascular Disease
+      </td>
+      <td class=cellinside>Family Medicine - General
+      </td>
+      <td class=cellinside> 19,047,613
+    </td></tr>
+
+  </tbody>
+</table>
+
+
+<p>If you would like to see more than just the top 20 referrals by provider type you can download the complete list <a href="http://bit.ly/19zzTER">here</a></p>
+
+<p>Finally, I can&#8217;t resist a sexy visualization that helps to convey the elegance of the <a href="http://docgraph.org/?page_id=4">DocGraph</a> dataset. Below you will find a visualization of the
+referrals between provider types. The thickness of the edge reflects the number of patients that are referred between the two provider types. To create the visualization I used the open source <a href="http://gephi.org/">Gephi</a> graph visualization platform.</p>
+
+<p><span style="font-size: 0.8em; font-style: italic;">
+  click on the image below to see the full size version
+</span></p>
+
+<p><a href="http://rweald-docgraph-analysis.s3.amazonaws.com/referrals-by-provider-graph.png">
+  <img src="http://rweald-docgraph-analysis.s3.amazonaws.com/referrals-by-provider-graph.png" width=800 height=800 alt="visualization of referrals by provider"/>
+</a></p>
+
+<p>I hope you have enjoyed my analysis.
+I am always open to feedback and would love to collaborate on analysis related to <a href="http://strata.oreilly.com/2012/11/docgraph-open-social-doctor-data.html">DocGraph</a> or open health data in general.
+If you are interested in collaborating please email me ryan [at] weald.com or message me on twitter <a href="http://twitter.com/rweald">@rweald</a></p>
+</div>
+
+
+  <footer>
+    <p class="meta">
+      
+  
+
+<span class="byline author vcard">Posted by <span class="fn">Ryan Weald</span></span>
+
+      
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-06-02T09:29:00-07:00" pubdate data-updated="true">Jun 2<span>nd</span>, 2013</time>
+      
+
+<span class="categories">
+  
+    <a class='category' href='/blog/categories/r/'>R</a>, <a class='category' href='/blog/categories/data/'>data</a>, <a class='category' href='/blog/categories/docgraph/'>docgraph</a>
+  
+</span>
+
+
+    </p>
+    
+      <div class="sharing">
+  
+  
+  
+</div>
+
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/blog/2013/04/29/la-rubyconf-2013-building-recommendation-systems-in-ruby/" title="Previous Post: LA RubyConf 2013 - Building Recommendation Systems in Ruby">&laquo; LA RubyConf 2013 - Building Recommendation Systems in Ruby</a>
+      
+      
+    </p>
+  </footer>
+</article>
+
+  <section>
+    <h1>Comments</h1>
+    <div id="disqus_thread" aria-live="polite"><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+  </section>
+
+</div>
+
+<aside class="sidebar">
+  
+    <section>
+  <h1>About Me</h1>
+  <p>
+    Hi I'm Ryan. I am currently a data scientist 
+    at <a href="http://sharethrough.com">Sharethrough</a>.
+    My main interests lie in using data and machine learning to improve peoples lives. 
+    I'm particularly interesting in health care and data driven businesses, such as advertising.
+  </p>
+  <p>
+    You can find me online at the following locations:
+    <ul id="about_me_list">
+    	<li>
+    		<a href="http://twitter.com/rweald">Twitter</a>
+    	</li>
+    	<li>
+    		<a href="http://www.linkedin.com/in/ryanweald/">LinkedIn</a>
+    	</li>
+    	<li>
+    		<a href="http://github.com/rweald">Github</a>
+    	</li>
+    </ul>
+    </p>
+</section>
+<section>
+  <h1>Recent Posts</h1>
+  <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2013/06/02/what-doctor-will-you-see-next/">Analyzing DocGraph - What Type of Doctor Will You See Next?</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/04/29/la-rubyconf-2013-building-recommendation-systems-in-ruby/">LA RubyConf 2013 - Building Recommendation Systems in Ruby</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/01/27/analyzing-out-of-state-patient-referrals-using-docgraph/">Analyzing Out-of-State Patient Referrals Using DocGraph</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2012/12/13/visualizing-geographic-connections-between-us-doctors/">Visualizing the Geographic Connections Between U.S. Doctors</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2012/12/03/building-data-driven-products-with-ruby-rubyconf-2012/">Building Data Driven Products With Ruby - RubyConf 2012</a>
+      </li>
+    
+  </ul>
+</section>
+
+<section>
+  <h1>Latest Tweets</h1>
+  <ul id="tweets">
+    <li class="loading">Status updating...</li>
+  </ul>
+  <script type="text/javascript">
+    $.domReady(function(){
+      getTwitterFeed("rweald", 4, false);
+    });
+  </script>
+  <script src="/javascripts/twitter.js" type="text/javascript"> </script>
+  
+    <a href="http://twitter.com/rweald" class="twitter-follow-button" data-show-count="false">Follow @rweald</a>
+  
+</section>
+
+
+  
+</aside>
+
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+  Copyright &copy; 2013 - Ryan Weald -
+  <span class="credit" style="font-size: 0.8em;">Powered by <a href="http://octopress.org">Octopress</a>. Design by <a href="http://octopressthemes.com">Octopress Themes</a>.</span>
+</p>
+
+</footer>
+  
+
+<script type="text/javascript">
+      var disqus_shortname = 'isurfsoftware';
+      
+        
+        // var disqus_developer = 1;
+        var disqus_identifier = 'http://rweald.github.com/blog/2013/06/02/what-doctor-will-you-see-next/';
+        var disqus_url = 'http://rweald.github.com/blog/2013/06/02/what-doctor-will-you-see-next/';
+        var disqus_script = 'embed.js';
+      
+    (function () {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = 'http://' + disqus_shortname + '.disqus.com/' + disqus_script;
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    }());
+</script>
+
+
+
+
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = 'http://platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+
+</body>
+</html>
