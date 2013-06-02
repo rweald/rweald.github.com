@@ -215,5 +215,5 @@ referrals between provider types. The thickness of the edge reflects the number 
 </a>
 
 I hope you have enjoyed my analysis. 
-I am always open to feedback and would love to collaborate on analysis related [DocGraph](http://strata.oreilly.com/2012/11/docgraph-open-social-doctor-data.html) or open health data in general.
+I am always open to feedback and would love to collaborate on analysis related to [DocGraph](http://strata.oreilly.com/2012/11/docgraph-open-social-doctor-data.html) or open health data in general.
 If you are interested in collaborating please email me ryan \[at\] weald.com or message me on twitter [@rweald](http://twitter.com/rweald)
