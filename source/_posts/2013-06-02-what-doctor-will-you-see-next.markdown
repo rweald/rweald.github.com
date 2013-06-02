@@ -33,9 +33,9 @@ related to _Internal Medicine - Cardiovascular Disease_.
 <table border=0 class="table table-bordered table-striped">
   <tbody> 
     <tr class= firstline > 
-      <th>type.x  </th>
-      <th>type.y  </th>
-      <th>num_patients</th> 
+      <th>Provider Type Seen First </th>
+      <th>Provider Type Seen Second </th>
+      <th>Number of Patients</th> 
     </tr> 
     <tr> 
       <td class=cellinside>Radiology - Diagnostic Radiology
