@@ -3,7 +3,7 @@ layout: post
 title: "LA RubyConf 2013 - Building Recommendation Systems in Ruby"
 date: 2013-04-29 08:06
 comments: true
-categories: ruby machine-learning
+categories: talk ruby machine-learning
 ---
 
 Below is the presentation I gave at LA RubyConf 2013 titled, "_People who liked this talk also liked … Building Recommendation Systems Using Ruby_"
