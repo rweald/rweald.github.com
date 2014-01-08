@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[Category: machine-learning | Ryan Weald's Blog]]></title>
-  <link href="http://rweald.github.com/blog/categories/machine-learning/atom.xml" rel="self"/>
+  <title><![CDATA[Category: talk | Ryan Weald's Blog]]></title>
+  <link href="http://rweald.github.com/blog/categories/talk/atom.xml" rel="self"/>
   <link href="http://rweald.github.com/"/>
   <updated>2014-01-07T17:57:49-08:00</updated>
   <id>http://rweald.github.com/</id>
@@ -28,6 +28,20 @@
 <script async class="speakerdeck-embed" data-id="2438b36061a7013038f7123139414c5a" data-ratio="1.2994923857868" src="http://rweald.github.com//speakerdeck.com/assets/embed.js"></script>
 
 
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Building Data Driven Products With Ruby - RubyConf 2012]]></title>
+    <link href="http://rweald.github.com/blog/2012/12/03/building-data-driven-products-with-ruby-rubyconf-2012/"/>
+    <updated>2012-12-03T20:36:00-08:00</updated>
+    <id>http://rweald.github.com/blog/2012/12/03/building-data-driven-products-with-ruby-rubyconf-2012</id>
+    <content type="html"><![CDATA[<p>Below is the presentation I gave at RubyConf 2012 titled, "Building Data Driven Products With Ruby."</p>
+
+<p>You can view the slides on <a href="https://speakerdeck.com/rweald/building-data-driven-products-with-ruby">Speaker Deck</a></p>
+
+<iframe width="560" height="315" src="http://www.youtube.com/embed/XIqRdB5HCYM" frameborder="0" allowfullscreen></iframe>
 
 ]]></content>
   </entry>
