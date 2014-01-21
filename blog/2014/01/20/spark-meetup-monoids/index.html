@@ -5,11 +5,11 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>LA RubyConf 2013 - Building Recommendation Systems in Ruby - Ryan Weald's Blog</title>
+  <title>Spark Meetup: Monoids, Store, and Dependency Injection - Abstractions for Spark Streaming Jobs - Ryan Weald's Blog</title>
   <meta name="author" content="Ryan Weald">
 
   
-  <meta name="description" content="Below is the presentation I gave at LA RubyConf 2013 titled, &#8221;People who liked this talk also liked … Building Recommendation Systems Using &hellip;">
+  <meta name="description" content="Below is the presentation I gave at the Spark User Meetup on 01/16/2014 Monoids, Store, and Dependency Injection - Abstractions for Spark Streaming &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -18,7 +18,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://rweald.github.com/blog/2013/04/29/la-rubyconf-2013-building-recommendation-systems-in-ruby/">
+  <link rel="canonical" href="http://rweald.github.com/blog/2014/01/20/spark-meetup-monoids/">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <script src="/javascripts/modernizr-2.0.js"></script>
@@ -78,7 +78,7 @@
   
   <header>
     
-      <h1 class="entry-title">LA RubyConf 2013 - Building Recommendation Systems in Ruby</h1>
+      <h1 class="entry-title">Spark Meetup: Monoids, Store, and Dependency Injection - Abstractions for Spark Streaming Jobs</h1>
     
     
       <p class="meta">
@@ -94,7 +94,7 @@
   
 
 
-<time datetime="2013-04-29T08:06:00-07:00" pubdate data-updated="true">Apr 29<span>th</span>, 2013</time>
+<time datetime="2014-01-20T18:41:00-08:00" pubdate data-updated="true">Jan 20<span>th</span>, 2014</time>
         
          | <a href="#disqus_thread">Comments</a>
         
@@ -103,16 +103,22 @@
   </header>
 
 
-<div class="entry-content"><p>Below is the presentation I gave at LA RubyConf 2013 titled, &#8221;<em>People who liked this talk also liked … Building Recommendation Systems Using Ruby</em>&#8221;</p>
+<div class="entry-content"><p>Below is the presentation I gave at the Spark User Meetup on 01/16/2014</p>
 
-<iframe width="560" height="315" src="http://www.youtube.com/embed/fh1y1BUTJxE" frameborder="0" allowfullscreen></iframe>
+<h3>Monoids, Store, and Dependency Injection - Abstractions for Spark Streaming Jobs</h3>
+
+<h4>Abstract:</h4>
+
+<p>One of the most difficult aspects of deploying spark streaming as part of your technology stack is maintaining all the code associated
+with stream processing jobs. In this talk I will discuss the tools and techniques that Sharethrough has found most useful for maintaining a large number of spark streaming jobs.
+We will look in detail at the way Monoids and Twitter&#8217;s Algebrid library can be used to create generic aggregations.
+ As well as the way we can create generic interfaces for writing the results of streaming jobs to multiple data stores.
+ Finally we will look at the way dependency injection can be used to tie all the pieces together, enabling raping development of new streaming jobs.</p>
+
+<iframe width="560" height="315" src="http://www.youtube.com/embed/C7gWtxelYNM" frameborder="0" allowfullscreen></iframe>
 
 
-
-
-<script async class="speakerdeck-embed" data-id="2438b36061a7013038f7123139414c5a" data-ratio="1.2994923857868" src="//speakerdeck.com/assets/embed.js"></script>
-
-
+<script async class="speakerdeck-embed" data-id="916d7bc061cf0131881c3e1e04cfd46e" data-ratio="1.2994923857868" src="//speakerdeck.com/assets/embed.js"></script>
 
 </div>
 
@@ -136,12 +142,12 @@
   
 
 
-<time datetime="2013-04-29T08:06:00-07:00" pubdate data-updated="true">Apr 29<span>th</span>, 2013</time>
+<time datetime="2014-01-20T18:41:00-08:00" pubdate data-updated="true">Jan 20<span>th</span>, 2014</time>
       
 
 <span class="categories">
   
-    <a class='category' href='/blog/categories/machine-learning/'>machine-learning</a>, <a class='category' href='/blog/categories/ruby/'>ruby</a>, <a class='category' href='/blog/categories/talk/'>talk</a>
+    <a class='category' href='/blog/categories/scala/'>Scala</a>, <a class='category' href='/blog/categories/data/'>data</a>, <a class='category' href='/blog/categories/distributed-systems/'>distributed-systems</a>, <a class='category' href='/blog/categories/talk/'>talk</a>
   
 </span>
 
@@ -157,10 +163,8 @@
     
     <p class="meta">
       
-        <a class="basic-alignment left" href="/blog/2013/01/27/analyzing-out-of-state-patient-referrals-using-docgraph/" title="Previous Post: Analyzing Out-of-State Patient Referrals Using DocGraph">&laquo; Analyzing Out-of-State Patient Referrals Using DocGraph</a>
+        <a class="basic-alignment left" href="/blog/2014/01/11/spark-summit-2013-productionalizing-spark-streaming/" title="Previous Post: Spark Summit 2013 - Productionalizing Spark Streaming">&laquo; Spark Summit 2013 - Productionalizing Spark Streaming</a>
       
-      
-        <a class="basic-alignment right" href="/blog/2013/06/02/what-doctor-will-you-see-next/" title="Next Post: Analyzing DocGraph - What Type of Doctor Will You See Next?">Analyzing DocGraph - What Type of Doctor Will You See Next? &raquo;</a>
       
     </p>
   </footer>
@@ -245,8 +249,8 @@
       
         
         // var disqus_developer = 1;
-        var disqus_identifier = 'http://rweald.github.com/blog/2013/04/29/la-rubyconf-2013-building-recommendation-systems-in-ruby/';
-        var disqus_url = 'http://rweald.github.com/blog/2013/04/29/la-rubyconf-2013-building-recommendation-systems-in-ruby/';
+        var disqus_identifier = 'http://rweald.github.com/blog/2014/01/20/spark-meetup-monoids/';
+        var disqus_url = 'http://rweald.github.com/blog/2014/01/20/spark-meetup-monoids/';
         var disqus_script = 'embed.js';
       
     (function () {

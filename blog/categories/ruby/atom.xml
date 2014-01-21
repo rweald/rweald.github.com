@@ -4,7 +4,7 @@
   <title><![CDATA[Category: ruby | Ryan Weald's Blog]]></title>
   <link href="http://rweald.github.com/blog/categories/ruby/atom.xml" rel="self"/>
   <link href="http://rweald.github.com/"/>
-  <updated>2014-01-07T18:00:40-08:00</updated>
+  <updated>2014-01-20T18:46:16-08:00</updated>
   <id>http://rweald.github.com/</id>
   <author>
     <name><![CDATA[Ryan Weald]]></name>
@@ -57,6 +57,18 @@
 
 <p>I walk you through the basics of
 linear regression, and show you how you can perform <em>simple linear regression</em> using Ruby</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[SDRuby Lightning Talk - Give Yourself Some Backbone]]></title>
+    <link href="http://rweald.github.com/blog/2011/07/16/sdruby-lightning-talk-give-yourself-some-backbone/"/>
+    <updated>2011-07-16T11:02:00-07:00</updated>
+    <id>http://rweald.github.com/blog/2011/07/16/sdruby-lightning-talk-give-yourself-some-backbone</id>
+    <content type="html"><![CDATA[<p>Below is a lightening talk I gave at an SD Ruby Meetup. It was my first every tech presentation to a public industry audience.</p>
+
+<script async class="speakerdeck-embed" data-id="499a83b05d21013169236e4c83706996" data-ratio="1.2994923857868" src="http://rweald.github.com//speakerdeck.com/assets/embed.js"></script>
+
 ]]></content>
   </entry>
   

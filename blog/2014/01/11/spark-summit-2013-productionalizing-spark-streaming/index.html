@@ -5,11 +5,11 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>LA RubyConf 2013 - Building Recommendation Systems in Ruby - Ryan Weald's Blog</title>
+  <title>Spark Summit 2013 - Productionalizing Spark Streaming - Ryan Weald's Blog</title>
   <meta name="author" content="Ryan Weald">
 
   
-  <meta name="description" content="Below is the presentation I gave at LA RubyConf 2013 titled, &#8221;People who liked this talk also liked … Building Recommendation Systems Using &hellip;">
+  <meta name="description" content="Below is the presentation I gave at Spark Summit 2013 Productionalizing Spark Streaming At Sharethrough we have deployed Spark to our production &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -18,7 +18,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://rweald.github.com/blog/2013/04/29/la-rubyconf-2013-building-recommendation-systems-in-ruby/">
+  <link rel="canonical" href="http://rweald.github.com/blog/2014/01/11/spark-summit-2013-productionalizing-spark-streaming/">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <script src="/javascripts/modernizr-2.0.js"></script>
@@ -78,7 +78,7 @@
   
   <header>
     
-      <h1 class="entry-title">LA RubyConf 2013 - Building Recommendation Systems in Ruby</h1>
+      <h1 class="entry-title">Spark Summit 2013 - Productionalizing Spark Streaming</h1>
     
     
       <p class="meta">
@@ -94,7 +94,7 @@
   
 
 
-<time datetime="2013-04-29T08:06:00-07:00" pubdate data-updated="true">Apr 29<span>th</span>, 2013</time>
+<time datetime="2014-01-11T10:54:00-08:00" pubdate data-updated="true">Jan 11<span>th</span>, 2014</time>
         
          | <a href="#disqus_thread">Comments</a>
         
@@ -103,16 +103,18 @@
   </header>
 
 
-<div class="entry-content"><p>Below is the presentation I gave at LA RubyConf 2013 titled, &#8221;<em>People who liked this talk also liked … Building Recommendation Systems Using Ruby</em>&#8221;</p>
+<div class="entry-content"><p>Below is the presentation I gave at <a href="http://spark-summit.org/summit-2013/">Spark Summit 2013</a></p>
 
-<iframe width="560" height="315" src="http://www.youtube.com/embed/fh1y1BUTJxE" frameborder="0" allowfullscreen></iframe>
+<h3>Productionalizing Spark Streaming</h3>
+
+<p>At Sharethrough we have deployed Spark to our production environment to support several user facing product features. While building these features we uncovered a consistent set of challenges across multiple streaming jobs. By addressing these challenges you can speed up development of future streaming jobs. In this talk we will discuss the 3 major challenges we encountered while developing production streaming jobs and how we overcame them.</p>
+
+<p>First we will look at how to write jobs to ensure fault tolerance since streaming jobs need to run 24/7 even under failure conditions. Second we will look at the programming abstractions we created using functional programming and existing libraries. Finally we will look at the way we test all the pieces of a job –from manipulating data through writing to external databases– to give us confidence in our code before we deploy to production</p>
+
+<iframe width="560" height="315" src="http://www.youtube.com/embed/OhpjgaBVUtU" frameborder="0" allowfullscreen></iframe>
 
 
-
-
-<script async class="speakerdeck-embed" data-id="2438b36061a7013038f7123139414c5a" data-ratio="1.2994923857868" src="//speakerdeck.com/assets/embed.js"></script>
-
-
+<script async class="speakerdeck-embed" data-id="a45f30f03dd70131600346451c48010b" data-ratio="1.2994923857868" src="//speakerdeck.com/assets/embed.js"></script>
 
 </div>
 
@@ -136,12 +138,12 @@
   
 
 
-<time datetime="2013-04-29T08:06:00-07:00" pubdate data-updated="true">Apr 29<span>th</span>, 2013</time>
+<time datetime="2014-01-11T10:54:00-08:00" pubdate data-updated="true">Jan 11<span>th</span>, 2014</time>
       
 
 <span class="categories">
   
-    <a class='category' href='/blog/categories/machine-learning/'>machine-learning</a>, <a class='category' href='/blog/categories/ruby/'>ruby</a>, <a class='category' href='/blog/categories/talk/'>talk</a>
+    <a class='category' href='/blog/categories/scala/'>Scala</a>, <a class='category' href='/blog/categories/data/'>data</a>, <a class='category' href='/blog/categories/distributed-systems/'>distributed-systems</a>, <a class='category' href='/blog/categories/talk/'>talk</a>
   
 </span>
 
@@ -157,10 +159,10 @@
     
     <p class="meta">
       
-        <a class="basic-alignment left" href="/blog/2013/01/27/analyzing-out-of-state-patient-referrals-using-docgraph/" title="Previous Post: Analyzing Out-of-State Patient Referrals Using DocGraph">&laquo; Analyzing Out-of-State Patient Referrals Using DocGraph</a>
+        <a class="basic-alignment left" href="/blog/2013/06/02/what-doctor-will-you-see-next/" title="Previous Post: Analyzing DocGraph - What Type of Doctor Will You See Next?">&laquo; Analyzing DocGraph - What Type of Doctor Will You See Next?</a>
       
       
-        <a class="basic-alignment right" href="/blog/2013/06/02/what-doctor-will-you-see-next/" title="Next Post: Analyzing DocGraph - What Type of Doctor Will You See Next?">Analyzing DocGraph - What Type of Doctor Will You See Next? &raquo;</a>
+        <a class="basic-alignment right" href="/blog/2014/01/20/spark-meetup-monoids/" title="Next Post: Spark Meetup: Monoids, Store, and Dependency Injection - Abstractions for Spark Streaming Jobs">Spark Meetup: Monoids, Store, and Dependency Injection - Abstractions for Spark Streaming Jobs &raquo;</a>
       
     </p>
   </footer>
@@ -245,8 +247,8 @@
       
         
         // var disqus_developer = 1;
-        var disqus_identifier = 'http://rweald.github.com/blog/2013/04/29/la-rubyconf-2013-building-recommendation-systems-in-ruby/';
-        var disqus_url = 'http://rweald.github.com/blog/2013/04/29/la-rubyconf-2013-building-recommendation-systems-in-ruby/';
+        var disqus_identifier = 'http://rweald.github.com/blog/2014/01/11/spark-summit-2013-productionalizing-spark-streaming/';
+        var disqus_url = 'http://rweald.github.com/blog/2014/01/11/spark-summit-2013-productionalizing-spark-streaming/';
         var disqus_script = 'embed.js';
       
     (function () {

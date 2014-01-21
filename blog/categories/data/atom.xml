@@ -4,7 +4,7 @@
   <title><![CDATA[Category: data | Ryan Weald's Blog]]></title>
   <link href="http://rweald.github.com/blog/categories/data/atom.xml" rel="self"/>
   <link href="http://rweald.github.com/"/>
-  <updated>2014-01-07T18:00:40-08:00</updated>
+  <updated>2014-01-20T18:46:16-08:00</updated>
   <id>http://rweald.github.com/</id>
   <author>
     <name><![CDATA[Ryan Weald]]></name>
@@ -12,6 +12,52 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Spark Meetup: Monoids, Store, and Dependency Injection - Abstractions for Spark Streaming Jobs]]></title>
+    <link href="http://rweald.github.com/blog/2014/01/20/spark-meetup-monoids/"/>
+    <updated>2014-01-20T18:41:00-08:00</updated>
+    <id>http://rweald.github.com/blog/2014/01/20/spark-meetup-monoids</id>
+    <content type="html"><![CDATA[<p>Below is the presentation I gave at the Spark User Meetup on 01/16/2014</p>
+
+<h3>Monoids, Store, and Dependency Injection - Abstractions for Spark Streaming Jobs</h3>
+
+<h4>Abstract:</h4>
+
+<p>One of the most difficult aspects of deploying spark streaming as part of your technology stack is maintaining all the code associated
+with stream processing jobs. In this talk I will discuss the tools and techniques that Sharethrough has found most useful for maintaining a large number of spark streaming jobs.
+We will look in detail at the way Monoids and Twitter's Algebrid library can be used to create generic aggregations.
+ As well as the way we can create generic interfaces for writing the results of streaming jobs to multiple data stores.
+ Finally we will look at the way dependency injection can be used to tie all the pieces together, enabling raping development of new streaming jobs.</p>
+
+<iframe width="560" height="315" src="http://www.youtube.com/embed/C7gWtxelYNM" frameborder="0" allowfullscreen></iframe>
+
+
+<script async class="speakerdeck-embed" data-id="916d7bc061cf0131881c3e1e04cfd46e" data-ratio="1.2994923857868" src="http://rweald.github.com//speakerdeck.com/assets/embed.js"></script>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Spark Summit 2013 - Productionalizing Spark Streaming]]></title>
+    <link href="http://rweald.github.com/blog/2014/01/11/spark-summit-2013-productionalizing-spark-streaming/"/>
+    <updated>2014-01-11T10:54:00-08:00</updated>
+    <id>http://rweald.github.com/blog/2014/01/11/spark-summit-2013-productionalizing-spark-streaming</id>
+    <content type="html"><![CDATA[<p>Below is the presentation I gave at <a href="http://spark-summit.org/summit-2013/">Spark Summit 2013</a></p>
+
+<h3>Productionalizing Spark Streaming</h3>
+
+<p>At Sharethrough we have deployed Spark to our production environment to support several user facing product features. While building these features we uncovered a consistent set of challenges across multiple streaming jobs. By addressing these challenges you can speed up development of future streaming jobs. In this talk we will discuss the 3 major challenges we encountered while developing production streaming jobs and how we overcame them.</p>
+
+<p>First we will look at how to write jobs to ensure fault tolerance since streaming jobs need to run 24/7 even under failure conditions. Second we will look at the programming abstractions we created using functional programming and existing libraries. Finally we will look at the way we test all the pieces of a job –from manipulating data through writing to external databases– to give us confidence in our code before we deploy to production</p>
+
+<iframe width="560" height="315" src="http://www.youtube.com/embed/OhpjgaBVUtU" frameborder="0" allowfullscreen></iframe>
+
+
+<script async class="speakerdeck-embed" data-id="a45f30f03dd70131600346451c48010b" data-ratio="1.2994923857868" src="http://rweald.github.com//speakerdeck.com/assets/embed.js"></script>
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Analyzing DocGraph - What Type of Doctor Will You See Next?]]></title>
