@@ -5,12 +5,11 @@ comments: false
 sharing: false
 footer: false
 ---
-<img src="/images/rubyconf.jpg" alt="" height=350 width=180/>
+<img src="/images/profile.jpg" alt="" height=350 width=180/>
 
-I am a data scientist at
-[Sharethrough](http://sharethrough.com) where I use data to rid the internet of disruptive advertising. 
-I studied Computer Science and Bioinformatics at UCSD before dropping out to try and make my mark on the world. 
-In my spare time I contribute to open source, hack on healthcare, and dodge sharks while surfing in Northern California.
+I'm currently pursing my entrepreneurial interests building data products to help people understand their bodies and eliminate chronic disease before it begins.
+I'm passionate about machine learning, programming languages, software engineering, startups, and using data to improve peoples lives.
+In my spare time I: climb indoor rocks, play tennis, hack on open healthcare data, and dodge sharks while surfing in Northern California.
 
 <p style="margin-bottom: 3px;">
   You can find me online at the following locations:
