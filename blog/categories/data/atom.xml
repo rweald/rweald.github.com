@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: data | Ryan Weald's Blog]]></title>
-  <link href="http://rweald.github.com/blog/categories/data/atom.xml" rel="self"/>
-  <link href="http://rweald.github.com/"/>
-  <updated>2014-02-12T11:33:30-08:00</updated>
-  <id>http://rweald.github.com/</id>
+  <link href="http://rweald.github.io/blog/categories/data/atom.xml" rel="self"/>
+  <link href="http://rweald.github.io/"/>
+  <updated>2014-11-18T11:36:40-08:00</updated>
+  <id>http://rweald.github.io/</id>
   <author>
     <name><![CDATA[Ryan Weald]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[Spark Meetup: Monoids, Store, and Dependency Injection - Abstractions for Spark Streaming Jobs]]></title>
-    <link href="http://rweald.github.com/blog/2014/01/20/spark-meetup-monoids/"/>
+    <link href="http://rweald.github.io/blog/2014/01/20/spark-meetup-monoids/"/>
     <updated>2014-01-20T18:41:00-08:00</updated>
-    <id>http://rweald.github.com/blog/2014/01/20/spark-meetup-monoids</id>
+    <id>http://rweald.github.io/blog/2014/01/20/spark-meetup-monoids</id>
     <content type="html"><![CDATA[<p>Below is the presentation I gave at the Spark User Meetup on 01/16/2014</p>
 
 <h3>Monoids, Store, and Dependency Injection - Abstractions for Spark Streaming Jobs</h3>
@@ -33,16 +33,16 @@ We will look in detail at the way Monoids and Twitter's Algebrid library can be 
 <iframe width="560" height="315" src="http://www.youtube.com/embed/C7gWtxelYNM" frameborder="0" allowfullscreen></iframe>
 
 
-<script async class="speakerdeck-embed" data-id="916d7bc061cf0131881c3e1e04cfd46e" data-ratio="1.2994923857868" src="http://rweald.github.com//speakerdeck.com/assets/embed.js"></script>
+<script async class="speakerdeck-embed" data-id="916d7bc061cf0131881c3e1e04cfd46e" data-ratio="1.2994923857868" src="http://rweald.github.io//speakerdeck.com/assets/embed.js"></script>
 
 ]]></content>
   </entry>
   
   <entry>
     <title type="html"><![CDATA[Spark Summit 2013 - Productionalizing Spark Streaming]]></title>
-    <link href="http://rweald.github.com/blog/2014/01/11/spark-summit-2013-productionalizing-spark-streaming/"/>
+    <link href="http://rweald.github.io/blog/2014/01/11/spark-summit-2013-productionalizing-spark-streaming/"/>
     <updated>2014-01-11T10:54:00-08:00</updated>
-    <id>http://rweald.github.com/blog/2014/01/11/spark-summit-2013-productionalizing-spark-streaming</id>
+    <id>http://rweald.github.io/blog/2014/01/11/spark-summit-2013-productionalizing-spark-streaming</id>
     <content type="html"><![CDATA[<p>Below is the presentation I gave at <a href="http://spark-summit.org/summit-2013/">Spark Summit 2013</a></p>
 
 <h3>Productionalizing Spark Streaming</h3>
@@ -54,16 +54,16 @@ We will look in detail at the way Monoids and Twitter's Algebrid library can be 
 <iframe width="560" height="315" src="http://www.youtube.com/embed/OhpjgaBVUtU" frameborder="0" allowfullscreen></iframe>
 
 
-<script async class="speakerdeck-embed" data-id="a45f30f03dd70131600346451c48010b" data-ratio="1.2994923857868" src="http://rweald.github.com//speakerdeck.com/assets/embed.js"></script>
+<script async class="speakerdeck-embed" data-id="a45f30f03dd70131600346451c48010b" data-ratio="1.2994923857868" src="http://rweald.github.io//speakerdeck.com/assets/embed.js"></script>
 
 ]]></content>
   </entry>
   
   <entry>
     <title type="html"><![CDATA[Analyzing DocGraph - What Type of Doctor Will You See Next?]]></title>
-    <link href="http://rweald.github.com/blog/2013/06/02/what-doctor-will-you-see-next/"/>
+    <link href="http://rweald.github.io/blog/2013/06/02/what-doctor-will-you-see-next/"/>
     <updated>2013-06-02T09:29:00-07:00</updated>
-    <id>http://rweald.github.com/blog/2013/06/02/what-doctor-will-you-see-next</id>
+    <id>http://rweald.github.io/blog/2013/06/02/what-doctor-will-you-see-next</id>
     <content type="html"><![CDATA[<p>In my previous posts analyzing the <a href="http://docgraph.org/?page_id=4">DocGraph</a> dataset I have looked at
 <a href="http://isurfsoftware.com/blog/2012/12/13/visualizing-geographic-connections-between-us-doctors/">the geographic connections between referrals</a> and
 <a href="http://isurfsoftware.com/blog/2013/01/27/analyzing-out-of-state-patient-referrals-using-docgraph/">out of state referrals</a>. In this post I decided to change
@@ -279,9 +279,9 @@ If you are interested in collaborating please email me ryan [at] weald.com or me
   
   <entry>
     <title type="html"><![CDATA[Analyzing Out-of-State Patient Referrals Using DocGraph]]></title>
-    <link href="http://rweald.github.com/blog/2013/01/27/analyzing-out-of-state-patient-referrals-using-docgraph/"/>
+    <link href="http://rweald.github.io/blog/2013/01/27/analyzing-out-of-state-patient-referrals-using-docgraph/"/>
     <updated>2013-01-27T14:38:00-08:00</updated>
-    <id>http://rweald.github.com/blog/2013/01/27/analyzing-out-of-state-patient-referrals-using-docgraph</id>
+    <id>http://rweald.github.io/blog/2013/01/27/analyzing-out-of-state-patient-referrals-using-docgraph</id>
     <content type="html"><![CDATA[<p>I previously built a <a href="http://isurfsoftware.com/blog/2012/12/13/visualizing-geographic-connections-between-us-doctors/">visualization of the U.S. medical graph</a> using the
 <a href="http://strata.oreilly.com/2012/11/docgraph-open-social-doctor-data.html">DocGraph</a> dataset.
 The visualization prompted me to ask the question, does the state where you live affect the likelihood you will be referred to a doctor in another state?</p>
@@ -347,9 +347,9 @@ If you are interested in collaborating on research related to <a href="http://st
   
   <entry>
     <title type="html"><![CDATA[Visualizing the Geographic Connections Between U.S. Doctors]]></title>
-    <link href="http://rweald.github.com/blog/2012/12/13/visualizing-geographic-connections-between-us-doctors/"/>
+    <link href="http://rweald.github.io/blog/2012/12/13/visualizing-geographic-connections-between-us-doctors/"/>
     <updated>2012-12-13T08:05:00-08:00</updated>
-    <id>http://rweald.github.com/blog/2012/12/13/visualizing-geographic-connections-between-us-doctors</id>
+    <id>http://rweald.github.io/blog/2012/12/13/visualizing-geographic-connections-between-us-doctors</id>
     <content type="html"><![CDATA[<p>I recently acquired access to the <a href="http://strata.oreilly.com/2012/11/docgraph-open-social-doctor-data.html">DocGraph</a> data set on
 <a href="http://www.medstartr.com/projects/93-phase-ii-next-level-doctor-social-graph">MedStartr</a>.
 This data set contains a social network of U.S. doctors, with each connection representing

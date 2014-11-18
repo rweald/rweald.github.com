@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: statistics | Ryan Weald's Blog]]></title>
-  <link href="http://rweald.github.com/blog/categories/statistics/atom.xml" rel="self"/>
-  <link href="http://rweald.github.com/"/>
-  <updated>2014-02-12T11:33:30-08:00</updated>
-  <id>http://rweald.github.com/</id>
+  <link href="http://rweald.github.io/blog/categories/statistics/atom.xml" rel="self"/>
+  <link href="http://rweald.github.io/"/>
+  <updated>2014-11-18T11:36:40-08:00</updated>
+  <id>http://rweald.github.io/</id>
   <author>
     <name><![CDATA[Ryan Weald]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[Linear Regression Using Ruby]]></title>
-    <link href="http://rweald.github.com/blog/2012/09/12/linear-regression-using-ruby/"/>
+    <link href="http://rweald.github.io/blog/2012/09/12/linear-regression-using-ruby/"/>
     <updated>2012-09-12T07:45:00-07:00</updated>
-    <id>http://rweald.github.com/blog/2012/09/12/linear-regression-using-ruby</id>
+    <id>http://rweald.github.io/blog/2012/09/12/linear-regression-using-ruby</id>
     <content type="html"><![CDATA[<h4>*Posted on the <a href="http://www.sharethrough.com/2012/09/linear-regression-using-ruby/">Sharethrough Engineering Blog</a></h4>
 
 <p><em>Abstract:</em></p>

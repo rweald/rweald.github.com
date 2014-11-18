@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Ryan Weald's Blog]]></title>
-  <link href="http://rweald.github.com/atom.xml" rel="self"/>
-  <link href="http://rweald.github.com/"/>
-  <updated>2014-02-12T11:33:30-08:00</updated>
-  <id>http://rweald.github.com/</id>
+  <link href="http://rweald.github.io/atom.xml" rel="self"/>
+  <link href="http://rweald.github.io/"/>
+  <updated>2014-11-18T11:36:40-08:00</updated>
+  <id>http://rweald.github.io/</id>
   <author>
     <name><![CDATA[Ryan Weald]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[Spark Meetup: Monoids, Store, and Dependency Injection - Abstractions for Spark Streaming Jobs]]></title>
-    <link href="http://rweald.github.com/blog/2014/01/20/spark-meetup-monoids/"/>
+    <link href="http://rweald.github.io/blog/2014/01/20/spark-meetup-monoids/"/>
     <updated>2014-01-20T18:41:00-08:00</updated>
-    <id>http://rweald.github.com/blog/2014/01/20/spark-meetup-monoids</id>
+    <id>http://rweald.github.io/blog/2014/01/20/spark-meetup-monoids</id>
     <content type="html"><![CDATA[<p>Below is the presentation I gave at the Spark User Meetup on 01/16/2014</p>
 
 <h3>Monoids, Store, and Dependency Injection - Abstractions for Spark Streaming Jobs</h3>
@@ -33,16 +33,16 @@ We will look in detail at the way Monoids and Twitter&#8217;s Algebrid library c
 <iframe width="560" height="315" src="http://www.youtube.com/embed/C7gWtxelYNM" frameborder="0" allowfullscreen></iframe>
 
 
-<script async class="speakerdeck-embed" data-id="916d7bc061cf0131881c3e1e04cfd46e" data-ratio="1.2994923857868" src="http://rweald.github.com//speakerdeck.com/assets/embed.js"></script>
+<script async class="speakerdeck-embed" data-id="916d7bc061cf0131881c3e1e04cfd46e" data-ratio="1.2994923857868" src="http://rweald.github.io//speakerdeck.com/assets/embed.js"></script>
 
 ]]></content>
   </entry>
   
   <entry>
     <title type="html"><![CDATA[Spark Summit 2013 - Productionalizing Spark Streaming]]></title>
-    <link href="http://rweald.github.com/blog/2014/01/11/spark-summit-2013-productionalizing-spark-streaming/"/>
+    <link href="http://rweald.github.io/blog/2014/01/11/spark-summit-2013-productionalizing-spark-streaming/"/>
     <updated>2014-01-11T10:54:00-08:00</updated>
-    <id>http://rweald.github.com/blog/2014/01/11/spark-summit-2013-productionalizing-spark-streaming</id>
+    <id>http://rweald.github.io/blog/2014/01/11/spark-summit-2013-productionalizing-spark-streaming</id>
     <content type="html"><![CDATA[<p>Below is the presentation I gave at <a href="http://spark-summit.org/summit-2013/">Spark Summit 2013</a></p>
 
 <h3>Productionalizing Spark Streaming</h3>
@@ -54,16 +54,16 @@ We will look in detail at the way Monoids and Twitter&#8217;s Algebrid library c
 <iframe width="560" height="315" src="http://www.youtube.com/embed/OhpjgaBVUtU" frameborder="0" allowfullscreen></iframe>
 
 
-<script async class="speakerdeck-embed" data-id="a45f30f03dd70131600346451c48010b" data-ratio="1.2994923857868" src="http://rweald.github.com//speakerdeck.com/assets/embed.js"></script>
+<script async class="speakerdeck-embed" data-id="a45f30f03dd70131600346451c48010b" data-ratio="1.2994923857868" src="http://rweald.github.io//speakerdeck.com/assets/embed.js"></script>
 
 ]]></content>
   </entry>
   
   <entry>
     <title type="html"><![CDATA[Analyzing DocGraph - What Type of Doctor Will You See Next?]]></title>
-    <link href="http://rweald.github.com/blog/2013/06/02/what-doctor-will-you-see-next/"/>
+    <link href="http://rweald.github.io/blog/2013/06/02/what-doctor-will-you-see-next/"/>
     <updated>2013-06-02T09:29:00-07:00</updated>
-    <id>http://rweald.github.com/blog/2013/06/02/what-doctor-will-you-see-next</id>
+    <id>http://rweald.github.io/blog/2013/06/02/what-doctor-will-you-see-next</id>
     <content type="html"><![CDATA[<p>In my previous posts analyzing the <a href="http://docgraph.org/?page_id=4">DocGraph</a> dataset I have looked at
 <a href="http://isurfsoftware.com/blog/2012/12/13/visualizing-geographic-connections-between-us-doctors/">the geographic connections between referrals</a> and
 <a href="http://isurfsoftware.com/blog/2013/01/27/analyzing-out-of-state-patient-referrals-using-docgraph/">out of state referrals</a>. In this post I decided to change
@@ -279,9 +279,9 @@ If you are interested in collaborating please email me ryan [at] weald.com or me
   
   <entry>
     <title type="html"><![CDATA[LA RubyConf 2013 - Building Recommendation Systems in Ruby]]></title>
-    <link href="http://rweald.github.com/blog/2013/04/29/la-rubyconf-2013-building-recommendation-systems-in-ruby/"/>
+    <link href="http://rweald.github.io/blog/2013/04/29/la-rubyconf-2013-building-recommendation-systems-in-ruby/"/>
     <updated>2013-04-29T08:06:00-07:00</updated>
-    <id>http://rweald.github.com/blog/2013/04/29/la-rubyconf-2013-building-recommendation-systems-in-ruby</id>
+    <id>http://rweald.github.io/blog/2013/04/29/la-rubyconf-2013-building-recommendation-systems-in-ruby</id>
     <content type="html"><![CDATA[<p>Below is the presentation I gave at LA RubyConf 2013 titled, &#8221;<em>People who liked this talk also liked … Building Recommendation Systems Using Ruby</em>&#8221;</p>
 
 <iframe width="560" height="315" src="http://www.youtube.com/embed/fh1y1BUTJxE" frameborder="0" allowfullscreen></iframe>
@@ -289,7 +289,7 @@ If you are interested in collaborating please email me ryan [at] weald.com or me
 
 
 
-<script async class="speakerdeck-embed" data-id="2438b36061a7013038f7123139414c5a" data-ratio="1.2994923857868" src="http://rweald.github.com//speakerdeck.com/assets/embed.js"></script>
+<script async class="speakerdeck-embed" data-id="2438b36061a7013038f7123139414c5a" data-ratio="1.2994923857868" src="http://rweald.github.io//speakerdeck.com/assets/embed.js"></script>
 
 
 
@@ -298,9 +298,9 @@ If you are interested in collaborating please email me ryan [at] weald.com or me
   
   <entry>
     <title type="html"><![CDATA[Analyzing Out-of-State Patient Referrals Using DocGraph]]></title>
-    <link href="http://rweald.github.com/blog/2013/01/27/analyzing-out-of-state-patient-referrals-using-docgraph/"/>
+    <link href="http://rweald.github.io/blog/2013/01/27/analyzing-out-of-state-patient-referrals-using-docgraph/"/>
     <updated>2013-01-27T14:38:00-08:00</updated>
-    <id>http://rweald.github.com/blog/2013/01/27/analyzing-out-of-state-patient-referrals-using-docgraph</id>
+    <id>http://rweald.github.io/blog/2013/01/27/analyzing-out-of-state-patient-referrals-using-docgraph</id>
     <content type="html"><![CDATA[<p>I previously built a <a href="http://isurfsoftware.com/blog/2012/12/13/visualizing-geographic-connections-between-us-doctors/">visualization of the U.S. medical graph</a> using the
 <a href="http://strata.oreilly.com/2012/11/docgraph-open-social-doctor-data.html">DocGraph</a> dataset.
 The visualization prompted me to ask the question, does the state where you live affect the likelihood you will be referred to a doctor in another state?</p>
@@ -366,9 +366,9 @@ If you are interested in collaborating on research related to <a href="http://st
   
   <entry>
     <title type="html"><![CDATA[Visualizing the Geographic Connections Between U.S. Doctors]]></title>
-    <link href="http://rweald.github.com/blog/2012/12/13/visualizing-geographic-connections-between-us-doctors/"/>
+    <link href="http://rweald.github.io/blog/2012/12/13/visualizing-geographic-connections-between-us-doctors/"/>
     <updated>2012-12-13T08:05:00-08:00</updated>
-    <id>http://rweald.github.com/blog/2012/12/13/visualizing-geographic-connections-between-us-doctors</id>
+    <id>http://rweald.github.io/blog/2012/12/13/visualizing-geographic-connections-between-us-doctors</id>
     <content type="html"><![CDATA[<p>I recently acquired access to the <a href="http://strata.oreilly.com/2012/11/docgraph-open-social-doctor-data.html">DocGraph</a> data set on
 <a href="http://www.medstartr.com/projects/93-phase-ii-next-level-doctor-social-graph">MedStartr</a>.
 This data set contains a social network of U.S. doctors, with each connection representing
@@ -414,9 +414,9 @@ data set. If you are interested in collaborating on research related to <a href=
   
   <entry>
     <title type="html"><![CDATA[Building Data Driven Products With Ruby - RubyConf 2012]]></title>
-    <link href="http://rweald.github.com/blog/2012/12/03/building-data-driven-products-with-ruby-rubyconf-2012/"/>
+    <link href="http://rweald.github.io/blog/2012/12/03/building-data-driven-products-with-ruby-rubyconf-2012/"/>
     <updated>2012-12-03T20:36:00-08:00</updated>
-    <id>http://rweald.github.com/blog/2012/12/03/building-data-driven-products-with-ruby-rubyconf-2012</id>
+    <id>http://rweald.github.io/blog/2012/12/03/building-data-driven-products-with-ruby-rubyconf-2012</id>
     <content type="html"><![CDATA[<p>Below is the presentation I gave at RubyConf 2012 titled, &#8220;Building Data Driven Products With Ruby.&#8221;</p>
 
 <p>You can view the slides on <a href="https://speakerdeck.com/rweald/building-data-driven-products-with-ruby">Speaker Deck</a></p>
@@ -428,9 +428,9 @@ data set. If you are interested in collaborating on research related to <a href=
   
   <entry>
     <title type="html"><![CDATA[Linear Regression Using Ruby]]></title>
-    <link href="http://rweald.github.com/blog/2012/09/12/linear-regression-using-ruby/"/>
+    <link href="http://rweald.github.io/blog/2012/09/12/linear-regression-using-ruby/"/>
     <updated>2012-09-12T07:45:00-07:00</updated>
-    <id>http://rweald.github.com/blog/2012/09/12/linear-regression-using-ruby</id>
+    <id>http://rweald.github.io/blog/2012/09/12/linear-regression-using-ruby</id>
     <content type="html"><![CDATA[<h4>*Posted on the <a href="http://www.sharethrough.com/2012/09/linear-regression-using-ruby/">Sharethrough Engineering Blog</a></h4>
 
 <p><em>Abstract:</em></p>
@@ -442,9 +442,9 @@ linear regression, and show you how you can perform <em>simple linear regression
   
   <entry>
     <title type="html"><![CDATA[Banking Your Profits, How to upgrade to Rails 3]]></title>
-    <link href="http://rweald.github.com/blog/2012/04/15/banking-your-profits/"/>
+    <link href="http://rweald.github.io/blog/2012/04/15/banking-your-profits/"/>
     <updated>2012-04-15T00:00:00-07:00</updated>
-    <id>http://rweald.github.com/blog/2012/04/15/banking-your-profits</id>
+    <id>http://rweald.github.io/blog/2012/04/15/banking-your-profits</id>
     <content type="html"><![CDATA[<p>Let me start off by saying this is not a post touting all the great new features available in the latest version of Rails. I am not going to try and convince you that there is no way you can be productive staying on your current version of Rails. Instead this is a post about the way you can improve the overall quality of your codebase and reduce technical debt even if you never fully complete the upgrade. I am going to outline the process that we used at <a href="http://sharethrough.github.com">Sharethrough</a> to improve the quality of our codebase while upgrading from Rails 2 to Rails 3.</p>
 
 <p>The driving principle behind this post is &#8220;Banking your profits&#8221;. In
@@ -482,21 +482,21 @@ pain was actually the result of tight coupling and
   
   <entry>
     <title type="html"><![CDATA[SDRuby Lightning Talk - Give Yourself Some Backbone]]></title>
-    <link href="http://rweald.github.com/blog/2011/07/16/sdruby-lightning-talk-give-yourself-some-backbone/"/>
+    <link href="http://rweald.github.io/blog/2011/07/16/sdruby-lightning-talk-give-yourself-some-backbone/"/>
     <updated>2011-07-16T11:02:00-07:00</updated>
-    <id>http://rweald.github.com/blog/2011/07/16/sdruby-lightning-talk-give-yourself-some-backbone</id>
+    <id>http://rweald.github.io/blog/2011/07/16/sdruby-lightning-talk-give-yourself-some-backbone</id>
     <content type="html"><![CDATA[<p>Below is a lightening talk I gave at an SD Ruby Meetup. It was my first every tech presentation to a public industry audience.</p>
 
-<script async class="speakerdeck-embed" data-id="499a83b05d21013169236e4c83706996" data-ratio="1.2994923857868" src="http://rweald.github.com//speakerdeck.com/assets/embed.js"></script>
+<script async class="speakerdeck-embed" data-id="499a83b05d21013169236e4c83706996" data-ratio="1.2994923857868" src="http://rweald.github.io//speakerdeck.com/assets/embed.js"></script>
 
 ]]></content>
   </entry>
   
   <entry>
     <title type="html"><![CDATA[Using Mongoid Alongside ActiveRecord]]></title>
-    <link href="http://rweald.github.com/blog/2011/05/26/mongoid-activerecord-side-by-side/"/>
+    <link href="http://rweald.github.io/blog/2011/05/26/mongoid-activerecord-side-by-side/"/>
     <updated>2011-05-26T00:00:00-07:00</updated>
-    <id>http://rweald.github.com/blog/2011/05/26/mongoid-activerecord-side-by-side</id>
+    <id>http://rweald.github.io/blog/2011/05/26/mongoid-activerecord-side-by-side</id>
     <content type="html"><![CDATA[<p>MongoDB is a very popular document oriented database and more apps are
 using it every day. However, we all know about the problems that mongo
 has with data durability. So you might not want to use it as a complete
@@ -547,9 +547,9 @@ file</p>
   
   <entry>
     <title type="html"><![CDATA[2011 Experimenting With Goliath And Eventmachine]]></title>
-    <link href="http://rweald.github.com/blog/2011/05/12/2011-experimenting-with-goliath-and-EventMachine/"/>
+    <link href="http://rweald.github.io/blog/2011/05/12/2011-experimenting-with-goliath-and-EventMachine/"/>
     <updated>2011-05-12T00:00:00-07:00</updated>
-    <id>http://rweald.github.com/blog/2011/05/12/2011-experimenting-with-goliath-and-EventMachine</id>
+    <id>http://rweald.github.io/blog/2011/05/12/2011-experimenting-with-goliath-and-EventMachine</id>
     <content type="html"><![CDATA[<p>After hearing lots of buzz surrounding <a href="https://github.com/postrank-labs/goliath">Goliath</a> the new asynchronous web server for ruby I thought I would give it a try for a particular problem I had. As part of <a href="https://github.com/icl/cove">COVE</a>, an open source online video ethnography tool, we have to handle large video file uploads. The application is written in Rails which is great except when you have really long running connections. With long running connections it ties up your mongrels and reduces your ability to service request.</p>
 
 <p>  The reason for this is because Rails is an inherently I/O blocking.
@@ -1153,9 +1153,9 @@ files to the web service.</p>
   
   <entry>
     <title type="html"><![CDATA[Caching Responses From Remote APIs]]></title>
-    <link href="http://rweald.github.com/blog/2011/04/05/caching-responses-from-external-apis/"/>
+    <link href="http://rweald.github.io/blog/2011/04/05/caching-responses-from-external-apis/"/>
     <updated>2011-04-05T00:00:00-07:00</updated>
-    <id>http://rweald.github.com/blog/2011/04/05/caching-responses-from-external-apis</id>
+    <id>http://rweald.github.io/blog/2011/04/05/caching-responses-from-external-apis</id>
     <content type="html"><![CDATA[<p>  <a href="http://secure.dokbot.com">Dokbot</a>, the project that I am currently
 working on, utilizes the mendeley API to add citations to posts. To
 achieve this the application allows users to click an add citation
@@ -1214,9 +1214,9 @@ response using whatever cache <a href="http://guides.rubyonrails.org/caching_wit
   
   <entry>
     <title type="html"><![CDATA[Mongodb Indexes With Rspec]]></title>
-    <link href="http://rweald.github.com/blog/2011/03/07/mongodb-indexes-with-rspec/"/>
+    <link href="http://rweald.github.io/blog/2011/03/07/mongodb-indexes-with-rspec/"/>
     <updated>2011-03-07T00:00:00-08:00</updated>
-    <id>http://rweald.github.com/blog/2011/03/07/mongodb-indexes-with-rspec</id>
+    <id>http://rweald.github.io/blog/2011/03/07/mongodb-indexes-with-rspec</id>
     <content type="html"><![CDATA[<p>I recently had need to test some geospatial queries in a rails
 application.
 At first this seems like nothing out of the ordinary but there are

@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: Scala | Ryan Weald's Blog]]></title>
-  <link href="http://rweald.github.com/blog/categories/scala/atom.xml" rel="self"/>
-  <link href="http://rweald.github.com/"/>
-  <updated>2014-02-12T11:33:30-08:00</updated>
-  <id>http://rweald.github.com/</id>
+  <link href="http://rweald.github.io/blog/categories/scala/atom.xml" rel="self"/>
+  <link href="http://rweald.github.io/"/>
+  <updated>2014-11-18T11:36:40-08:00</updated>
+  <id>http://rweald.github.io/</id>
   <author>
     <name><![CDATA[Ryan Weald]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[Spark Meetup: Monoids, Store, and Dependency Injection - Abstractions for Spark Streaming Jobs]]></title>
-    <link href="http://rweald.github.com/blog/2014/01/20/spark-meetup-monoids/"/>
+    <link href="http://rweald.github.io/blog/2014/01/20/spark-meetup-monoids/"/>
     <updated>2014-01-20T18:41:00-08:00</updated>
-    <id>http://rweald.github.com/blog/2014/01/20/spark-meetup-monoids</id>
+    <id>http://rweald.github.io/blog/2014/01/20/spark-meetup-monoids</id>
     <content type="html"><![CDATA[<p>Below is the presentation I gave at the Spark User Meetup on 01/16/2014</p>
 
 <h3>Monoids, Store, and Dependency Injection - Abstractions for Spark Streaming Jobs</h3>
@@ -33,16 +33,16 @@ We will look in detail at the way Monoids and Twitter's Algebrid library can be 
 <iframe width="560" height="315" src="http://www.youtube.com/embed/C7gWtxelYNM" frameborder="0" allowfullscreen></iframe>
 
 
-<script async class="speakerdeck-embed" data-id="916d7bc061cf0131881c3e1e04cfd46e" data-ratio="1.2994923857868" src="http://rweald.github.com//speakerdeck.com/assets/embed.js"></script>
+<script async class="speakerdeck-embed" data-id="916d7bc061cf0131881c3e1e04cfd46e" data-ratio="1.2994923857868" src="http://rweald.github.io//speakerdeck.com/assets/embed.js"></script>
 
 ]]></content>
   </entry>
   
   <entry>
     <title type="html"><![CDATA[Spark Summit 2013 - Productionalizing Spark Streaming]]></title>
-    <link href="http://rweald.github.com/blog/2014/01/11/spark-summit-2013-productionalizing-spark-streaming/"/>
+    <link href="http://rweald.github.io/blog/2014/01/11/spark-summit-2013-productionalizing-spark-streaming/"/>
     <updated>2014-01-11T10:54:00-08:00</updated>
-    <id>http://rweald.github.com/blog/2014/01/11/spark-summit-2013-productionalizing-spark-streaming</id>
+    <id>http://rweald.github.io/blog/2014/01/11/spark-summit-2013-productionalizing-spark-streaming</id>
     <content type="html"><![CDATA[<p>Below is the presentation I gave at <a href="http://spark-summit.org/summit-2013/">Spark Summit 2013</a></p>
 
 <h3>Productionalizing Spark Streaming</h3>
@@ -54,7 +54,7 @@ We will look in detail at the way Monoids and Twitter's Algebrid library can be 
 <iframe width="560" height="315" src="http://www.youtube.com/embed/OhpjgaBVUtU" frameborder="0" allowfullscreen></iframe>
 
 
-<script async class="speakerdeck-embed" data-id="a45f30f03dd70131600346451c48010b" data-ratio="1.2994923857868" src="http://rweald.github.com//speakerdeck.com/assets/embed.js"></script>
+<script async class="speakerdeck-embed" data-id="a45f30f03dd70131600346451c48010b" data-ratio="1.2994923857868" src="http://rweald.github.io//speakerdeck.com/assets/embed.js"></script>
 
 ]]></content>
   </entry>

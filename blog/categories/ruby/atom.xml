@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: ruby | Ryan Weald's Blog]]></title>
-  <link href="http://rweald.github.com/blog/categories/ruby/atom.xml" rel="self"/>
-  <link href="http://rweald.github.com/"/>
-  <updated>2014-02-12T11:33:30-08:00</updated>
-  <id>http://rweald.github.com/</id>
+  <link href="http://rweald.github.io/blog/categories/ruby/atom.xml" rel="self"/>
+  <link href="http://rweald.github.io/"/>
+  <updated>2014-11-18T11:36:40-08:00</updated>
+  <id>http://rweald.github.io/</id>
   <author>
     <name><![CDATA[Ryan Weald]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[LA RubyConf 2013 - Building Recommendation Systems in Ruby]]></title>
-    <link href="http://rweald.github.com/blog/2013/04/29/la-rubyconf-2013-building-recommendation-systems-in-ruby/"/>
+    <link href="http://rweald.github.io/blog/2013/04/29/la-rubyconf-2013-building-recommendation-systems-in-ruby/"/>
     <updated>2013-04-29T08:06:00-07:00</updated>
-    <id>http://rweald.github.com/blog/2013/04/29/la-rubyconf-2013-building-recommendation-systems-in-ruby</id>
+    <id>http://rweald.github.io/blog/2013/04/29/la-rubyconf-2013-building-recommendation-systems-in-ruby</id>
     <content type="html"><![CDATA[<p>Below is the presentation I gave at LA RubyConf 2013 titled, "<em>People who liked this talk also liked … Building Recommendation Systems Using Ruby</em>"</p>
 
 <iframe width="560" height="315" src="http://www.youtube.com/embed/fh1y1BUTJxE" frameborder="0" allowfullscreen></iframe>
@@ -25,7 +25,7 @@
 
 
 
-<script async class="speakerdeck-embed" data-id="2438b36061a7013038f7123139414c5a" data-ratio="1.2994923857868" src="http://rweald.github.com//speakerdeck.com/assets/embed.js"></script>
+<script async class="speakerdeck-embed" data-id="2438b36061a7013038f7123139414c5a" data-ratio="1.2994923857868" src="http://rweald.github.io//speakerdeck.com/assets/embed.js"></script>
 
 
 
@@ -34,9 +34,9 @@
   
   <entry>
     <title type="html"><![CDATA[Building Data Driven Products With Ruby - RubyConf 2012]]></title>
-    <link href="http://rweald.github.com/blog/2012/12/03/building-data-driven-products-with-ruby-rubyconf-2012/"/>
+    <link href="http://rweald.github.io/blog/2012/12/03/building-data-driven-products-with-ruby-rubyconf-2012/"/>
     <updated>2012-12-03T20:36:00-08:00</updated>
-    <id>http://rweald.github.com/blog/2012/12/03/building-data-driven-products-with-ruby-rubyconf-2012</id>
+    <id>http://rweald.github.io/blog/2012/12/03/building-data-driven-products-with-ruby-rubyconf-2012</id>
     <content type="html"><![CDATA[<p>Below is the presentation I gave at RubyConf 2012 titled, "Building Data Driven Products With Ruby."</p>
 
 <p>You can view the slides on <a href="https://speakerdeck.com/rweald/building-data-driven-products-with-ruby">Speaker Deck</a></p>
@@ -48,9 +48,9 @@
   
   <entry>
     <title type="html"><![CDATA[Linear Regression Using Ruby]]></title>
-    <link href="http://rweald.github.com/blog/2012/09/12/linear-regression-using-ruby/"/>
+    <link href="http://rweald.github.io/blog/2012/09/12/linear-regression-using-ruby/"/>
     <updated>2012-09-12T07:45:00-07:00</updated>
-    <id>http://rweald.github.com/blog/2012/09/12/linear-regression-using-ruby</id>
+    <id>http://rweald.github.io/blog/2012/09/12/linear-regression-using-ruby</id>
     <content type="html"><![CDATA[<h4>*Posted on the <a href="http://www.sharethrough.com/2012/09/linear-regression-using-ruby/">Sharethrough Engineering Blog</a></h4>
 
 <p><em>Abstract:</em></p>
@@ -62,12 +62,12 @@ linear regression, and show you how you can perform <em>simple linear regression
   
   <entry>
     <title type="html"><![CDATA[SDRuby Lightning Talk - Give Yourself Some Backbone]]></title>
-    <link href="http://rweald.github.com/blog/2011/07/16/sdruby-lightning-talk-give-yourself-some-backbone/"/>
+    <link href="http://rweald.github.io/blog/2011/07/16/sdruby-lightning-talk-give-yourself-some-backbone/"/>
     <updated>2011-07-16T11:02:00-07:00</updated>
-    <id>http://rweald.github.com/blog/2011/07/16/sdruby-lightning-talk-give-yourself-some-backbone</id>
+    <id>http://rweald.github.io/blog/2011/07/16/sdruby-lightning-talk-give-yourself-some-backbone</id>
     <content type="html"><![CDATA[<p>Below is a lightening talk I gave at an SD Ruby Meetup. It was my first every tech presentation to a public industry audience.</p>
 
-<script async class="speakerdeck-embed" data-id="499a83b05d21013169236e4c83706996" data-ratio="1.2994923857868" src="http://rweald.github.com//speakerdeck.com/assets/embed.js"></script>
+<script async class="speakerdeck-embed" data-id="499a83b05d21013169236e4c83706996" data-ratio="1.2994923857868" src="http://rweald.github.io//speakerdeck.com/assets/embed.js"></script>
 
 ]]></content>
   </entry>

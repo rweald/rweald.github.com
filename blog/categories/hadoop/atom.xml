@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: hadoop | Ryan Weald's Blog]]></title>
-  <link href="http://rweald.github.com/blog/categories/hadoop/atom.xml" rel="self"/>
-  <link href="http://rweald.github.com/"/>
-  <updated>2014-02-12T11:33:30-08:00</updated>
-  <id>http://rweald.github.com/</id>
+  <link href="http://rweald.github.io/blog/categories/hadoop/atom.xml" rel="self"/>
+  <link href="http://rweald.github.io/"/>
+  <updated>2014-11-18T11:36:40-08:00</updated>
+  <id>http://rweald.github.io/</id>
   <author>
     <name><![CDATA[Ryan Weald]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[Building Data Driven Products With Ruby - RubyConf 2012]]></title>
-    <link href="http://rweald.github.com/blog/2012/12/03/building-data-driven-products-with-ruby-rubyconf-2012/"/>
+    <link href="http://rweald.github.io/blog/2012/12/03/building-data-driven-products-with-ruby-rubyconf-2012/"/>
     <updated>2012-12-03T20:36:00-08:00</updated>
-    <id>http://rweald.github.com/blog/2012/12/03/building-data-driven-products-with-ruby-rubyconf-2012</id>
+    <id>http://rweald.github.io/blog/2012/12/03/building-data-driven-products-with-ruby-rubyconf-2012</id>
     <content type="html"><![CDATA[<p>Below is the presentation I gave at RubyConf 2012 titled, "Building Data Driven Products With Ruby."</p>
 
 <p>You can view the slides on <a href="https://speakerdeck.com/rweald/building-data-driven-products-with-ruby">Speaker Deck</a></p>

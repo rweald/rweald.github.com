@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: machine-learning | Ryan Weald's Blog]]></title>
-  <link href="http://rweald.github.com/blog/categories/machine-learning/atom.xml" rel="self"/>
-  <link href="http://rweald.github.com/"/>
-  <updated>2014-02-12T11:33:30-08:00</updated>
-  <id>http://rweald.github.com/</id>
+  <link href="http://rweald.github.io/blog/categories/machine-learning/atom.xml" rel="self"/>
+  <link href="http://rweald.github.io/"/>
+  <updated>2014-11-18T11:36:40-08:00</updated>
+  <id>http://rweald.github.io/</id>
   <author>
     <name><![CDATA[Ryan Weald]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[LA RubyConf 2013 - Building Recommendation Systems in Ruby]]></title>
-    <link href="http://rweald.github.com/blog/2013/04/29/la-rubyconf-2013-building-recommendation-systems-in-ruby/"/>
+    <link href="http://rweald.github.io/blog/2013/04/29/la-rubyconf-2013-building-recommendation-systems-in-ruby/"/>
     <updated>2013-04-29T08:06:00-07:00</updated>
-    <id>http://rweald.github.com/blog/2013/04/29/la-rubyconf-2013-building-recommendation-systems-in-ruby</id>
+    <id>http://rweald.github.io/blog/2013/04/29/la-rubyconf-2013-building-recommendation-systems-in-ruby</id>
     <content type="html"><![CDATA[<p>Below is the presentation I gave at LA RubyConf 2013 titled, "<em>People who liked this talk also liked … Building Recommendation Systems Using Ruby</em>"</p>
 
 <iframe width="560" height="315" src="http://www.youtube.com/embed/fh1y1BUTJxE" frameborder="0" allowfullscreen></iframe>
@@ -25,7 +25,7 @@
 
 
 
-<script async class="speakerdeck-embed" data-id="2438b36061a7013038f7123139414c5a" data-ratio="1.2994923857868" src="http://rweald.github.com//speakerdeck.com/assets/embed.js"></script>
+<script async class="speakerdeck-embed" data-id="2438b36061a7013038f7123139414c5a" data-ratio="1.2994923857868" src="http://rweald.github.io//speakerdeck.com/assets/embed.js"></script>
 
 
 
